@@ -8,6 +8,10 @@ object Common {
     "Sets scaling factor of running tests that are wrapped in scale(...)"
   )
 
+  lazy val targetJvm = settingKey[String](
+    "Sets the target JVM to compile byte code"
+  )
+
   def settings = Seq(
     version := "1.1.0-M3",
 
@@ -25,19 +29,26 @@ object Common {
 
     crossScalaVersions := Seq("2.10.6", "2.11.8", "2.12.1"),
 
+    targetJvm := (CrossVersion.partialVersion(scalaVersion.value) match {
+      case Some((2, 10))  => "1.6"
+      case Some((2, 11))  => "1.6"
+      case Some((2, 12))  => "1.8"
+      case _              => "1.6"
+    }),
+
     scalacOptions ++= Seq(
       "-encoding", "UTF-8",
       "-deprecation", "-unchecked", "-feature",
       "-Xfatal-warnings"
     ) ++ (CrossVersion.partialVersion(scalaVersion.value) match {
       case Some((2, 10)) => Seq(
-        "-Ywarn-all", "-target:jvm-1.6"
+        "-Ywarn-all", "-target:jvm-" + targetJvm.value
       )
       case Some((2, 11)) => Seq(
-        "-target:jvm-1.6"
+        "-target:jvm-" + targetJvm.value
       )
       case Some((2, 12)) => Seq(
-        "-target:jvm-1.8"
+        "-target:jvm-" + targetJvm.value
       )
       case _ => Nil
     }),
@@ -55,8 +66,8 @@ object Common {
     }),
 
     javacOptions ++= Seq(
-      "-source", "1.6", "-target", "1.6", "-Xlint:all", "-Werror",
-      "-Xlint:-options", "-Xlint:-path", "-Xlint:-processing"
+      "-source", targetJvm.value, "-target", targetJvm.value, "-Xlint:all",
+      "-Werror", "-Xlint:-options", "-Xlint:-path", "-Xlint:-processing"
     ),
   
     scalacOptions in (Compile, doc) ++= Seq(

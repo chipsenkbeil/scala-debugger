@@ -88,6 +88,21 @@ lazy val sbtScalaDebuggerPlugin = project
   .enablePlugins(CrossPerProjectPlugin)
 
 //
+// DEBUGGER VISUAL PROJECT CONFIGURATION
+//
+lazy val scalaDebuggerVisual = project
+  .in(file("scala-debugger-visual"))
+  .configs(IntegrationTest)
+  .settings(Common.settings: _*)
+  .settings(Defaults.itSettings: _*)
+  .settings(Visual.settings: _*)
+  .settings(name := "scala-debugger-visual")
+  .settings(Common.targetJvm := "1.8")
+  .dependsOn(scalaDebuggerApi % "compile->compile;test->compile;it->compile")
+  .dependsOn(scalaDebuggerTool % "compile->compile;test->compile;it->compile")
+  .dependsOn(scalaDebuggerTest % "test->compile;it->compile")
+
+//
 // MAIN PROJECT CONFIGURATION
 //
 lazy val root = project
@@ -105,6 +120,7 @@ lazy val root = project
     scalaDebuggerMacros,
     scalaDebuggerLanguage,
     scalaDebuggerTool,
+    scalaDebuggerVisual,
     sbtScalaDebuggerPlugin
   ).enablePlugins(CrossPerProjectPlugin)
 
