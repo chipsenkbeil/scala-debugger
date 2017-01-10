@@ -1,7 +1,7 @@
 package org.scaladebugger.test.info
 
 /**
- * Provides test of expanding scope ($outer) for Scala profiles.
+ * Provides test of expanding scope (dollar outer) for Scala profiles.
  *
  * @note Should have a class name of org.scaladebugger.test.info.OuterScope
  */

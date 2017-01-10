@@ -1,24 +1,31 @@
 package org.scaladebugger.visual
 
-import scalafx.Includes._
-import scalafx.application.JFXApp
+import scalafx.application.{JFXApp, Platform}
 import scalafx.scene.Scene
-import scalafx.scene.paint.Color._
-import scalafx.scene.shape.Rectangle
+import scalafx.scene.control.{Button, ToolBar}
+import scalafx.scene.layout.{BorderPane, HBox}
+import scalafx.stage.StageStyle
 
 object Main extends JFXApp {
   stage = new JFXApp.PrimaryStage {
-    title.value = "Hello Stage"
+    initStyle(StageStyle.Undecorated)
+    title = "Hello Stage"
     width = 600
     height = 450
     scene = new Scene {
-      fill = LightGreen
-      content = new Rectangle {
-        x = 25
-        y = 40
-        width = 100
-        height = 100
-        fill <== when(hover) choose Green otherwise Red
+      content = new BorderPane {
+        style = "-fx-background-color: green;"
+        top = new ToolBar {
+          prefHeight = 25
+          minHeight = 25
+          maxHeight = 25
+          items = new HBox {
+            children = new Button {
+              text = "X"
+              onAction = e => Platform.exit()
+            }
+          }
+        }
       }
     }
   }
