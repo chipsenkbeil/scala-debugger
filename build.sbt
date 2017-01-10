@@ -97,10 +97,10 @@ lazy val scalaDebuggerVisual = project
   .settings(Defaults.itSettings: _*)
   .settings(Visual.settings: _*)
   .settings(name := "scala-debugger-visual")
-  .settings(Common.targetJvm := "1.8")
   .dependsOn(scalaDebuggerApi % "compile->compile;test->compile;it->compile")
   .dependsOn(scalaDebuggerTool % "compile->compile;test->compile;it->compile")
   .dependsOn(scalaDebuggerTest % "test->compile;it->compile")
+  .enablePlugins(CrossPerProjectPlugin)
 
 //
 // MAIN PROJECT CONFIGURATION
