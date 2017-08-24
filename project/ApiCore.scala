@@ -1,8 +1,8 @@
 import sbt.Keys._
 import sbt._
 
-object Api {
-  /** Api-specific project settings. */
+object ApiCore {
+  /** Api core-specific project settings. */
   val settings = Seq(
     // NOTE: Fork needed to avoid mixing in sbt classloader, which is causing
     //       LinkageError to be thrown for JDI-based classes

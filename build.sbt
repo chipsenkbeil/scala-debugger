@@ -1,13 +1,13 @@
 //
 // DEBUGGER API PROJECT CONFIGURATION
 //
-lazy val scalaDebuggerApi = project
-  .in(file("scala-debugger-api"))
+lazy val scalaDebuggerApiCore = project
+  .in(file("scala-debugger-api-core"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
-  .settings(Api.settings: _*)
-  .settings(name := "scala-debugger-api")
+  .settings(ApiCore.settings: _*)
+  .settings(name := "scala-debugger-api-core")
   .dependsOn(scalaDebuggerMacros % "compile->compile;test->compile;it->compile")
   .dependsOn(scalaDebuggerTest % "test->compile;it->compile;test->test;it->test")
 
@@ -59,7 +59,7 @@ lazy val scalaDebuggerLanguage = project
   .settings(Language.settings: _*)
   .settings(Macros.settings: _*)
   .settings(name := "scala-debugger-language")
-  .dependsOn(scalaDebuggerApi % "compile->compile;test->compile;it->compile")
+  .dependsOn(scalaDebuggerApiCore % "compile->compile;test->compile;it->compile")
 
 //
 // DEBUGGER TOOL PROJECT CONFIGURATION
@@ -71,7 +71,7 @@ lazy val scalaDebuggerTool = project
   .settings(Defaults.itSettings: _*)
   .settings(Tool.settings: _*)
   .settings(name := "scala-debugger-tool")
-  .dependsOn(scalaDebuggerApi % "compile->compile;test->compile;it->compile")
+  .dependsOn(scalaDebuggerApiCore % "compile->compile;test->compile;it->compile")
   .dependsOn(scalaDebuggerLanguage % "compile->compile;test->compile;it->compile")
   .dependsOn(scalaDebuggerTest % "test->compile;it->compile;test->test;it->test")
 
@@ -99,7 +99,7 @@ lazy val root = project
     publishArtifact := false,
     publishLocal := {}
   ).aggregate(
-    scalaDebuggerApi,
+    scalaDebuggerApiCore,
     scalaDebuggerDocs,
     scalaDebuggerTest,
     scalaDebuggerMacros,
