@@ -1,7 +1,6 @@
 package org.scaladebugger.api.debuggers
 import com.sun.jdi._
 import com.sun.jdi.connect.AttachingConnector
-import org.scaladebugger.api.profiles.{ProfileManager, StandardProfileManager}
 import org.scaladebugger.api.utils.{Logging, LoopingTaskRunner}
 import org.scaladebugger.api.virtualmachines.{ScalaVirtualMachine, ScalaVirtualMachineManager, StandardScalaVirtualMachine}
 

@@ -2,7 +2,6 @@ package org.scaladebugger.api.profiles.java.requests.threads
 
 import java.util.concurrent.atomic.AtomicInteger
 
-import org.scaladebugger.api.profiles.java.JavaDebugProfile
 import org.scaladebugger.api.utils.JDITools
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
 import org.scaladebugger.test.helpers.ParallelMockFunSpec

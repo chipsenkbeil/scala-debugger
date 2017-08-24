@@ -2,7 +2,6 @@ package test
 
 import java.util.concurrent.ArrayBlockingQueue
 
-import org.scaladebugger.api.utils.Logging
 import org.scaladebugger.tool.frontend.VirtualTerminal
 import org.scalatest.{Assertion, Matchers}
 

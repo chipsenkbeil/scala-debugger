@@ -1,14 +1,13 @@
 package org.scaladebugger.api.debuggers
 import java.util.concurrent.ConcurrentHashMap
 
-import org.scaladebugger.api.profiles.java.JavaDebugProfile
-import org.scaladebugger.api.utils.{JDILoader, Logging}
 import org.scaladebugger.api.virtualmachines.{DummyScalaVirtualMachine, ScalaVirtualMachine, ScalaVirtualMachineManager}
 
 import scala.collection.JavaConverters._
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future, Promise}
 import Debugger._
+import org.scaladebugger.api.utils.{JDILoader, Logging}
 
 /** Represents the constants available to the debugger interface. */
 object Debugger {

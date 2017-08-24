@@ -2,9 +2,7 @@ package org.scaladebugger.api.profiles.java.info.events
 
 import com.sun.jdi.{ReferenceType, ThreadReference, VirtualMachine}
 import com.sun.jdi.event.VMStartEvent
-import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.profiles.traits.info.{InfoProducer, ThreadInfo}
-import org.scaladebugger.api.profiles.traits.info.events.VMStartEventInfo
+import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 /**

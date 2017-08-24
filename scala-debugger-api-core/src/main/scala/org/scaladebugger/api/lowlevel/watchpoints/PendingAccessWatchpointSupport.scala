@@ -1,8 +1,6 @@
 package org.scaladebugger.api.lowlevel.watchpoints
-
-import org.scaladebugger.api.lowlevel.PendingRequestSupport
+import org.scaladebugger.api.interfaces.lowlevel.PendingRequestSupport
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
-import org.scaladebugger.api.utils.PendingActionManager
 
 import scala.util.{Success, Try}
 

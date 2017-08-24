@@ -1,9 +1,8 @@
 package org.scaladebugger.api.profiles.java.info
 
 import com.sun.jdi.{ReferenceType, Value}
-import org.scaladebugger.api.lowlevel.classes.ClassManager
+import org.scaladebugger.api.interfaces.lowlevel.classes.ClassManager
 import org.scaladebugger.api.lowlevel.utils.JDIHelperMethods
-import org.scaladebugger.api.profiles.traits.info.{InfoProducer, MiscInfo, ReferenceTypeInfo, ValueInfo}
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 import scala.util.Try

@@ -2,7 +2,6 @@ package org.scaladebugger.tool.backend.functions
 import org.scaladebugger.api.debuggers.{AttachingDebugger, LaunchingDebugger, ListeningDebugger, ProcessDebugger}
 import org.scaladebugger.api.profiles.java.JavaDebugProfile
 import org.scaladebugger.api.profiles.scala210.Scala210DebugProfile
-import org.scaladebugger.api.utils.JDITools
 import org.scaladebugger.tool.backend.StateManager
 
 /**

@@ -1,6 +1,5 @@
 package org.scaladebugger.api.debuggers
 
-import org.scaladebugger.api.utils.JDILoader
 import org.scaladebugger.api.virtualmachines.{DummyScalaVirtualMachine, ScalaVirtualMachine, ScalaVirtualMachineManager}
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory

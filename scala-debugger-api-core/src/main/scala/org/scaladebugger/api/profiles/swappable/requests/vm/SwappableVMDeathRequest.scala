@@ -2,9 +2,6 @@ package org.scaladebugger.api.profiles.swappable.requests.vm
 
 import org.scaladebugger.api.lowlevel.JDIArgument
 import org.scaladebugger.api.lowlevel.vm.VMDeathRequestInfo
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.swappable.SwappableDebugProfileManagement
-import org.scaladebugger.api.profiles.traits.requests.vm.VMDeathRequest
 
 import scala.util.Try
 

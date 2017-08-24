@@ -2,9 +2,6 @@ package org.scaladebugger.api.dsl.info
 
 import com.sun.jdi.VirtualMachine
 import org.scaladebugger.api.lowlevel.ManagerContainer
-import org.scaladebugger.api.profiles.ProfileManager
-import org.scaladebugger.api.profiles.traits.DebugProfile
-import org.scaladebugger.api.profiles.traits.info.{ObjectInfo, VariableInfo}
 import org.scaladebugger.api.virtualmachines.{ObjectCache, ScalaVirtualMachine, ScalaVirtualMachineManager}
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory

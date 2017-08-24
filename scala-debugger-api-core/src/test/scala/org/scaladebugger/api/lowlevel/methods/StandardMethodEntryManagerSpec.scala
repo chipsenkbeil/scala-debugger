@@ -1,6 +1,6 @@
 package org.scaladebugger.api.lowlevel.methods
 import com.sun.jdi.request.{EventRequest, EventRequestManager, MethodEntryRequest}
-import org.scaladebugger.api.lowlevel.classes.ClassManager
+import org.scaladebugger.api.interfaces.lowlevel.classes.ClassManager
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}

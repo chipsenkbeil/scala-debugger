@@ -1,17 +1,12 @@
 package org.scaladebugger.api.profiles.java.requests.watchpoints
 
 import com.sun.jdi.event.ModificationWatchpointEvent
-import org.scaladebugger.api.lowlevel.JDIArgument
+import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
 import org.scaladebugger.api.lowlevel.events.EventManager
 import org.scaladebugger.api.lowlevel.events.EventType.ModificationWatchpointEventType
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 import org.scaladebugger.api.lowlevel.utils.JDIArgumentGroup
 import org.scaladebugger.api.lowlevel.watchpoints._
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.RequestHelper
-import org.scaladebugger.api.profiles.traits.info.InfoProducer
-import org.scaladebugger.api.profiles.traits.info.events.ModificationWatchpointEventInfo
-import org.scaladebugger.api.profiles.traits.requests.watchpoints.ModificationWatchpointRequest
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 import scala.util.Try

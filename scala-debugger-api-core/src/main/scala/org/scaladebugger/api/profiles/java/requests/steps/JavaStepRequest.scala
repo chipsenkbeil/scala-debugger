@@ -2,7 +2,7 @@ package org.scaladebugger.api.profiles.java.requests.steps
 
 import com.sun.jdi.ThreadReference
 import com.sun.jdi.event.StepEvent
-import org.scaladebugger.api.lowlevel.JDIArgument
+import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
 import org.scaladebugger.api.lowlevel.events.EventType.StepEventType
 import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
 import org.scaladebugger.api.lowlevel.events.{EventManager, JDIEventArgument}
@@ -10,9 +10,6 @@ import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 import org.scaladebugger.api.lowlevel.requests.filters.ThreadFilter
 import org.scaladebugger.api.lowlevel.steps._
 import org.scaladebugger.api.lowlevel.utils.JDIArgumentGroup
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.traits.info.{InfoProducer, ThreadInfo}
-import org.scaladebugger.api.profiles.traits.requests.steps.StepRequest
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 import scala.concurrent.Future

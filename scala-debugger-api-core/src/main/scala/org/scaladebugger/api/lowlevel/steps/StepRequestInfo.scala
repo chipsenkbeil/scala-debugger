@@ -1,7 +1,7 @@
 package org.scaladebugger.api.lowlevel.steps
 
 import com.sun.jdi.ThreadReference
-import org.scaladebugger.api.lowlevel.RequestInfo
+import org.scaladebugger.api.interfaces.lowlevel.RequestInfo
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 
 /**

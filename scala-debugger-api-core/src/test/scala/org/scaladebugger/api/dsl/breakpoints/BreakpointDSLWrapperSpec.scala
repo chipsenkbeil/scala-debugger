@@ -2,9 +2,6 @@ package org.scaladebugger.api.dsl.breakpoints
 
 import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
-import org.scaladebugger.api.pipelines.Pipeline
-import org.scaladebugger.api.profiles.traits.requests.breakpoints.BreakpointRequest
-import org.scaladebugger.api.profiles.traits.info.events.BreakpointEventInfo
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 
 import scala.util.Success

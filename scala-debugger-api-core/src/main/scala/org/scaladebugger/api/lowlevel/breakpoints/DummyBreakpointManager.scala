@@ -1,6 +1,7 @@
 package org.scaladebugger.api.lowlevel.breakpoints
 
 import com.sun.jdi.request.BreakpointRequest
+import org.scaladebugger.api.interfaces.lowlevel.breakpoints.{BreakpointManager, BreakpointRequestInfo}
 import org.scaladebugger.api.lowlevel.DummyOperationException
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 

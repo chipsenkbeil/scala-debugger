@@ -8,11 +8,6 @@ import org.scaladebugger.api.lowlevel.events.EventManager
 import org.scaladebugger.api.lowlevel.events.EventType.VMStartEventType
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 import org.scaladebugger.api.lowlevel.utils.JDIArgumentGroup
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.RequestHelper
-import org.scaladebugger.api.profiles.traits.info.InfoProducer
-import org.scaladebugger.api.profiles.traits.info.events.VMStartEventInfo
-import org.scaladebugger.api.profiles.traits.requests.vm.VMStartRequest
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 import scala.util.Try

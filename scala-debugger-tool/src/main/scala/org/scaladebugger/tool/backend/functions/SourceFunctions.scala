@@ -3,7 +3,6 @@ import java.io.File
 
 import java.nio.file._
 
-import org.scaladebugger.api.utils.FileSearcher
 import org.scaladebugger.tool.backend.StateManager
 
 /**

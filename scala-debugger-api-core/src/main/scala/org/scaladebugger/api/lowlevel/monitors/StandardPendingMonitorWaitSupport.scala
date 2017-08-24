@@ -1,7 +1,5 @@
 package org.scaladebugger.api.lowlevel.monitors
 
-import org.scaladebugger.api.utils.PendingActionManager
-
 /**
  * Provides pending monitor wait capabilities to an existing
  * monitor wait manager.

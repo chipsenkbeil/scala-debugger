@@ -1,5 +1,6 @@
 package org.scaladebugger.api.profiles.java.requests.steps
-import org.scaladebugger.api.profiles.traits.info.ThreadInfo
+
+import org.scaladebugger.api.interfaces.profiles.info.ThreadInfo
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 import org.scalatest.time.Seconds

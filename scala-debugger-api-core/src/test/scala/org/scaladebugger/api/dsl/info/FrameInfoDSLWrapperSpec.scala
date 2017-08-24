@@ -1,7 +1,6 @@
 package org.scaladebugger.api.dsl.info
 
 import com.sun.jdi.StackFrame
-import org.scaladebugger.api.profiles.traits.info._
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory

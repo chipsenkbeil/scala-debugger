@@ -2,16 +2,17 @@ package test
 
 import com.sun.jdi.ThreadReference
 import com.sun.jdi.request.EventRequest
-import org.scaladebugger.api.lowlevel.breakpoints.BreakpointRequestInfo
-import org.scaladebugger.api.lowlevel.classes.{ClassUnloadRequestInfo, ClassPrepareRequestInfo}
+import org.scaladebugger.api.interfaces.lowlevel.breakpoints.BreakpointRequestInfo
+import org.scaladebugger.api.interfaces.lowlevel.classes.{ClassPrepareRequestInfo, ClassUnloadRequestInfo}
+import org.scaladebugger.api.lowlevel.classes.ClassUnloadRequestInfo
 import org.scaladebugger.api.lowlevel.exceptions.ExceptionRequestInfo
-import org.scaladebugger.api.lowlevel.methods.{MethodExitRequestInfo, MethodEntryRequestInfo}
-import org.scaladebugger.api.lowlevel.monitors.{MonitorWaitRequestInfo, MonitorWaitedRequestInfo, MonitorContendedEnterRequestInfo, MonitorContendedEnteredRequestInfo}
-import org.scaladebugger.api.lowlevel.requests.{JDIRequestProcessor, JDIRequestArgument}
+import org.scaladebugger.api.lowlevel.methods.{MethodEntryRequestInfo, MethodExitRequestInfo}
+import org.scaladebugger.api.lowlevel.monitors.{MonitorContendedEnterRequestInfo, MonitorContendedEnteredRequestInfo, MonitorWaitRequestInfo, MonitorWaitedRequestInfo}
+import org.scaladebugger.api.lowlevel.requests.{JDIRequestArgument, JDIRequestProcessor}
 import org.scaladebugger.api.lowlevel.steps.StepRequestInfo
-import org.scaladebugger.api.lowlevel.threads.{ThreadStartRequestInfo, ThreadDeathRequestInfo}
+import org.scaladebugger.api.lowlevel.threads.{ThreadDeathRequestInfo, ThreadStartRequestInfo}
 import org.scaladebugger.api.lowlevel.vm.VMDeathRequestInfo
-import org.scaladebugger.api.lowlevel.watchpoints.{ModificationWatchpointRequestInfo, AccessWatchpointRequestInfo}
+import org.scaladebugger.api.lowlevel.watchpoints.{AccessWatchpointRequestInfo, ModificationWatchpointRequestInfo}
 
 /**
  * Provides helpers to create stubbed request info objects since ScalaMock

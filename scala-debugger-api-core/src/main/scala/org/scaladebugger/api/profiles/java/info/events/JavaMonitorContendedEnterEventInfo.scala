@@ -2,9 +2,7 @@ package org.scaladebugger.api.profiles.java.info.events
 
 import com.sun.jdi._
 import com.sun.jdi.event.MonitorContendedEnterEvent
-import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.profiles.traits.info.InfoProducer
-import org.scaladebugger.api.profiles.traits.info.events.{MonitorContendedEnterEventInfo, MonitorEvent}
+import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 /**

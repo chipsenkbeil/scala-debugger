@@ -1,5 +1,5 @@
 package org.scaladebugger.api.profiles.java.info
-import org.scaladebugger.api.profiles.java.JavaDebugProfile
+
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 import test.{ApiTestUtilities, VirtualMachineFixtures}
 

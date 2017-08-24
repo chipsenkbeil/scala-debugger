@@ -1,5 +1,6 @@
 package org.scaladebugger.api.lowlevel
 
+import org.scaladebugger.api.interfaces.lowlevel.RequestInfo
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 
 case class StandardRequestInfo(

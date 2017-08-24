@@ -8,12 +8,7 @@ import org.scaladebugger.api.lowlevel.exceptions.PendingExceptionSupport
 import org.scaladebugger.api.lowlevel.methods.{PendingMethodEntrySupport, PendingMethodExitSupport}
 import org.scaladebugger.api.lowlevel.utils.JDIHelperMethods
 import org.scaladebugger.api.lowlevel.watchpoints.{PendingAccessWatchpointSupport, PendingModificationWatchpointSupport}
-import org.scaladebugger.api.profiles.java.JavaDebugProfile
-import org.scaladebugger.api.profiles.ProfileManager
-import org.scaladebugger.api.profiles.traits.DebugProfile
-import org.scaladebugger.api.utils.{Logging, LoopingTaskRunner}
 import com.sun.jdi._
-import org.scaladebugger.api.profiles.scala210.Scala210DebugProfile
 
 import scala.util.Try
 

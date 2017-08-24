@@ -3,16 +3,12 @@ package org.scaladebugger.api.profiles.java.requests.vm
 import java.util.concurrent.ConcurrentHashMap
 
 import com.sun.jdi.event.VMDisconnectEvent
+import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
 import org.scaladebugger.api.lowlevel.events.EventManager
 import org.scaladebugger.api.lowlevel.events.EventType.VMDisconnectEventType
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 import org.scaladebugger.api.lowlevel.utils.JDIArgumentGroup
-import org.scaladebugger.api.lowlevel.{JDIArgument, StandardRequestInfo}
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.RequestHelper
-import org.scaladebugger.api.profiles.traits.info.InfoProducer
-import org.scaladebugger.api.profiles.traits.info.events.VMDisconnectEventInfo
-import org.scaladebugger.api.profiles.traits.requests.vm.VMDisconnectRequest
+import org.scaladebugger.api.lowlevel.StandardRequestInfo
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 import scala.util.Try

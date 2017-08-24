@@ -1,6 +1,5 @@
 package org.scaladebugger.api.profiles.scala210.info
 
-import org.scaladebugger.api.profiles.java.info.JavaInfoProducer
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 
 class Scala210InfoProducerSpec extends ParallelMockFunSpec {

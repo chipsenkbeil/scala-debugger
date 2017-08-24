@@ -3,7 +3,6 @@ package test
 import java.io.IOException
 
 import org.scaladebugger.api.profiles.java.JavaDebugProfile
-import org.scaladebugger.api.utils.{JDITools, Logging}
 import org.scaladebugger.test.helpers.ControlledParallelSuite
 import org.scaladebugger.tool.Repl
 import org.scaladebugger.tool.backend.StateManager

@@ -1,5 +1,6 @@
 package org.scaladebugger.api.lowlevel.breakpoints
 
+import org.scaladebugger.api.interfaces.lowlevel.breakpoints.{BreakpointManager, BreakpointRequestInfo}
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument

@@ -1,17 +1,18 @@
 package test
 
 import com.sun.jdi.request.EventRequestManager
+import org.scaladebugger.api.interfaces.lowlevel.breakpoints.BreakpointManager
+import org.scaladebugger.api.interfaces.lowlevel.classes.{ClassManager, ClassPrepareManager, ClassUnloadManager}
 import org.scaladebugger.api.lowlevel.PendingRequestSupport
-import org.scaladebugger.api.lowlevel.breakpoints.BreakpointManager
-import org.scaladebugger.api.lowlevel.classes.{ClassUnloadManager, ClassPrepareManager, ClassManager}
+import org.scaladebugger.api.lowlevel.classes.ClassUnloadManager
 import org.scaladebugger.api.lowlevel.events.EventManager
 import org.scaladebugger.api.lowlevel.exceptions.ExceptionManager
-import org.scaladebugger.api.lowlevel.methods.{MethodExitManager, MethodEntryManager}
-import org.scaladebugger.api.lowlevel.monitors.{MonitorWaitManager, MonitorWaitedManager, MonitorContendedEnterManager, MonitorContendedEnteredManager}
+import org.scaladebugger.api.lowlevel.methods.{MethodEntryManager, MethodExitManager}
+import org.scaladebugger.api.lowlevel.monitors.{MonitorContendedEnterManager, MonitorContendedEnteredManager, MonitorWaitManager, MonitorWaitedManager}
 import org.scaladebugger.api.lowlevel.steps.StepManager
-import org.scaladebugger.api.lowlevel.threads.{ThreadStartManager, ThreadDeathManager}
+import org.scaladebugger.api.lowlevel.threads.{ThreadDeathManager, ThreadStartManager}
 import org.scaladebugger.api.lowlevel.vm.VMDeathManager
-import org.scaladebugger.api.lowlevel.watchpoints.{ModificationWatchpointManager, AccessWatchpointManager}
+import org.scaladebugger.api.lowlevel.watchpoints.{AccessWatchpointManager, ModificationWatchpointManager}
 
 /**
  * Contains all managers with pending support enabled.

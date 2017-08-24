@@ -4,7 +4,8 @@ import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.atomic.AtomicInteger
 
 import com.sun.jdi.event.ClassUnloadEvent
-import org.scaladebugger.api.lowlevel.JDIArgument
+import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
+import org.scaladebugger.api.interfaces.lowlevel.classes.{ClassUnloadManager, ClassUnloadRequestInfo, PendingClassUnloadSupportLike}
 import org.scaladebugger.api.lowlevel.classes._
 import org.scaladebugger.api.lowlevel.events.EventType._
 import org.scaladebugger.api.lowlevel.events.filters.UniqueIdPropertyFilter
@@ -12,14 +13,6 @@ import org.scaladebugger.api.lowlevel.events.{EventManager, JDIEventArgument}
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 import org.scaladebugger.api.lowlevel.requests.properties.UniqueIdProperty
 import org.scaladebugger.api.lowlevel.utils.JDIArgumentGroup
-import org.scaladebugger.api.pipelines.Pipeline
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.Constants._
-import org.scaladebugger.api.profiles.RequestHelper
-import org.scaladebugger.api.profiles.traits.requests.classes.ClassUnloadRequest
-import org.scaladebugger.api.profiles.traits.info.InfoProducer
-import org.scaladebugger.api.profiles.traits.info.events.ClassUnloadEventInfo
-import org.scaladebugger.api.utils.{Memoization, MultiMap}
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 import scala.collection.JavaConverters._

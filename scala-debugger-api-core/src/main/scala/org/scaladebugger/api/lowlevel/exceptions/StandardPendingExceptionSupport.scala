@@ -1,7 +1,5 @@
 package org.scaladebugger.api.lowlevel.exceptions
 
-import org.scaladebugger.api.utils.PendingActionManager
-
 /**
  * Provides pending exception capabilities to an existing exception manager.
  *

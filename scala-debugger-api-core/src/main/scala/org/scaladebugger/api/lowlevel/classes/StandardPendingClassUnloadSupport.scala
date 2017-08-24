@@ -1,6 +1,6 @@
 package org.scaladebugger.api.lowlevel.classes
 
-import org.scaladebugger.api.utils.PendingActionManager
+import org.scaladebugger.api.interfaces.lowlevel.classes.ClassUnloadRequestInfo
 
 /**
  * Provides pending class unload capabilities to an existing class unload

@@ -2,9 +2,7 @@ package org.scaladebugger.api.profiles.java.info.events
 
 import com.sun.jdi._
 import com.sun.jdi.event.LocatableEvent
-import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.profiles.traits.info.events.{LocatableEventInfo, MonitorEvent, MonitorEventInfo}
-import org.scaladebugger.api.profiles.traits.info.{InfoProducer, ObjectInfo, ThreadInfo}
+import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 /**

@@ -1,15 +1,12 @@
 package org.scaladebugger.api.profiles.java.requests.classes
 
 import com.sun.jdi.event.ClassPrepareEvent
-import org.scaladebugger.api.lowlevel.classes.{ClassPrepareManager, ClassPrepareRequestInfo, PendingClassPrepareSupportLike}
+import org.scaladebugger.api.interfaces.lowlevel.classes.{ClassPrepareManager, ClassPrepareRequestInfo, PendingClassPrepareSupportLike}
+import org.scaladebugger.api.lowlevel.classes.ClassPrepareRequestInfo
 import org.scaladebugger.api.lowlevel.events.EventType.ClassPrepareEventType
 import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
 import org.scaladebugger.api.lowlevel.events.{EventManager, JDIEventArgument}
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
-import org.scaladebugger.api.pipelines.Pipeline
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.traits.info.InfoProducer
-import org.scaladebugger.api.profiles.traits.info.events.{ClassPrepareEventInfo, EventInfoProducer}
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 import test.{JDIMockHelpers, TestRequestHelper}

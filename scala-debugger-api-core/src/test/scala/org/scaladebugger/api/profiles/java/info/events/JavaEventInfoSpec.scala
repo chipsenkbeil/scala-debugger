@@ -3,8 +3,6 @@ package org.scaladebugger.api.profiles.java.info.events
 import com.sun.jdi.event._
 import org.scaladebugger.api.lowlevel.events.JDIEventArgument
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
-import org.scaladebugger.api.profiles.traits.info.InfoProducer
-import org.scaladebugger.api.profiles.traits.info.events._
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 

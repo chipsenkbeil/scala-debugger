@@ -1,6 +1,5 @@
 package org.scaladebugger.api.lowlevel.monitors
-
-import org.scaladebugger.api.lowlevel.PendingRequestSupport
+import org.scaladebugger.api.interfaces.lowlevel.PendingRequestSupport
 
 /**
  * Provides pending monitor contended entered capabilities to an existing

@@ -2,9 +2,6 @@ package org.scaladebugger.api.profiles.swappable.requests.methods
 
 import org.scaladebugger.api.lowlevel.JDIArgument
 import org.scaladebugger.api.lowlevel.methods.MethodEntryRequestInfo
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.swappable.SwappableDebugProfileManagement
-import org.scaladebugger.api.profiles.traits.requests.methods.MethodEntryRequest
 
 import scala.util.Try
 

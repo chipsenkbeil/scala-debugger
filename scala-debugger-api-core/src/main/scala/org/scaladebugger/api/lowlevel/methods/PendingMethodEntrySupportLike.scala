@@ -1,6 +1,5 @@
 package org.scaladebugger.api.lowlevel.methods
-
-import org.scaladebugger.api.lowlevel.PendingRequestSupport
+import org.scaladebugger.api.interfaces.lowlevel.PendingRequestSupport
 
 /**
  * Provides pending method entry capabilities to an existing access

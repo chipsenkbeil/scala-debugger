@@ -1,11 +1,6 @@
 package org.scaladebugger.api.dsl.steps
-
-import org.scaladebugger.api.lowlevel.JDIArgument
+import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
 import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.traits.info.ThreadInfo
-import org.scaladebugger.api.profiles.traits.info.events.StepEventInfo
-import org.scaladebugger.api.profiles.traits.requests.steps.StepRequest
 
 import scala.util.Try
 

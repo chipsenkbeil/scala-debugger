@@ -2,9 +2,6 @@ package org.scaladebugger.api.profiles.swappable.requests.exceptions
 
 import org.scaladebugger.api.lowlevel.JDIArgument
 import org.scaladebugger.api.lowlevel.exceptions.ExceptionRequestInfo
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.swappable.SwappableDebugProfileManagement
-import org.scaladebugger.api.profiles.traits.requests.exceptions.ExceptionRequest
 
 import scala.util.Try
 

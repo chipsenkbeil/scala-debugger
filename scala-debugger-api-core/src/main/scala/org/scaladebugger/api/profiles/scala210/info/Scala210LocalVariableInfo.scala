@@ -1,9 +1,7 @@
 package org.scaladebugger.api.profiles.scala210.info
 
 import com.sun.jdi._
-import org.scaladebugger.api.profiles.traits.info._
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
-import org.scaladebugger.api.profiles.java.info.JavaLocalVariableInfo
 
 /**
  * Represents an implementation of a local variable profile that adds Scala

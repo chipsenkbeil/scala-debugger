@@ -6,7 +6,6 @@ import org.scaladebugger.api.lowlevel.requests.Implicits._
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 import org.scaladebugger.api.lowlevel.requests.filters.CountFilter
 import org.scaladebugger.api.lowlevel.requests.properties.{EnabledProperty, SuspendPolicyProperty}
-import org.scaladebugger.api.utils.MultiMap
 
 import scala.util.Try
 

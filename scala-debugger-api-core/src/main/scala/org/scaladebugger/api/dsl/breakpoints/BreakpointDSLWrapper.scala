@@ -1,10 +1,7 @@
 package org.scaladebugger.api.dsl.breakpoints
 
-import org.scaladebugger.api.lowlevel.JDIArgument
+import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
 import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.traits.requests.breakpoints.BreakpointRequest
-import org.scaladebugger.api.profiles.traits.info.events.BreakpointEventInfo
 
 import scala.util.Try
 

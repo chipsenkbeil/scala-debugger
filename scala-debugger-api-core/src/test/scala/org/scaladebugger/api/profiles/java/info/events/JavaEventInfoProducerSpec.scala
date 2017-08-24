@@ -1,6 +1,5 @@
 package org.scaladebugger.api.profiles.java.info.events
 
-import org.scaladebugger.api.profiles.traits.info.InfoProducer
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 
 class JavaEventInfoProducerSpec extends ParallelMockFunSpec {

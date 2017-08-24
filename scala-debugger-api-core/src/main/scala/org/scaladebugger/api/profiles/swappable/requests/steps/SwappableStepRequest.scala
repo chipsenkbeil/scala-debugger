@@ -1,14 +1,9 @@
 package org.scaladebugger.api.profiles.swappable.requests.steps
 
 import com.sun.jdi.event.StepEvent
-import org.scaladebugger.api.lowlevel.JDIArgument
+import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
 import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
 import org.scaladebugger.api.lowlevel.steps.StepRequestInfo
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.swappable.SwappableDebugProfileManagement
-import org.scaladebugger.api.profiles.traits.info.ThreadInfo
-import org.scaladebugger.api.profiles.traits.info.events.StepEventInfo
-import org.scaladebugger.api.profiles.traits.requests.steps.StepRequest
 
 import scala.concurrent.Future
 import scala.util.Try

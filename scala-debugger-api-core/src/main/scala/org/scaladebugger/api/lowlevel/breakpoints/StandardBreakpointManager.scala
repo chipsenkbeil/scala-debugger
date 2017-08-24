@@ -1,14 +1,14 @@
 package org.scaladebugger.api.lowlevel.breakpoints
 
-import com.sun.jdi.request.{EventRequestManager, BreakpointRequest}
-import org.scaladebugger.api.lowlevel.classes.ClassManager
+import com.sun.jdi.request.{BreakpointRequest, EventRequestManager}
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 import org.scaladebugger.api.lowlevel.requests.properties.{EnabledProperty, SuspendPolicyProperty}
-import org.scaladebugger.api.utils.{MultiMap, Logging}
 import com.sun.jdi.Location
+import org.scaladebugger.api.interfaces.lowlevel.breakpoints.{BreakpointManager, BreakpointRequestInfo, NoBreakpointLocationFound}
+import org.scaladebugger.api.interfaces.lowlevel.classes.ClassManager
 
 import scala.collection.JavaConverters._
-import scala.util.{Try, Failure}
+import scala.util.{Failure, Try}
 
 /**
  * Represents the manager for breakpoint requests.

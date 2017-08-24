@@ -1,8 +1,8 @@
 package org.scaladebugger.api.profiles.java.info
 import com.sun.jdi.InvalidTypeException
+import org.scaladebugger.api.interfaces.profiles.info.ThreadInfo
 import org.scaladebugger.api.lowlevel.events.misc.NoResume
 import org.scaladebugger.api.profiles.java.JavaDebugProfile
-import org.scaladebugger.api.profiles.traits.info.ThreadInfo
 import org.scaladebugger.api.utils.JDITools
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
 import org.scaladebugger.test.helpers.ParallelMockFunSpec

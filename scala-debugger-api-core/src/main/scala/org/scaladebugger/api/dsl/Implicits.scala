@@ -11,17 +11,6 @@ import org.scaladebugger.api.dsl.steps.StepDSLWrapper
 import org.scaladebugger.api.dsl.threads.{ThreadDeathDSLWrapper, ThreadStartDSLWrapper}
 import org.scaladebugger.api.dsl.vm.{VMDeathDSLWrapper, VMDisconnectDSLWrapper, VMStartDSLWrapper}
 import org.scaladebugger.api.dsl.watchpoints.{AccessWatchpointDSLWrapper, ModificationWatchpointDSLWrapper}
-import org.scaladebugger.api.profiles.traits.requests.breakpoints.BreakpointRequest
-import org.scaladebugger.api.profiles.traits.requests.classes.{ClassPrepareRequest, ClassUnloadRequest}
-import org.scaladebugger.api.profiles.traits.requests.events.EventListenerRequest
-import org.scaladebugger.api.profiles.traits.requests.exceptions.ExceptionRequest
-import org.scaladebugger.api.profiles.traits.info._
-import org.scaladebugger.api.profiles.traits.requests.methods.{MethodEntryRequest, MethodExitRequest}
-import org.scaladebugger.api.profiles.traits.requests.monitors.{MonitorContendedEnterRequest, MonitorContendedEnteredRequest, MonitorWaitRequest, MonitorWaitedRequest}
-import org.scaladebugger.api.profiles.traits.requests.steps.StepRequest
-import org.scaladebugger.api.profiles.traits.requests.threads.{ThreadDeathRequest, ThreadStartRequest}
-import org.scaladebugger.api.profiles.traits.requests.vm.{VMDeathRequest, VMDisconnectRequest, VMStartRequest}
-import org.scaladebugger.api.profiles.traits.requests.watchpoints.{AccessWatchpointRequest, ModificationWatchpointRequest}
 
 /**
  * Contains implicit classes to provide DSL-like methods to the debugger API.

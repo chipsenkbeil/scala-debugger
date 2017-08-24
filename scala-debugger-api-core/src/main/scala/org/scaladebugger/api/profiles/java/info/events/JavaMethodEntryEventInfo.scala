@@ -2,9 +2,7 @@ package org.scaladebugger.api.profiles.java.info.events
 
 import com.sun.jdi.event.MethodEntryEvent
 import com.sun.jdi._
-import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.profiles.traits.info.{InfoProducer, MethodInfo}
-import org.scaladebugger.api.profiles.traits.info.events.MethodEntryEventInfo
+import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 /**

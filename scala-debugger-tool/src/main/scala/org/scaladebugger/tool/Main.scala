@@ -1,7 +1,5 @@
 package org.scaladebugger.tool
 
-import org.scaladebugger.api.utils.JDITools
-
 object Main {
   def main(args: Array[String]): Unit = {
     // Parse CLI arguments

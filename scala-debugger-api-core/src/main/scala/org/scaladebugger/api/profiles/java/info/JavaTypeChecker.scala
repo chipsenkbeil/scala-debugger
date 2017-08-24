@@ -1,7 +1,5 @@
 package org.scaladebugger.api.profiles.java.info
 
-import org.scaladebugger.api.profiles.traits.info.TypeChecker
-
 /**
  * Represents a java implementation of a type checker profile that adds no
  * custom logic on top of the standard JDI.

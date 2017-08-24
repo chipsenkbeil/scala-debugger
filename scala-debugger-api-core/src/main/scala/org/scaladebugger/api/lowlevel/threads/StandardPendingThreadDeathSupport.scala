@@ -1,7 +1,5 @@
 package org.scaladebugger.api.lowlevel.threads
 
-import org.scaladebugger.api.utils.PendingActionManager
-
 /**
  * Provides pending thread death capabilities to an existing thread death
  * manager.

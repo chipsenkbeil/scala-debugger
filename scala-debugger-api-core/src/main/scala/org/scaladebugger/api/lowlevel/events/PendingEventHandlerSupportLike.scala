@@ -1,6 +1,5 @@
 package org.scaladebugger.api.lowlevel.events
-
-import org.scaladebugger.api.lowlevel.PendingRequestSupport
+import org.scaladebugger.api.interfaces.lowlevel.PendingRequestSupport
 
 /**
  * Provides pending event capabilities to an existing event manager. Note that

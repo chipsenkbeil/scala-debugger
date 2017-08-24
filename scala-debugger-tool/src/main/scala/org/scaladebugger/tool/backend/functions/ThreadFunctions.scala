@@ -1,5 +1,5 @@
 package org.scaladebugger.tool.backend.functions
-import org.scaladebugger.api.profiles.traits.info.ThreadInfo
+
 import org.scaladebugger.tool.backend.StateManager
 
 /**

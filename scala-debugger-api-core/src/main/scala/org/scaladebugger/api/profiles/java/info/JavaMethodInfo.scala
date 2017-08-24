@@ -1,7 +1,6 @@
 package org.scaladebugger.api.profiles.java.info
 
 import com.sun.jdi.{Method, ReferenceType, Type}
-import org.scaladebugger.api.profiles.traits.info.{InfoProducer, MethodInfo, ReferenceTypeInfo, TypeInfo}
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 /**

@@ -2,9 +2,9 @@ package org.scaladebugger.api.lowlevel.watchpoints
 
 import com.sun.jdi.request.{EventRequest, EventRequestManager, ModificationWatchpointRequest}
 import com.sun.jdi.{ReferenceType, VirtualMachine}
+import org.scaladebugger.api.interfaces.lowlevel.classes.ClassManager
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
-import org.scaladebugger.api.lowlevel.classes.ClassManager
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 import test.JDIMockHelpers
 

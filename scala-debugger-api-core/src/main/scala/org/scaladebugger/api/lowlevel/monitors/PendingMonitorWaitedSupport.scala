@@ -1,7 +1,6 @@
 package org.scaladebugger.api.lowlevel.monitors
 
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
-import org.scaladebugger.api.utils.PendingActionManager
 
 import scala.util.{Success, Try}
 

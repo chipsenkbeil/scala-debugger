@@ -2,9 +2,6 @@ package org.scaladebugger.api.dsl.watchpoints
 
 import org.scaladebugger.api.lowlevel.JDIArgument
 import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.traits.info.events.AccessWatchpointEventInfo
-import org.scaladebugger.api.profiles.traits.requests.watchpoints.AccessWatchpointRequest
 
 import scala.util.Try
 

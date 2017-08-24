@@ -1,8 +1,7 @@
 package org.scaladebugger.api.profiles.java.info
 
 import com.sun.jdi._
-import org.scaladebugger.api.lowlevel.classes.ClassManager
-import org.scaladebugger.api.profiles.traits.info._
+import org.scaladebugger.api.interfaces.lowlevel.classes.ClassManager
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 import scala.annotation.tailrec

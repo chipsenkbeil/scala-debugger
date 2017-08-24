@@ -1,6 +1,5 @@
 package org.scaladebugger.api.virtualmachines
 
-import org.scaladebugger.api.utils.JDITools
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 import org.scalatest.concurrent.Eventually
 import test.{ApiTestUtilities, VirtualMachineFixtures}

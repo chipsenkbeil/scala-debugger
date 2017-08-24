@@ -2,6 +2,8 @@ package org.scaladebugger.api.lowlevel
 
 import com.sun.jdi.ThreadReference
 import com.sun.jdi.request.EventRequestManager
+import org.scaladebugger.api.interfaces.lowlevel.breakpoints.{BreakpointManager, BreakpointRequestInfo, PendingBreakpointSupportLike}
+import org.scaladebugger.api.interfaces.lowlevel.classes.{ClassManager, PendingClassUnloadSupportLike, _}
 import org.scaladebugger.api.lowlevel.breakpoints._
 import org.scaladebugger.api.lowlevel.classes._
 import org.scaladebugger.api.lowlevel.events.EventManager.EventHandler

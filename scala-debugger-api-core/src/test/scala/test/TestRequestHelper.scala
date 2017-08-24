@@ -4,8 +4,6 @@ import java.util.UUID
 
 import com.sun.jdi.event.Event
 import org.scaladebugger.api.lowlevel.events.{EventManager, EventType}
-import org.scaladebugger.api.profiles.RequestHelper
-import org.scaladebugger.api.profiles.traits.info.events.EventInfo
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 import scala.reflect.ClassTag

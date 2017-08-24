@@ -3,8 +3,6 @@ import com.sun.jdi.connect.{Connector, LaunchingConnector}
 import com.sun.jdi.{ReferenceType, VirtualMachine, VirtualMachineManager}
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
-import org.scaladebugger.api.profiles.ProfileManager
-import org.scaladebugger.api.utils.LoopingTaskRunner
 import org.scaladebugger.api.virtualmachines.{ScalaVirtualMachine, ScalaVirtualMachineManager, StandardScalaVirtualMachine}
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 

@@ -2,8 +2,6 @@ package org.scaladebugger.api.virtualmachines
 
 import java.util.concurrent.ConcurrentHashMap
 
-import org.scaladebugger.api.profiles.traits.info.ObjectInfo
-
 import scala.collection.JavaConverters._
 import scala.util.Try
 

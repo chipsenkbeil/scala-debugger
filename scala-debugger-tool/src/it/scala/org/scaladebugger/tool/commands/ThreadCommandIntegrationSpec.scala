@@ -2,8 +2,6 @@ package org.scaladebugger.tool.commands
 
 import java.io.File
 
-import org.scaladebugger.api.profiles.traits.info.ThreadInfo
-import org.scaladebugger.api.utils.JDITools
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 import org.scalatest.concurrent.Eventually
 import test.{ToolConstants, ToolFixtures, ToolTestUtilities}

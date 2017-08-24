@@ -2,9 +2,6 @@ package org.scaladebugger.api.profiles.swappable.requests.monitors
 
 import org.scaladebugger.api.lowlevel.JDIArgument
 import org.scaladebugger.api.lowlevel.monitors.MonitorContendedEnteredRequestInfo
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.swappable.SwappableDebugProfileManagement
-import org.scaladebugger.api.profiles.traits.requests.monitors.MonitorContendedEnteredRequest
 
 import scala.util.Try
 

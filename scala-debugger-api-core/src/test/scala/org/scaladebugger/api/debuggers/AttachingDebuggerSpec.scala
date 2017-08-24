@@ -1,8 +1,6 @@
 package org.scaladebugger.api.debuggers
 import com.sun.jdi.connect.{AttachingConnector, Connector}
 import com.sun.jdi.{VirtualMachine, VirtualMachineManager}
-import org.scaladebugger.api.profiles.ProfileManager
-import org.scaladebugger.api.utils.LoopingTaskRunner
 import org.scaladebugger.api.virtualmachines.{ScalaVirtualMachine, ScalaVirtualMachineManager, StandardScalaVirtualMachine}
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 

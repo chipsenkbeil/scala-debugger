@@ -11,10 +11,6 @@ import org.scaladebugger.api.lowlevel.events.{EventManager, JDIEventArgument}
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 import org.scaladebugger.api.lowlevel.requests.properties.UniqueIdProperty
 import org.scaladebugger.api.lowlevel.{JDIArgument, RequestInfo}
-import org.scaladebugger.api.pipelines.Pipeline
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.traits.info.events.EventInfo
-import org.scaladebugger.api.utils.{Memoization, MultiMap}
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 import scala.collection.JavaConverters._
@@ -218,7 +214,6 @@ class RequestHelper[
 
     val totalPipelinesRemaining = pCounter.decrementAndGet()
 
-    import org.scaladebugger.api.profiles.Constants.CloseRemoveAll
     if (totalPipelinesRemaining == 0 || data.exists(_ == CloseRemoveAll)) {
       _removeRequestById(requestId)
       pipelineRequestEventIds.remove(requestId).foreach(

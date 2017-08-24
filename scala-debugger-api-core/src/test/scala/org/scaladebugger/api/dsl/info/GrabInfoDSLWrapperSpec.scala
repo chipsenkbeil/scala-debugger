@@ -1,7 +1,6 @@
 package org.scaladebugger.api.dsl.info
 
 import com.sun.jdi.ThreadReference
-import org.scaladebugger.api.profiles.traits.info.{GrabInfoProfile, ThreadInfo}
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}

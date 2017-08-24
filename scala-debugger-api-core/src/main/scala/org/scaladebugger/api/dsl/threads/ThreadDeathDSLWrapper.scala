@@ -2,9 +2,6 @@ package org.scaladebugger.api.dsl.threads
 
 import org.scaladebugger.api.lowlevel.JDIArgument
 import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.traits.info.events.ThreadDeathEventInfo
-import org.scaladebugger.api.profiles.traits.requests.threads.ThreadDeathRequest
 
 import scala.util.Try
 

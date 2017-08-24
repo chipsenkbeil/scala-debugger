@@ -1,7 +1,6 @@
 package org.scaladebugger.tool.backend.functions
 import org.scaladebugger.api.lowlevel.wrappers.Implicits._
 import org.scaladebugger.api.lowlevel.wrappers.ValueWrapper
-import org.scaladebugger.api.profiles.traits.info.{ThreadInfo, VariableInfo}
 import org.scaladebugger.tool.backend.StateManager
 
 import scala.collection.JavaConverters._

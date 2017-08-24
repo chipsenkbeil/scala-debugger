@@ -4,7 +4,6 @@ import com.sun.jdi.request.{EventRequestManager, VMDeathRequest}
 import org.scaladebugger.api.lowlevel.requests.Implicits._
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 import org.scaladebugger.api.lowlevel.requests.properties.{EnabledProperty, SuspendPolicyProperty}
-import org.scaladebugger.api.utils.{Logging, MultiMap}
 
 import scala.util.Try
 

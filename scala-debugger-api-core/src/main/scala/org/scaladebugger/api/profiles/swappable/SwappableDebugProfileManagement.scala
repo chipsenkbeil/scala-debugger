@@ -1,8 +1,5 @@
 package org.scaladebugger.api.profiles.swappable
 
-import org.scaladebugger.api.profiles.ProfileManager
-import org.scaladebugger.api.profiles.traits.DebugProfile
-
 /**
  * Represents the management functionality of swapping debug profiles.
  */

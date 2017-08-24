@@ -2,10 +2,10 @@ package org.scaladebugger.api.profiles
 
 import _root_.java.util.concurrent.ConcurrentHashMap
 
+import org.scaladebugger.api.interfaces.profiles.DebugProfile
 import org.scaladebugger.api.lowlevel.ManagerContainer
 import org.scaladebugger.api.profiles.java.JavaDebugProfile
 import org.scaladebugger.api.profiles.scala210.Scala210DebugProfile
-import org.scaladebugger.api.profiles.traits.DebugProfile
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 import scala.collection.JavaConverters._

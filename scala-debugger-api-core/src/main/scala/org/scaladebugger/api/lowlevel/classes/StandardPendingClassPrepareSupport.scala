@@ -1,6 +1,6 @@
 package org.scaladebugger.api.lowlevel.classes
 
-import org.scaladebugger.api.utils.PendingActionManager
+import org.scaladebugger.api.interfaces.lowlevel.classes.ClassPrepareRequestInfo
 
 /**
  * Provides pending class prepare capabilities to an existing class prepare

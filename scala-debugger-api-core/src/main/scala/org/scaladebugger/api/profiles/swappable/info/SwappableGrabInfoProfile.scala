@@ -1,8 +1,6 @@
 package org.scaladebugger.api.profiles.swappable.info
 
 import com.sun.jdi._
-import org.scaladebugger.api.profiles.swappable.SwappableDebugProfileManagement
-import org.scaladebugger.api.profiles.traits.info._
 
 /**
  * Represents a swappable profile for grabbing various info that redirects the

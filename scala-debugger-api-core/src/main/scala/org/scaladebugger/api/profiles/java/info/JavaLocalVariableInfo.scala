@@ -1,7 +1,6 @@
 package org.scaladebugger.api.profiles.java.info
 
 import com.sun.jdi._
-import org.scaladebugger.api.profiles.traits.info._
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 /**

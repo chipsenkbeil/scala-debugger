@@ -11,8 +11,6 @@ import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
 import org.scaladebugger.api.lowlevel.events.filters.UniqueIdPropertyFilter
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 import org.scaladebugger.api.lowlevel.requests.properties.UniqueIdProperty
-import org.scaladebugger.api.pipelines.Pipeline
-import org.scaladebugger.api.profiles.traits.info.events.EventInfo
 import org.scaladebugger.api.virtualmachines.{ScalaVirtualMachine, ScalaVirtualMachineManager}
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 
@@ -302,7 +300,6 @@ class RequestHelperSpec extends ParallelMockFunSpec {
             .repeated(totalPipelines).times()
 
           // Close 1 pipeline and force the close of all others
-          import org.scaladebugger.api.profiles.Constants.CloseRemoveAll
           pipelines.head.close(data = CloseRemoveAll)
         }
       }

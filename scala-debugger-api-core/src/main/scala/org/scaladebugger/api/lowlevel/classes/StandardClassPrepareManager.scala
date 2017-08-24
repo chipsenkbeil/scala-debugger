@@ -1,10 +1,10 @@
 package org.scaladebugger.api.lowlevel.classes
 
 import com.sun.jdi.request.{ClassPrepareRequest, EventRequestManager}
+import org.scaladebugger.api.interfaces.lowlevel.classes.{ClassPrepareManager, ClassPrepareRequestInfo}
 import org.scaladebugger.api.lowlevel.requests.Implicits._
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 import org.scaladebugger.api.lowlevel.requests.properties.{EnabledProperty, SuspendPolicyProperty}
-import org.scaladebugger.api.utils.{MultiMap, Logging}
 
 import scala.util.Try
 

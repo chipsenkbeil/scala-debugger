@@ -1,11 +1,9 @@
 package org.scaladebugger.api.virtualmachines
 
 import com.sun.jdi.VirtualMachine
-import org.scaladebugger.api.profiles.traits.DebugProfile
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 import org.scaladebugger.api.lowlevel.ManagerContainer
-import org.scaladebugger.api.profiles.ProfileManager
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 
 class ScalaVirtualMachineSpec extends ParallelMockFunSpec

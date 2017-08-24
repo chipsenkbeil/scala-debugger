@@ -3,9 +3,6 @@ package org.scaladebugger.api.lowlevel.events
 import com.sun.jdi.event.{Event, EventQueue, EventSet}
 import org.scaladebugger.api.lowlevel.events.EventType._
 import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.pipelines.Pipeline
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.utils.{Logging, LoopingTaskRunner, MultiMap}
 
 /**
  * Contains public types related to the event manager.

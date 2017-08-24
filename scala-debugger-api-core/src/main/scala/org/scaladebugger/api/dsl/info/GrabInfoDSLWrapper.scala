@@ -1,7 +1,6 @@
 package org.scaladebugger.api.dsl.info
 
 import com.sun.jdi.ThreadReference
-import org.scaladebugger.api.profiles.traits.info.{ThreadInfo, GrabInfoProfile}
 
 import scala.util.Try
 

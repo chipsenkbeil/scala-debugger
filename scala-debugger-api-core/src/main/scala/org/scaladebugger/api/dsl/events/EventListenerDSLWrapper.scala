@@ -1,12 +1,9 @@
 package org.scaladebugger.api.dsl.events
 
 import com.sun.jdi.event.Event
-import org.scaladebugger.api.lowlevel.JDIArgument
+import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
 import org.scaladebugger.api.lowlevel.events.EventType.EventType
 import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.traits.requests.events.EventListenerRequest
-import org.scaladebugger.api.profiles.traits.info.events.EventInfo
 
 import scala.util.Try
 

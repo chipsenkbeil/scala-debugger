@@ -1,7 +1,5 @@
 package org.scaladebugger.api.lowlevel.steps
 
-import org.scaladebugger.api.utils.PendingActionManager
-
 /**
  * Provides pending step capabilities to an existing access watchpoint manager.
  *

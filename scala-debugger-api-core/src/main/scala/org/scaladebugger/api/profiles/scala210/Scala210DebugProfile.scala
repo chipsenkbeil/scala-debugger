@@ -2,20 +2,6 @@ package org.scaladebugger.api.profiles.scala210
 
 import com.sun.jdi.VirtualMachine
 import org.scaladebugger.api.lowlevel.ManagerContainer
-import org.scaladebugger.api.profiles.java.requests.breakpoints.JavaBreakpointRequest
-import org.scaladebugger.api.profiles.java.requests.classes.{JavaClassPrepareRequest, JavaClassUnloadRequest}
-import org.scaladebugger.api.profiles.java.requests.events.JavaEventListenerRequest
-import org.scaladebugger.api.profiles.java.requests.exceptions.JavaExceptionRequest
-import org.scaladebugger.api.profiles.java.info.{JavaCreateInfo, JavaGrabInfoProfile, JavaMiscInfo}
-import org.scaladebugger.api.profiles.java.requests.methods.{JavaMethodEntryRequest, JavaMethodExitRequest}
-import org.scaladebugger.api.profiles.java.requests.monitors.{JavaMonitorContendedEnterRequest, JavaMonitorContendedEnteredRequest, JavaMonitorWaitRequest, JavaMonitorWaitedRequest}
-import org.scaladebugger.api.profiles.java.requests.steps.JavaStepRequest
-import org.scaladebugger.api.profiles.java.requests.threads.{JavaThreadDeathRequest, JavaThreadStartRequest}
-import org.scaladebugger.api.profiles.java.requests.vm.{JavaVMDeathRequest, JavaVMDisconnectRequest, JavaVMStartRequest}
-import org.scaladebugger.api.profiles.java.requests.watchpoints.{JavaAccessWatchpointRequest, JavaModificationWatchpointRequest}
-import org.scaladebugger.api.profiles.scala210.info.Scala210InfoProducer
-import org.scaladebugger.api.profiles.traits.ManagerContainerDebugProfile
-import org.scaladebugger.api.profiles.traits.info.InfoProducer
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 /**

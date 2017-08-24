@@ -1,7 +1,6 @@
 package org.scaladebugger.api.profiles.java.info
 
 import com.sun.jdi.{ReferenceType, StackFrame, ThreadReference, VirtualMachine}
-import org.scaladebugger.api.profiles.traits.info.{FrameInfo, ThreadStatusInfo}
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory

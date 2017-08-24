@@ -3,7 +3,6 @@ package org.scaladebugger.api.profiles.java.info
 import java.util
 
 import com.sun.jdi._
-import org.scaladebugger.api.profiles.traits.info._
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory

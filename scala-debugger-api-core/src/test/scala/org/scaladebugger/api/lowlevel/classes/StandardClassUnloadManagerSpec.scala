@@ -3,6 +3,7 @@ package org.scaladebugger.api.lowlevel.classes
 import java.util.concurrent.atomic.AtomicInteger
 
 import com.sun.jdi.request.{ClassUnloadRequest, EventRequest, EventRequestManager}
+import org.scaladebugger.api.interfaces.lowlevel.classes.ClassUnloadRequestInfo
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 import org.scaladebugger.api.lowlevel.requests.{JDIRequestArgument, JDIRequestProcessor}

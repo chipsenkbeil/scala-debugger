@@ -1,10 +1,7 @@
 package org.scaladebugger.api.profiles.swappable.requests.classes
 
+import org.scaladebugger.api.interfaces.lowlevel.classes.ClassPrepareRequestInfo
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.classes.ClassPrepareRequestInfo
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.swappable.SwappableDebugProfileManagement
-import org.scaladebugger.api.profiles.traits.requests.classes.ClassPrepareRequest
 
 import scala.util.Try
 

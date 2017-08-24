@@ -4,7 +4,6 @@ import com.sun.jdi.request.{MonitorContendedEnterRequest, EventRequestManager}
 import org.scaladebugger.api.lowlevel.requests.Implicits._
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 import org.scaladebugger.api.lowlevel.requests.properties.{EnabledProperty, SuspendPolicyProperty}
-import org.scaladebugger.api.utils.{MultiMap, Logging}
 
 import scala.util.Try
 

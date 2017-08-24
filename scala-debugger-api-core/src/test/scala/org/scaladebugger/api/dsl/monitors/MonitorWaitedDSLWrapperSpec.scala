@@ -2,9 +2,6 @@ package org.scaladebugger.api.dsl.monitors
 
 import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
-import org.scaladebugger.api.pipelines.Pipeline
-import org.scaladebugger.api.profiles.traits.info.events.MonitorWaitedEventInfo
-import org.scaladebugger.api.profiles.traits.requests.monitors.MonitorWaitedRequest
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 
 import scala.util.Success

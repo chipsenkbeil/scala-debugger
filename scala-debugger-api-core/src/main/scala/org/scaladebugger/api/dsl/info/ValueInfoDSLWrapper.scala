@@ -1,6 +1,5 @@
 package org.scaladebugger.api.dsl.info
 
-import org.scaladebugger.api.profiles.traits.info.{ObjectInfo, ValueInfo}
 import org.scaladebugger.api.virtualmachines.ObjectCache
 
 /**

@@ -1,9 +1,6 @@
 package org.scaladebugger.api.profiles.swappable.requests.vm
 
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.swappable.SwappableDebugProfileManagement
-import org.scaladebugger.api.profiles.traits.requests.vm.VMStartRequest
 
 import scala.util.Try
 

@@ -1,6 +1,5 @@
 package org.scaladebugger.tool.commands
 
-import org.scaladebugger.api.utils.JDITools
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 import org.scaladebugger.tool.Repl
 import org.scalatest.concurrent.Eventually

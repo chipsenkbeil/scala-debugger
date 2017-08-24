@@ -1,5 +1,5 @@
 package org.scaladebugger.tool.backend.functions
-import org.scaladebugger.api.profiles.traits.info.{FieldVariableInfo, MethodInfo, ReferenceTypeInfo}
+
 import org.scaladebugger.tool.backend.StateManager
 import org.scaladebugger.tool.backend.utils.Regex
 

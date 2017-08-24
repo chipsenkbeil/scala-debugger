@@ -1,8 +1,8 @@
 package org.scaladebugger.api.profiles.java.info
 
 import com.sun.jdi._
-import org.scaladebugger.api.lowlevel.{InvokeNonVirtualArgument, InvokeSingleThreadedArgument, JDIArgument}
-import org.scaladebugger.api.profiles.traits.info._
+import org.scaladebugger.api.interfaces.lowlevel.{InvokeNonVirtualArgument, InvokeSingleThreadedArgument}
+import org.scaladebugger.api.lowlevel.{InvokeSingleThreadedArgument, JDIArgument}
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory

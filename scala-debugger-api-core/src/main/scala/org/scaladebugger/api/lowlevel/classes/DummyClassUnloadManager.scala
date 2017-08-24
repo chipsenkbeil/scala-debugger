@@ -1,6 +1,7 @@
 package org.scaladebugger.api.lowlevel.classes
 
 import com.sun.jdi.request.ClassUnloadRequest
+import org.scaladebugger.api.interfaces.lowlevel.classes.{ClassUnloadManager, ClassUnloadRequestInfo}
 import org.scaladebugger.api.lowlevel.DummyOperationException
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 

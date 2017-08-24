@@ -1,5 +1,5 @@
 //
-// DEBUGGER API PROJECT CONFIGURATION
+// DEBUGGER API CORE PROJECT CONFIGURATION
 //
 lazy val scalaDebuggerApiCore = project
   .in(file("scala-debugger-api-core"))
@@ -8,7 +8,48 @@ lazy val scalaDebuggerApiCore = project
   .settings(Defaults.itSettings: _*)
   .settings(ApiCore.settings: _*)
   .settings(name := "scala-debugger-api-core")
+  .dependsOn(scalaDebuggerApiInterfaces % "compile->compile;test->compile;it->compile")
+  .dependsOn(scalaDebuggerApiPipelines % "compile->compile;test->compile;it->compile")
+  .dependsOn(scalaDebuggerApiUtils % "compile->compile;test->compile;it->compile")
   .dependsOn(scalaDebuggerMacros % "compile->compile;test->compile;it->compile")
+  .dependsOn(scalaDebuggerTest % "test->compile;it->compile;test->test;it->test")
+
+//
+// DEBUGGER API INTERFACE PROJECT CONFIGURATION
+//
+lazy val scalaDebuggerApiInterfaces = project
+  .in(file("scala-debugger-api-interfaces"))
+  .configs(IntegrationTest)
+  .settings(Common.settings: _*)
+  .settings(Defaults.itSettings: _*)
+  .settings(ApiInterfaces.settings: _*)
+  .settings(name := "scala-debugger-api-interfaces")
+  .dependsOn(scalaDebuggerMacros % "compile->compile;test->compile;it->compile")
+  .dependsOn(scalaDebuggerApiPipelines % "compile->compile;test->compile;it->compile")
+  .dependsOn(scalaDebuggerTest % "test->compile;it->compile;test->test;it->test")
+
+//
+// DEBUGGER API UTILS PROJECT CONFIGURATION
+//
+lazy val scalaDebuggerApiUtils = project
+  .in(file("scala-debugger-api-utils"))
+  .configs(IntegrationTest)
+  .settings(Common.settings: _*)
+  .settings(Defaults.itSettings: _*)
+  .settings(ApiUtils.settings: _*)
+  .settings(name := "scala-debugger-api-utils")
+  .dependsOn(scalaDebuggerTest % "test->compile;it->compile;test->test;it->test")
+
+//
+// DEBUGGER API UTILS PROJECT CONFIGURATION
+//
+lazy val scalaDebuggerApiPipelines = project
+  .in(file("scala-debugger-api-pipelines"))
+  .configs(IntegrationTest)
+  .settings(Common.settings: _*)
+  .settings(Defaults.itSettings: _*)
+  .settings(ApiPipelines.settings: _*)
+  .settings(name := "scala-debugger-api-pipelines")
   .dependsOn(scalaDebuggerTest % "test->compile;it->compile;test->test;it->test")
 
 //
@@ -100,6 +141,9 @@ lazy val root = project
     publishLocal := {}
   ).aggregate(
     scalaDebuggerApiCore,
+    scalaDebuggerApiInterfaces,
+    scalaDebuggerApiPipelines,
+    scalaDebuggerApiUtils,
     scalaDebuggerDocs,
     scalaDebuggerTest,
     scalaDebuggerMacros,

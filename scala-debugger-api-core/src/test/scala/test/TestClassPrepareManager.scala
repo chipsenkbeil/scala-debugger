@@ -1,7 +1,8 @@
 package test
 
 import com.sun.jdi.request.ClassPrepareRequest
-import org.scaladebugger.api.lowlevel.classes.{ClassPrepareRequestInfo, ClassPrepareManager}
+import org.scaladebugger.api.interfaces.lowlevel.classes.{ClassPrepareManager, ClassPrepareRequestInfo}
+import org.scaladebugger.api.lowlevel.classes.ClassPrepareRequestInfo
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 
 import scala.util.Try

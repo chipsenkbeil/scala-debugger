@@ -2,9 +2,6 @@ package org.scaladebugger.api.virtualmachines
 
 import com.sun.jdi._
 import org.scaladebugger.api.lowlevel.ManagerContainer
-import org.scaladebugger.api.profiles.ProfileManager
-import org.scaladebugger.api.profiles.java.JavaDebugProfile
-import org.scaladebugger.api.profiles.swappable.SwappableDebugProfile
 
 /**
  * Represents a virtual machine running Scala code.

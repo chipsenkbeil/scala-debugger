@@ -1,10 +1,9 @@
 package org.scaladebugger.api.lowlevel.watchpoints
 
 import com.sun.jdi.request.{AccessWatchpointRequest, EventRequestManager}
-import org.scaladebugger.api.lowlevel.classes.ClassManager
+import org.scaladebugger.api.interfaces.lowlevel.classes.ClassManager
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 import org.scaladebugger.api.lowlevel.requests.properties.{EnabledProperty, SuspendPolicyProperty}
-import org.scaladebugger.api.utils.{Logging, MultiMap}
 
 import scala.collection.JavaConverters._
 import scala.util.{Failure, Try}

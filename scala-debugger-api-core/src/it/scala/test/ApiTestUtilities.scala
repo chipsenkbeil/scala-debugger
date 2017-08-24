@@ -4,14 +4,14 @@ import java.util.concurrent.atomic.AtomicBoolean
 
 import com.sun.jdi.ThreadReference
 import com.sun.jdi.event.{BreakpointEvent, StepEvent}
+import org.scaladebugger.api.interfaces.profiles.info.ThreadInfo
 import org.scaladebugger.api.profiles.java.JavaDebugProfile
-import org.scaladebugger.api.profiles.traits.info.ThreadInfo
-import org.scaladebugger.api.utils.{JDITools, Logging}
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 import org.scalatest.concurrent.Eventually
 import org.scalatest.concurrent.PatienceConfiguration.{Interval, Timeout}
 import org.scalatest.time.{Milliseconds, Span, Units}
 import org.scaladebugger.api.lowlevel.events.EventType._
+import org.scaladebugger.api.utils.{JDITools, Logging}
 
 /**
  * Contains helper methods for testing.

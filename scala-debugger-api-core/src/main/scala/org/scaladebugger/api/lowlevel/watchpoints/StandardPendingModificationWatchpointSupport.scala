@@ -1,7 +1,5 @@
 package org.scaladebugger.api.lowlevel.watchpoints
 
-import org.scaladebugger.api.utils.PendingActionManager
-
 /**
  * Provides pending modification watchpoint capabilities to an existing
  * modification watchpoint manager.

@@ -1,6 +1,5 @@
 package org.scaladebugger.api.virtualmachines
 
-import org.scaladebugger.api.profiles.traits.DebugProfile
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 import org.scaladebugger.api.lowlevel.breakpoints.{DummyBreakpointManager, PendingBreakpointSupport}
@@ -13,7 +12,6 @@ import org.scaladebugger.api.lowlevel.steps.{DummyStepManager, PendingStepSuppor
 import org.scaladebugger.api.lowlevel.threads.{DummyThreadDeathManager, DummyThreadStartManager, PendingThreadDeathSupport, PendingThreadStartSupport}
 import org.scaladebugger.api.lowlevel.vm.{DummyVMDeathManager, PendingVMDeathSupport}
 import org.scaladebugger.api.lowlevel.watchpoints.{DummyAccessWatchpointManager, DummyModificationWatchpointManager, PendingAccessWatchpointSupport, PendingModificationWatchpointSupport}
-import org.scaladebugger.api.profiles.ProfileManager
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 
 class DummyScalaVirtualMachineSpec extends ParallelMockFunSpec

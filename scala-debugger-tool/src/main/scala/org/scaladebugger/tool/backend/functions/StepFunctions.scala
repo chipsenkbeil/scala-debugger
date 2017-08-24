@@ -9,8 +9,6 @@ import scala.concurrent.{Await, Future}
 import scala.concurrent.duration._
 import scala.concurrent.ExecutionContext.Implicits.global
 import org.scaladebugger.api.dsl.Implicits._
-import org.scaladebugger.api.profiles.traits.info.ThreadInfo
-import org.scaladebugger.api.profiles.traits.info.events.StepEventInfo
 
 /**
  * Represents a collection of functions for managing steps.

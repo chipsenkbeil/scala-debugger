@@ -1,9 +1,6 @@
 package org.scaladebugger.api.profiles.java.info
 
 import com.sun.jdi._
-import org.scaladebugger.api.profiles.java.info.events.JavaEventInfoProducer
-import org.scaladebugger.api.profiles.traits.info._
-import org.scaladebugger.api.profiles.traits.info.events.EventInfoProducer
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 /**

@@ -1,6 +1,9 @@
 package org.scaladebugger.api.lowlevel
 import com.sun.jdi.VirtualMachine
 import com.sun.jdi.request.EventRequestManager
+import org.scaladebugger.api.interfaces.lowlevel.breakpoints.{BreakpointManager, BreakpointRequestInfo, PendingBreakpointSupportLike}
+import org.scaladebugger.api.interfaces.lowlevel.classes.{ClassManager, PendingClassPrepareSupportLike, PendingClassUnloadSupportLike, _}
+import org.scaladebugger.api.interfaces.lowlevel.{PendingRequestSupport, RequestInfo}
 import org.scaladebugger.api.lowlevel.breakpoints._
 import org.scaladebugger.api.lowlevel.classes._
 import org.scaladebugger.api.lowlevel.events._
@@ -11,7 +14,6 @@ import org.scaladebugger.api.lowlevel.steps._
 import org.scaladebugger.api.lowlevel.threads._
 import org.scaladebugger.api.lowlevel.vm._
 import org.scaladebugger.api.lowlevel.watchpoints._
-import org.scaladebugger.api.utils.{Logging, LoopingTaskRunner}
 import org.slf4j.LoggerFactory
 
 import scala.util.Try

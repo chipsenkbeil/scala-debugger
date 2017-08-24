@@ -1,13 +1,11 @@
 package org.scaladebugger.api.lowlevel.classes
 import org.scaladebugger.api.lowlevel.utils.JDIHelperMethods
-import org.scaladebugger.api.utils.Logging
 import com.sun.jdi.{Location, Method, ReferenceType, VirtualMachine}
+import org.scaladebugger.api.interfaces.lowlevel.classes.ClassManager
 
 import scala.collection.JavaConverters._
 import scala.util.Try
-
 import collection.mutable
-import ClassManager._
 
 /**
  * Represents a manager of classes available on the virtual machine and their

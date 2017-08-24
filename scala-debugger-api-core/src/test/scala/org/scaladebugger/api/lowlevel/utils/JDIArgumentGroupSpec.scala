@@ -1,8 +1,8 @@
 package org.scaladebugger.api.lowlevel.utils
 
+import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
-import org.scaladebugger.api.lowlevel.JDIArgument
 import org.scaladebugger.api.lowlevel.events.JDIEventArgument
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 import org.scaladebugger.test.helpers.ParallelMockFunSpec

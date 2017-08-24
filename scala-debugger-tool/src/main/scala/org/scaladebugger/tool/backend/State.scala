@@ -4,7 +4,6 @@ import java.nio.file.Path
 
 import ammonite.util.Bind
 import org.scaladebugger.api.debuggers.Debugger
-import org.scaladebugger.api.profiles.traits.info.{ThreadGroupInfo, ThreadInfo}
 import org.scaladebugger.api.virtualmachines.{DummyScalaVirtualMachine, ScalaVirtualMachine}
 
 case class State(

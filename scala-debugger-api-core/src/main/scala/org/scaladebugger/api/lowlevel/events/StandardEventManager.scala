@@ -2,7 +2,6 @@ package org.scaladebugger.api.lowlevel.events
 
 import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
 import org.scaladebugger.api.lowlevel.events.misc.Resume
-import org.scaladebugger.api.utils.{Logging, LoopingTaskRunner, MultiMap}
 import com.sun.jdi.event.{Event, EventQueue, EventSet}
 import EventType._
 

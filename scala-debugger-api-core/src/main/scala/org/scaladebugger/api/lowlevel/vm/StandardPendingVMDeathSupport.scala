@@ -1,7 +1,5 @@
 package org.scaladebugger.api.lowlevel.vm
 
-import org.scaladebugger.api.utils.PendingActionManager
-
 /**
  * Provides pending vm death capabilities to an existing vm death
  * manager.

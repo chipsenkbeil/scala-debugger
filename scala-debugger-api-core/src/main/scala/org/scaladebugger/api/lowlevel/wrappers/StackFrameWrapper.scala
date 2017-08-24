@@ -1,6 +1,5 @@
 package org.scaladebugger.api.lowlevel.wrappers
 
-import org.scaladebugger.api.utils.Logging
 import com.sun.jdi._
 
 import scala.collection.JavaConverters._

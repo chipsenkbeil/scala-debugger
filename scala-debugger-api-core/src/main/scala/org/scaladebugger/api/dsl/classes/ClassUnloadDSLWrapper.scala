@@ -1,11 +1,8 @@
 package org.scaladebugger.api.dsl.classes
 
 import com.sun.jdi.event.ClassUnloadEvent
-import org.scaladebugger.api.lowlevel.JDIArgument
+import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
 import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.traits.requests.classes.ClassUnloadRequest
-import org.scaladebugger.api.profiles.traits.info.events.ClassUnloadEventInfo
 
 import scala.util.Try
 

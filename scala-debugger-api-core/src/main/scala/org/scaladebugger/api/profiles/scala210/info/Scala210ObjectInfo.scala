@@ -1,8 +1,6 @@
 package org.scaladebugger.api.profiles.scala210.info
 
 import com.sun.jdi.{ObjectReference, ReferenceType, VirtualMachine}
-import org.scaladebugger.api.profiles.java.info.JavaObjectInfo
-import org.scaladebugger.api.profiles.traits.info.{FieldVariableInfo, InfoProducer}
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 /**

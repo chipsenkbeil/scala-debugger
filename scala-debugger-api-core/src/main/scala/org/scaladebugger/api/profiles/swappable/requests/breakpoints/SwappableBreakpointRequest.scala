@@ -1,10 +1,6 @@
 package org.scaladebugger.api.profiles.swappable.requests.breakpoints
-
-import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.breakpoints.BreakpointRequestInfo
-import org.scaladebugger.api.pipelines.Pipeline.IdentityPipeline
-import org.scaladebugger.api.profiles.swappable.SwappableDebugProfileManagement
-import org.scaladebugger.api.profiles.traits.requests.breakpoints.BreakpointRequest
+import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
+import org.scaladebugger.api.interfaces.lowlevel.breakpoints.BreakpointRequestInfo
 
 import scala.util.Try
 

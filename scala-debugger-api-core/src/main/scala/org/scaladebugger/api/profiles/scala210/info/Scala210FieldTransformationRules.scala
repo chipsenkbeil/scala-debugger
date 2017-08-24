@@ -1,7 +1,5 @@
 package org.scaladebugger.api.profiles.scala210.info
 
-import org.scaladebugger.api.profiles.traits.info.FieldVariableInfo
-
 trait Scala210FieldTransformationRules {
   // Will retrieve fields of these objects
   private val expandNames = Seq("$outer")

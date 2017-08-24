@@ -1,6 +1,6 @@
 package org.scaladebugger.api.profiles
 
-import org.scaladebugger.api.profiles.traits.DebugProfile
+import org.scaladebugger.api.interfaces.profiles.DebugProfile
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
 
 class StandardProfileManagerSpec extends ParallelMockFunSpec {

@@ -2,7 +2,6 @@ package org.scaladebugger.api.profiles.java.info
 
 import com.sun.jdi._
 import org.scaladebugger.api.lowlevel.{InvokeSingleThreadedArgument, JDIArgument}
-import org.scaladebugger.api.profiles.traits.info.{InterfaceTypeInfo, ValueInfo, _}
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 import scala.util.Try
