@@ -72,7 +72,7 @@ class JavaPrimitiveInfo(
   override def toLocalValue: AnyVal = {
     assert(eitherValue.isLeft, "Cannot retrieve value of void!")
 
-    import org.scaladebugger.api.lowlevel.wrappers.Implicits._
+    import org.scaladebugger.api.lowlevel.jvm.wrappers.Implicits._
     eitherValue.left.get.primitiveValue()
   }
 

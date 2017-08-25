@@ -1,8 +1,8 @@
 package test
 
 import com.sun.jdi.request.MethodExitRequest
-import org.scaladebugger.api.lowlevel.methods.{MethodExitManager, MethodExitRequestInfo}
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.methods.{MethodExitManager, MethodExitRequestInfo}
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
 
 import scala.util.Try
 

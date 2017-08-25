@@ -1,7 +1,7 @@
 package org.scaladebugger.api.profile.swappable.requests.exceptions
 
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.exceptions.ExceptionRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.exceptions.ExceptionRequestInfo
 
 import scala.util.Try
 

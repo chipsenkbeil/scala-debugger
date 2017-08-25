@@ -1,8 +1,8 @@
 package org.scaladebugger.api.interfaces.profiles.requests.classes
 
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.classes.ClassPrepareRequestInfo
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.classes.ClassPrepareRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
 
 import scala.util.Try
 

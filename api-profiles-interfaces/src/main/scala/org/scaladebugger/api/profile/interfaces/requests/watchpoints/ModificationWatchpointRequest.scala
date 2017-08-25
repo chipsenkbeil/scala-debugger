@@ -1,8 +1,8 @@
 package org.scaladebugger.api.interfaces.profiles.requests.watchpoints
 
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.lowlevel.watchpoints.ModificationWatchpointRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.watchpoints.ModificationWatchpointRequestInfo
 
 import scala.util.Try
 

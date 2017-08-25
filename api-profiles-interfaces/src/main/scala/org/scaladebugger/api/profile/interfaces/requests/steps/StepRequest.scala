@@ -1,8 +1,8 @@
 package org.scaladebugger.api.interfaces.profiles.requests.steps
 
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.lowlevel.steps.StepRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.steps.StepRequestInfo
 
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global

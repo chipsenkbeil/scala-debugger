@@ -1,7 +1,7 @@
 package org.scaladebugger.api.profiles.scala210.info
 
 import org.scaladebugger.api.interfaces.profiles.info.ThreadInfo
-import org.scaladebugger.api.lowlevel.events.misc.NoResume
+import org.scaladebugger.api.lowlevel.jvm.events.misc.NoResume
 import org.scaladebugger.api.profiles.scala210.Scala210DebugProfile
 import org.scaladebugger.api.utils.JDITools
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine

@@ -1,7 +1,7 @@
 package org.scaladebugger.api.virtualmachines
 import com.sun.jdi.VirtualMachine
-import org.scaladebugger.api.lowlevel.ManagerContainer
-import org.scaladebugger.api.lowlevel.events.EventManager
+import org.scaladebugger.api.lowlevel.jvm.ManagerContainer
+import org.scaladebugger.api.lowlevel.jvm.events.EventManager
 import org.scaladebugger.test.utils.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}

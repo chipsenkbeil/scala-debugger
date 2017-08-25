@@ -4,10 +4,10 @@ import java.util.concurrent.ConcurrentHashMap
 
 import com.sun.jdi.event.VMDisconnectEvent
 import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.events.EventManager
-import org.scaladebugger.api.lowlevel.events.EventType.VMDisconnectEventType
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
-import org.scaladebugger.api.lowlevel.utils.JDIArgumentGroup
+import org.scaladebugger.api.lowlevel.jvm.events.EventManager
+import org.scaladebugger.api.lowlevel.jvm.events.EventType.VMDisconnectEventType
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.utils.JDIArgumentGroup
 import org.scaladebugger.api.lowlevel.StandardRequestInfo
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 

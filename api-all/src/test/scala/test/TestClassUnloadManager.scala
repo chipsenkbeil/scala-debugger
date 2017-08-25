@@ -1,9 +1,9 @@
 package test
 
 import com.sun.jdi.request.ClassUnloadRequest
-import org.scaladebugger.api.interfaces.lowlevel.classes.{ClassUnloadManager, ClassUnloadRequestInfo}
-import org.scaladebugger.api.lowlevel.classes.ClassUnloadRequestInfo
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
+import org.scaladebugger.api.interfaces.lowlevel.classes.ClassUnloadRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.classes.{ClassUnloadManager, ClassUnloadRequestInfo}
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
 
 import scala.util.Try
 

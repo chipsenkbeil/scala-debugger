@@ -1,7 +1,7 @@
 package org.scaladebugger.api.profiles.java.info
 
 import com.sun.jdi._
-import org.scaladebugger.api.interfaces.lowlevel.classes.ClassManager
+import org.scaladebugger.api.lowlevel.jvm.classes.ClassManager
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 import org.scaladebugger.test.utils.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory

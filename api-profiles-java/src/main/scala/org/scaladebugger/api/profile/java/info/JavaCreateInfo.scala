@@ -2,8 +2,8 @@ package org.scaladebugger.api.profiles.java.info
 
 
 import com.sun.jdi.{ReferenceType, Value}
-import org.scaladebugger.api.interfaces.lowlevel.classes.ClassManager
-import org.scaladebugger.api.lowlevel.utils.JDIHelperMethods
+import org.scaladebugger.api.lowlevel.jvm.classes.ClassManager
+import org.scaladebugger.api.lowlevel.jvm.utils.JDIHelperMethods
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 /**
@@ -21,7 +21,7 @@ trait JavaCreateInfo extends CreateInfo with JDIHelperMethods {
    * @return The information about the remote value
    */
   override def createRemotely(value: AnyVal): ValueInfo = {
-    import org.scaladebugger.api.lowlevel.wrappers.Implicits._
+    import org.scaladebugger.api.lowlevel.jvm.wrappers.Implicits._
     createNewValueProfile(_virtualMachine.mirrorOf(value))
   }
 

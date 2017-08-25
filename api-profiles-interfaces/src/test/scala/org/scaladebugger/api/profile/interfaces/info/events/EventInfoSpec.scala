@@ -1,8 +1,8 @@
 package org.scaladebugger.api.profiles.info.events
 
 import org.scaladebugger.api.interfaces.profiles.info.events._
-import org.scaladebugger.api.lowlevel.events.JDIEventArgument
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.events.JDIEventArgument
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 import org.scaladebugger.test.utils.ParallelMockFunSpec
 import test.EventInfoTestClasses.TestEventInfo

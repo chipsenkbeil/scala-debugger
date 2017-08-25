@@ -1,8 +1,8 @@
 package test
 
 import com.sun.jdi.request.ThreadStartRequest
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
-import org.scaladebugger.api.lowlevel.threads.{ThreadStartManager, ThreadStartRequestInfo}
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.threads.{ThreadStartManager, ThreadStartRequestInfo}
 
 import scala.util.Try
 

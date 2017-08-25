@@ -2,17 +2,17 @@ package test
 
 import com.sun.jdi.ThreadReference
 import com.sun.jdi.request.EventRequest
-import org.scaladebugger.api.interfaces.lowlevel.breakpoints.BreakpointRequestInfo
-import org.scaladebugger.api.interfaces.lowlevel.classes.{ClassPrepareRequestInfo, ClassUnloadRequestInfo}
-import org.scaladebugger.api.lowlevel.classes.ClassUnloadRequestInfo
-import org.scaladebugger.api.lowlevel.exceptions.ExceptionRequestInfo
-import org.scaladebugger.api.lowlevel.methods.{MethodEntryRequestInfo, MethodExitRequestInfo}
-import org.scaladebugger.api.lowlevel.monitors.{MonitorContendedEnterRequestInfo, MonitorContendedEnteredRequestInfo, MonitorWaitRequestInfo, MonitorWaitedRequestInfo}
-import org.scaladebugger.api.lowlevel.requests.{JDIRequestArgument, JDIRequestProcessor}
-import org.scaladebugger.api.lowlevel.steps.StepRequestInfo
-import org.scaladebugger.api.lowlevel.threads.{ThreadDeathRequestInfo, ThreadStartRequestInfo}
-import org.scaladebugger.api.lowlevel.vm.VMDeathRequestInfo
-import org.scaladebugger.api.lowlevel.watchpoints.{AccessWatchpointRequestInfo, ModificationWatchpointRequestInfo}
+import org.scaladebugger.api.interfaces.lowlevel.classes.ClassUnloadRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.breakpoints.BreakpointRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.classes.{ClassPrepareRequestInfo, ClassUnloadRequestInfo}
+import org.scaladebugger.api.lowlevel.jvm.exceptions.ExceptionRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.methods.{MethodEntryRequestInfo, MethodExitRequestInfo}
+import org.scaladebugger.api.lowlevel.jvm.monitors.{MonitorContendedEnterRequestInfo, MonitorContendedEnteredRequestInfo, MonitorWaitRequestInfo, MonitorWaitedRequestInfo}
+import org.scaladebugger.api.lowlevel.jvm.requests.{JDIRequestArgument, JDIRequestProcessor}
+import org.scaladebugger.api.lowlevel.jvm.steps.StepRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.threads.{ThreadDeathRequestInfo, ThreadStartRequestInfo}
+import org.scaladebugger.api.lowlevel.jvm.vm.VMDeathRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.watchpoints.{AccessWatchpointRequestInfo, ModificationWatchpointRequestInfo}
 
 /**
  * Provides helpers to create stubbed request info objects since ScalaMock

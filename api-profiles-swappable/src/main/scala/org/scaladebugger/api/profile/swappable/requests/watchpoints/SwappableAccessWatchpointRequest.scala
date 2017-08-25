@@ -1,7 +1,7 @@
 package org.scaladebugger.api.profile.swappable.requests.watchpoints
 
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.watchpoints.AccessWatchpointRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.watchpoints.AccessWatchpointRequestInfo
 
 import scala.util.Try
 

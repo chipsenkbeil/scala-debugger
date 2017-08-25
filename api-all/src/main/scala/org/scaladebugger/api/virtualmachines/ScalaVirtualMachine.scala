@@ -1,7 +1,7 @@
 package org.scaladebugger.api.virtualmachines
 
 import com.sun.jdi._
-import org.scaladebugger.api.lowlevel.ManagerContainer
+import org.scaladebugger.api.lowlevel.jvm.ManagerContainer
 
 /**
  * Represents a virtual machine running Scala code.

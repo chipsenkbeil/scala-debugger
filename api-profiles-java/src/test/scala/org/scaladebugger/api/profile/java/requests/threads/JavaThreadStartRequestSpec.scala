@@ -1,11 +1,11 @@
 package org.scaladebugger.api.profiles.java.requests.threads
 
 import com.sun.jdi.event.ThreadStartEvent
-import org.scaladebugger.api.lowlevel.events.EventType.ThreadStartEventType
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.lowlevel.events.{EventManager, JDIEventArgument}
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
-import org.scaladebugger.api.lowlevel.threads.{PendingThreadStartSupportLike, ThreadStartManager, ThreadStartRequestInfo}
+import org.scaladebugger.api.lowlevel.jvm.events.EventType.ThreadStartEventType
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.events.{EventManager, JDIEventArgument}
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.threads.{PendingThreadStartSupportLike, ThreadStartManager, ThreadStartRequestInfo}
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 import org.scaladebugger.test.utils.ParallelMockFunSpec
 import test.{JDIMockHelpers, TestRequestHelper}

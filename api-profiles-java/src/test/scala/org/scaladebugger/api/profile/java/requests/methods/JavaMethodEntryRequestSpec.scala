@@ -1,12 +1,12 @@
 package org.scaladebugger.api.profiles.java.requests.methods
 
 import com.sun.jdi.event.MethodEntryEvent
-import org.scaladebugger.api.lowlevel.events.EventType.MethodEntryEventType
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.lowlevel.events.filters.MethodNameFilter
-import org.scaladebugger.api.lowlevel.events.{EventManager, JDIEventArgument}
-import org.scaladebugger.api.lowlevel.methods.{MethodEntryManager, MethodEntryRequestInfo, PendingMethodEntrySupportLike}
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.events.EventType.MethodEntryEventType
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.events.filters.MethodNameFilter
+import org.scaladebugger.api.lowlevel.jvm.events.{EventManager, JDIEventArgument}
+import org.scaladebugger.api.lowlevel.jvm.methods.{MethodEntryManager, MethodEntryRequestInfo, PendingMethodEntrySupportLike}
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 import org.scaladebugger.test.utils.ParallelMockFunSpec
 import test.{JDIMockHelpers, TestRequestHelper}

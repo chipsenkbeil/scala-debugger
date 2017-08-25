@@ -5,13 +5,13 @@ import java.util.concurrent.atomic.AtomicInteger
 
 import com.sun.jdi.event.MethodExitEvent
 import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.events.EventType.MethodExitEventType
-import org.scaladebugger.api.lowlevel.events.filters.{MethodNameFilter, UniqueIdPropertyFilter}
-import org.scaladebugger.api.lowlevel.events.{EventManager, JDIEventArgument}
-import org.scaladebugger.api.lowlevel.methods.{MethodExitManager, MethodExitRequestInfo, PendingMethodExitSupport, PendingMethodExitSupportLike}
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
-import org.scaladebugger.api.lowlevel.requests.properties.UniqueIdProperty
-import org.scaladebugger.api.lowlevel.utils.JDIArgumentGroup
+import org.scaladebugger.api.lowlevel.jvm.events.EventType.MethodExitEventType
+import org.scaladebugger.api.lowlevel.jvm.events.filters.{MethodNameFilter, UniqueIdPropertyFilter}
+import org.scaladebugger.api.lowlevel.jvm.events.{EventManager, JDIEventArgument}
+import org.scaladebugger.api.lowlevel.jvm.methods.{MethodExitManager, MethodExitRequestInfo, PendingMethodExitSupport, PendingMethodExitSupportLike}
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.requests.properties.UniqueIdProperty
+import org.scaladebugger.api.lowlevel.jvm.utils.JDIArgumentGroup
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 import scala.collection.JavaConverters._

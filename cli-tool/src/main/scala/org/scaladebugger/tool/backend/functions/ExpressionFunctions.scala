@@ -1,6 +1,6 @@
 package org.scaladebugger.tool.backend.functions
-import org.scaladebugger.api.lowlevel.wrappers.Implicits._
-import org.scaladebugger.api.lowlevel.wrappers.ValueWrapper
+import org.scaladebugger.api.lowlevel.jvm.wrappers.Implicits._
+import org.scaladebugger.api.lowlevel.jvm.wrappers.ValueWrapper
 import org.scaladebugger.tool.backend.StateManager
 
 import scala.collection.JavaConverters._

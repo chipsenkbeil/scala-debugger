@@ -2,10 +2,10 @@ package org.scaladebugger.api.profiles.java.requests.vm
 
 import com.sun.jdi.event.VMStartEvent
 import org.scaladebugger.api.lowlevel.StandardRequestInfo
-import org.scaladebugger.api.lowlevel.events.EventType.VMStartEventType
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.lowlevel.events.{EventManager, JDIEventArgument}
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.events.EventType.VMStartEventType
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.events.{EventManager, JDIEventArgument}
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 import org.scaladebugger.test.utils.ParallelMockFunSpec
 import test.{JDIMockHelpers, TestRequestHelper}

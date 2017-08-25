@@ -1,12 +1,12 @@
 package org.scaladebugger.api.profiles.java.requests.exceptions
 import com.sun.jdi.event.{Event, ExceptionEvent}
-import org.scaladebugger.api.lowlevel.events.{EventManager, JDIEventArgument}
-import org.scaladebugger.api.lowlevel.events.EventType.ExceptionEventType
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.lowlevel.events.filters.UniqueIdPropertyFilter
-import org.scaladebugger.api.lowlevel.exceptions.{ExceptionManager, ExceptionRequestInfo, PendingExceptionSupportLike}
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
-import org.scaladebugger.api.lowlevel.requests.properties.UniqueIdProperty
+import org.scaladebugger.api.lowlevel.jvm.events.{EventManager, JDIEventArgument}
+import org.scaladebugger.api.lowlevel.jvm.events.EventType.ExceptionEventType
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.events.filters.UniqueIdPropertyFilter
+import org.scaladebugger.api.lowlevel.jvm.exceptions.{ExceptionManager, ExceptionRequestInfo, PendingExceptionSupportLike}
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.requests.properties.UniqueIdProperty
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 import org.scaladebugger.test.utils.ParallelMockFunSpec
 import test.{JDIMockHelpers, TestRequestHelper}

@@ -3,7 +3,7 @@ package org.scaladebugger.api.profile.swappable.requests.events
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.events.EventType.EventType
+import org.scaladebugger.api.lowlevel.jvm.events.EventType.EventType
 import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 class SwappableEventListenerRequestSpec extends ParallelMockFunSpec

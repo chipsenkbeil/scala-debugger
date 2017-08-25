@@ -2,8 +2,8 @@ package org.scaladebugger.api.profile.swappable.requests.steps
 
 import com.sun.jdi.event.StepEvent
 import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.lowlevel.steps.StepRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.steps.StepRequestInfo
 
 import scala.concurrent.Future
 import scala.util.Try

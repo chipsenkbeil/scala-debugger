@@ -1,7 +1,7 @@
 package org.scaladebugger.api.profile.swappable.requests.threads
 
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.threads.ThreadDeathRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.threads.ThreadDeathRequestInfo
 
 import scala.util.Try
 

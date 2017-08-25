@@ -1,8 +1,8 @@
 package test
 
 import com.sun.jdi.request.MonitorWaitRequest
-import org.scaladebugger.api.lowlevel.monitors.{MonitorWaitRequestInfo, MonitorWaitManager}
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.monitors.{MonitorWaitRequestInfo, MonitorWaitManager}
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
 
 import scala.util.Try
 

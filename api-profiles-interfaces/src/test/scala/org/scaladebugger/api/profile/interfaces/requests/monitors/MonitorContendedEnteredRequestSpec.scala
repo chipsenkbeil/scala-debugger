@@ -2,8 +2,8 @@ package org.scaladebugger.api.profiles.requests.monitors
 
 import org.scaladebugger.api.interfaces.profiles.requests.monitors.MonitorContendedEnteredRequest
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.lowlevel.monitors.MonitorContendedEnteredRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.monitors.MonitorContendedEnteredRequestInfo
 import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 import scala.util.{Failure, Success, Try}

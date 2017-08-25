@@ -2,8 +2,8 @@ package org.scaladebugger.api.profiles.requests.watchpoints
 
 import org.scaladebugger.api.interfaces.profiles.requests.watchpoints.AccessWatchpointRequest
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.lowlevel.watchpoints.AccessWatchpointRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.watchpoints.AccessWatchpointRequestInfo
 import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 import scala.util.{Failure, Success, Try}

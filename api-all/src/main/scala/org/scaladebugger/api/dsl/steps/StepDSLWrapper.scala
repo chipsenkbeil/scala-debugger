@@ -1,6 +1,6 @@
 package org.scaladebugger.api.dsl.steps
 import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
 
 import scala.util.Try
 

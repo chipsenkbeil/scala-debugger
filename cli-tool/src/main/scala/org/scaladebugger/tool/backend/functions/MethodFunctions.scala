@@ -1,5 +1,5 @@
 package org.scaladebugger.tool.backend.functions
-import org.scaladebugger.api.lowlevel.events.misc.NoResume
+import org.scaladebugger.api.lowlevel.jvm.events.misc.NoResume
 import org.scaladebugger.tool.backend.StateManager
 
 /**

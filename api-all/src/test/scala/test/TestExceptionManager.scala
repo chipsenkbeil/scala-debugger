@@ -1,8 +1,8 @@
 package test
 
 import com.sun.jdi.request.ExceptionRequest
-import org.scaladebugger.api.lowlevel.exceptions.{ExceptionRequestInfo, ExceptionManager}
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.exceptions.{ExceptionRequestInfo, ExceptionManager}
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
 
 import scala.util.Try
 

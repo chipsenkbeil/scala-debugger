@@ -2,7 +2,7 @@ package org.scaladebugger.api.profiles.requests.methods
 
 import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
 import org.scaladebugger.api.interfaces.profiles.requests.methods.MethodExitRequest
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
 
 class MethodExitRequestSpec extends ParallelMockFunSpec
 {

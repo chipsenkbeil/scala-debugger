@@ -2,7 +2,7 @@ package org.scaladebugger.api.profiles.java.requests.events
 
 import java.util.concurrent.atomic.AtomicInteger
 
-import org.scaladebugger.api.lowlevel.events.EventType.BreakpointEventType
+import org.scaladebugger.api.lowlevel.jvm.events.EventType.BreakpointEventType
 import org.scaladebugger.api.utils.JDITools
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
 import org.scaladebugger.test.utils.ParallelMockFunSpec

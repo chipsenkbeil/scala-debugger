@@ -1,8 +1,8 @@
 package test
 
 import com.sun.jdi.request.MonitorContendedEnterRequest
-import org.scaladebugger.api.lowlevel.monitors.{MonitorContendedEnterRequestInfo, MonitorContendedEnterManager}
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.monitors.{MonitorContendedEnterRequestInfo, MonitorContendedEnterManager}
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
 
 import scala.util.Try
 

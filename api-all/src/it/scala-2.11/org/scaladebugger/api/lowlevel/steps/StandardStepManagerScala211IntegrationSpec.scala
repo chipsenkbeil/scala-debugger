@@ -1,4 +1,4 @@
-package org.scaladebugger.api.lowlevel.steps
+package org.scaladebugger.api.lowlevel.jvm.steps
 
 import com.sun.jdi.ThreadReference
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine

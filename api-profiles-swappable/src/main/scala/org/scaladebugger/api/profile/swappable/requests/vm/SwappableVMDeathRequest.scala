@@ -1,7 +1,7 @@
 package org.scaladebugger.api.profile.swappable.requests.vm
 
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.vm.VMDeathRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.vm.VMDeathRequestInfo
 
 import scala.util.Try
 

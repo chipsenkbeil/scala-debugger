@@ -136,7 +136,7 @@ class JavaClassTypeInfo(
     val t = thread.toJdiInstance
     val c = constructor.toJdiInstance
 
-    import org.scaladebugger.api.lowlevel.wrappers.Implicits._
+    import org.scaladebugger.api.lowlevel.jvm.wrappers.Implicits._
     val virtualMachine = newVirtualMachine()
     val v = arguments.map(virtualMachine.mirrorOf(_: Any))
 
@@ -219,7 +219,7 @@ class JavaClassTypeInfo(
     val t = thread.toJdiInstance
     val m = method.toJdiInstance
 
-    import org.scaladebugger.api.lowlevel.wrappers.Implicits._
+    import org.scaladebugger.api.lowlevel.jvm.wrappers.Implicits._
     val v = arguments.map(newVirtualMachine().mirrorOf(_: Any))
 
     val o = jdiArguments.map {

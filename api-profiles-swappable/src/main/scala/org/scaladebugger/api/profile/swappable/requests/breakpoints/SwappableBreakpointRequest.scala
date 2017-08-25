@@ -1,7 +1,7 @@
 package org.scaladebugger.api.profile.swappable.requests.breakpoints
 
 import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
-import org.scaladebugger.api.interfaces.lowlevel.breakpoints.BreakpointRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.breakpoints.BreakpointRequestInfo
 
 import scala.util.Try
 

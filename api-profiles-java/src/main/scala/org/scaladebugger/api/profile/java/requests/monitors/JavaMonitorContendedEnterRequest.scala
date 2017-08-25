@@ -3,12 +3,12 @@ package org.scaladebugger.api.profiles.java.requests.monitors
 
 import com.sun.jdi.event.MonitorContendedEnterEvent
 import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.events.EventManager
-import org.scaladebugger.api.lowlevel.events.EventType._
-import org.scaladebugger.api.lowlevel.monitors.{MonitorContendedEnterManager, MonitorContendedEnterRequestInfo, PendingMonitorContendedEnterSupportLike}
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
-import org.scaladebugger.api.lowlevel.requests.properties.UniqueIdProperty
-import org.scaladebugger.api.lowlevel.utils.JDIArgumentGroup
+import org.scaladebugger.api.lowlevel.jvm.events.EventManager
+import org.scaladebugger.api.lowlevel.jvm.events.EventType._
+import org.scaladebugger.api.lowlevel.jvm.monitors.{MonitorContendedEnterManager, MonitorContendedEnterRequestInfo, PendingMonitorContendedEnterSupportLike}
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.requests.properties.UniqueIdProperty
+import org.scaladebugger.api.lowlevel.jvm.utils.JDIArgumentGroup
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 import scala.util.Try

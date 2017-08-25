@@ -1,7 +1,7 @@
 package org.scaladebugger.api.profile.swappable.requests.monitors
 
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.monitors.MonitorWaitRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.monitors.MonitorWaitRequestInfo
 
 import scala.util.Try
 

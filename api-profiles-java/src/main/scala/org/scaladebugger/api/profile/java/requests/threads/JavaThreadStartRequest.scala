@@ -3,12 +3,12 @@ package org.scaladebugger.api.profiles.java.requests.threads
 
 import com.sun.jdi.event.ThreadStartEvent
 import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.events.EventManager
-import org.scaladebugger.api.lowlevel.events.EventType.ThreadStartEventType
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
-import org.scaladebugger.api.lowlevel.requests.properties.UniqueIdProperty
-import org.scaladebugger.api.lowlevel.threads._
-import org.scaladebugger.api.lowlevel.utils.JDIArgumentGroup
+import org.scaladebugger.api.lowlevel.jvm.events.EventManager
+import org.scaladebugger.api.lowlevel.jvm.events.EventType.ThreadStartEventType
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.requests.properties.UniqueIdProperty
+import org.scaladebugger.api.lowlevel.jvm.threads._
+import org.scaladebugger.api.lowlevel.jvm.utils.JDIArgumentGroup
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 import scala.util.Try

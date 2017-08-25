@@ -3,12 +3,12 @@ package org.scaladebugger.api.profiles.java.requests.methods
 
 import com.sun.jdi.event.MethodEntryEvent
 import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.events.EventManager
-import org.scaladebugger.api.lowlevel.events.EventType.MethodEntryEventType
-import org.scaladebugger.api.lowlevel.events.filters.MethodNameFilter
-import org.scaladebugger.api.lowlevel.methods.{MethodEntryManager, MethodEntryRequestInfo, PendingMethodEntrySupportLike}
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
-import org.scaladebugger.api.lowlevel.utils.JDIArgumentGroup
+import org.scaladebugger.api.lowlevel.jvm.events.EventManager
+import org.scaladebugger.api.lowlevel.jvm.events.EventType.MethodEntryEventType
+import org.scaladebugger.api.lowlevel.jvm.events.filters.MethodNameFilter
+import org.scaladebugger.api.lowlevel.jvm.methods.{MethodEntryManager, MethodEntryRequestInfo, PendingMethodEntrySupportLike}
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.utils.JDIArgumentGroup
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 import scala.util.Try

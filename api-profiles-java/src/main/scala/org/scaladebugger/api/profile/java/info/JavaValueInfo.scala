@@ -68,7 +68,7 @@ class JavaValueInfo(
    * @return The value as a local instance
    */
   override def toLocalValue: Any = {
-    import org.scaladebugger.api.lowlevel.wrappers.Implicits._
+    import org.scaladebugger.api.lowlevel.jvm.wrappers.Implicits._
     if (!isNull) _value.value()
     else null
   }

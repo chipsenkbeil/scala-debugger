@@ -1,14 +1,14 @@
 package org.scaladebugger.api.profiles.java.requests.breakpoints
 import com.sun.jdi.event.{BreakpointEvent, Event}
-import org.scaladebugger.api.interfaces.lowlevel.breakpoints.{BreakpointManager, BreakpointRequestInfo, PendingBreakpointSupportLike}
-import org.scaladebugger.api.interfaces.lowlevel.classes.ClassManager
-import org.scaladebugger.api.lowlevel.breakpoints.{BreakpointRequestInfo, PendingBreakpointSupportLike}
-import org.scaladebugger.api.lowlevel.events.{EventManager, JDIEventArgument}
-import org.scaladebugger.api.lowlevel.events.EventType.BreakpointEventType
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.lowlevel.events.filters.UniqueIdPropertyFilter
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
-import org.scaladebugger.api.lowlevel.requests.properties.UniqueIdProperty
+import org.scaladebugger.api.interfaces.lowlevel.breakpoints.{BreakpointRequestInfo, PendingBreakpointSupportLike}
+import org.scaladebugger.api.lowlevel.jvm.breakpoints.{BreakpointManager, BreakpointRequestInfo, PendingBreakpointSupportLike}
+import org.scaladebugger.api.lowlevel.jvm.classes.ClassManager
+import org.scaladebugger.api.lowlevel.jvm.events.{EventManager, JDIEventArgument}
+import org.scaladebugger.api.lowlevel.jvm.events.EventType.BreakpointEventType
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.events.filters.UniqueIdPropertyFilter
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.requests.properties.UniqueIdProperty
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 import org.scaladebugger.test.utils.ParallelMockFunSpec
 import test.{JDIMockHelpers, TestRequestHelper}

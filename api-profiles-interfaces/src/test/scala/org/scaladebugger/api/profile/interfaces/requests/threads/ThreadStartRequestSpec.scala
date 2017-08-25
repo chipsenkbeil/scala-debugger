@@ -2,8 +2,8 @@ package org.scaladebugger.api.profiles.requests.threads
 
 import org.scaladebugger.api.interfaces.profiles.requests.threads.ThreadStartRequest
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.lowlevel.threads.ThreadStartRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.threads.ThreadStartRequestInfo
 import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 import scala.util.{Failure, Success, Try}

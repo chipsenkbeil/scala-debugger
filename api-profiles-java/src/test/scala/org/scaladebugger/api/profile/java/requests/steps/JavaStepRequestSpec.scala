@@ -1,12 +1,12 @@
 package org.scaladebugger.api.profiles.java.requests.steps
 import com.sun.jdi.ThreadReference
 import com.sun.jdi.event.{Event, StepEvent}
-import org.scaladebugger.api.lowlevel.events.EventType.StepEventType
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.lowlevel.events.{EventManager, JDIEventArgument}
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
-import org.scaladebugger.api.lowlevel.requests.filters.ThreadFilter
-import org.scaladebugger.api.lowlevel.steps.{PendingStepSupportLike, StepManager, StepRequestInfo}
+import org.scaladebugger.api.lowlevel.jvm.events.EventType.StepEventType
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.events.{EventManager, JDIEventArgument}
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.requests.filters.ThreadFilter
+import org.scaladebugger.api.lowlevel.jvm.steps.{PendingStepSupportLike, StepManager, StepRequestInfo}
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 import org.scaladebugger.test.utils.ParallelMockFunSpec
 import org.scalatest.concurrent.{Futures, ScalaFutures}

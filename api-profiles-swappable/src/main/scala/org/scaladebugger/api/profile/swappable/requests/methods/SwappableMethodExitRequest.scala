@@ -1,7 +1,7 @@
 package org.scaladebugger.api.profile.swappable.requests.methods
 
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.methods.MethodExitRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.methods.MethodExitRequestInfo
 
 import scala.util.Try
 

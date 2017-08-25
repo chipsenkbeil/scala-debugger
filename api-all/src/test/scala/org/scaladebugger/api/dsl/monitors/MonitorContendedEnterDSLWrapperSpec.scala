@@ -1,7 +1,7 @@
 package org.scaladebugger.api.dsl.monitors
 
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
 import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 import scala.util.Success

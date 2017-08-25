@@ -1,7 +1,7 @@
 package test
 
-import org.scaladebugger.api.lowlevel.events.{EventHandlerInfo, JDIEventArgument, EventManager}
-import org.scaladebugger.api.lowlevel.events.EventType.EventType
+import org.scaladebugger.api.lowlevel.jvm.events.{EventHandlerInfo, JDIEventArgument, EventManager}
+import org.scaladebugger.api.lowlevel.jvm.events.EventType.EventType
 
 /**
  * Test event manager that merely invokes the provided event manager

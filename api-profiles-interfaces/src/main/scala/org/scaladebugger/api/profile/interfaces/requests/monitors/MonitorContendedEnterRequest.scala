@@ -1,8 +1,8 @@
 package org.scaladebugger.api.interfaces.profiles.requests.monitors
 
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.lowlevel.monitors.MonitorContendedEnterRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.monitors.MonitorContendedEnterRequestInfo
 
 import scala.util.Try
 

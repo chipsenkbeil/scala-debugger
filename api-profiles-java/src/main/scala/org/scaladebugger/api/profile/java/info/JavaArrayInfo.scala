@@ -29,7 +29,7 @@ class JavaArrayInfo(
   _referenceType = _referenceType
 ) with ArrayInfo with JavaCreateInfo {
   import scala.collection.JavaConverters._
-  import org.scaladebugger.api.lowlevel.wrappers.Implicits._
+  import org.scaladebugger.api.lowlevel.jvm.wrappers.Implicits._
   /**
    * Returns whether or not this info profile represents the low-level Java
    * implementation.

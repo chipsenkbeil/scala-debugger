@@ -1,9 +1,9 @@
 package org.scaladebugger.api.profiles.java.requests.events
 
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.events.{EventHandlerInfo, EventManager, PendingEventHandlerSupportLike}
-import org.scaladebugger.api.lowlevel.events.EventType.EventType
-import org.scaladebugger.api.lowlevel.utils.JDIArgumentGroup
+import org.scaladebugger.api.lowlevel.jvm.events.{EventHandlerInfo, EventManager, PendingEventHandlerSupportLike}
+import org.scaladebugger.api.lowlevel.jvm.events.EventType.EventType
+import org.scaladebugger.api.lowlevel.jvm.utils.JDIArgumentGroup
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 import scala.util.Try

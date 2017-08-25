@@ -1,11 +1,11 @@
 package org.scaladebugger.api.profiles.java.requests.classes
 import com.sun.jdi.event.ClassUnloadEvent
-import org.scaladebugger.api.interfaces.lowlevel.classes.{ClassUnloadManager, ClassUnloadRequestInfo, PendingClassUnloadSupportLike}
-import org.scaladebugger.api.lowlevel.classes.ClassUnloadRequestInfo
-import org.scaladebugger.api.lowlevel.events.EventType.ClassUnloadEventType
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.lowlevel.events.{EventManager, JDIEventArgument}
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
+import org.scaladebugger.api.interfaces.lowlevel.classes.{ClassUnloadRequestInfo, PendingClassUnloadSupportLike}
+import org.scaladebugger.api.lowlevel.jvm.classes.{ClassUnloadManager, ClassUnloadRequestInfo, PendingClassUnloadSupportLike}
+import org.scaladebugger.api.lowlevel.jvm.events.EventType.ClassUnloadEventType
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.events.{EventManager, JDIEventArgument}
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 import org.scaladebugger.test.utils.ParallelMockFunSpec
 import test.{JDIMockHelpers, TestRequestHelper}

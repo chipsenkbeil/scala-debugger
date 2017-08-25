@@ -1,6 +1,6 @@
 package org.scaladebugger.tool.backend.functions
-import org.scaladebugger.api.lowlevel.events.misc.NoResume
-import org.scaladebugger.api.lowlevel.watchpoints.{AccessWatchpointRequestInfo, ModificationWatchpointRequestInfo}
+import org.scaladebugger.api.lowlevel.jvm.events.misc.NoResume
+import org.scaladebugger.api.lowlevel.jvm.watchpoints.{AccessWatchpointRequestInfo, ModificationWatchpointRequestInfo}
 import org.scaladebugger.tool.backend.StateManager
 import org.scaladebugger.tool.backend.utils.Regex
 

@@ -3,7 +3,7 @@ package test
 import java.util.UUID
 
 import com.sun.jdi.event.Event
-import org.scaladebugger.api.lowlevel.events.{EventManager, EventType}
+import org.scaladebugger.api.lowlevel.jvm.events.{EventManager, EventType}
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 
 import scala.reflect.ClassTag

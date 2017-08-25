@@ -1,12 +1,12 @@
 package org.scaladebugger.api.profiles.java.requests.events
 import com.sun.jdi.event.Event
-import org.scaladebugger.api.lowlevel.events.EventManager.EventHandler
+import org.scaladebugger.api.lowlevel.jvm.events.EventManager.EventHandler
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
-import org.scaladebugger.api.lowlevel.events.EventType.EventType
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.lowlevel.events.{EventHandlerInfo, EventManager, JDIEventArgument, PendingEventHandlerSupportLike}
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.events.EventType.EventType
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.events.{EventHandlerInfo, EventManager, JDIEventArgument, PendingEventHandlerSupportLike}
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 import org.scaladebugger.test.utils.ParallelMockFunSpec
 import org.scalatest.concurrent.{Futures, ScalaFutures}

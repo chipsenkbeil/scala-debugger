@@ -1,6 +1,6 @@
 package org.scaladebugger.api.profiles.java.info
 
-import org.scaladebugger.api.lowlevel.events.misc.NoResume
+import org.scaladebugger.api.lowlevel.jvm.events.misc.NoResume
 import org.scaladebugger.api.utils.JDITools
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
 import org.scaladebugger.test.utils.ParallelMockFunSpec

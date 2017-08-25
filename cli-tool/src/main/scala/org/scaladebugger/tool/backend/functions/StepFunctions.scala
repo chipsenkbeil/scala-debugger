@@ -1,8 +1,8 @@
 package org.scaladebugger.tool.backend.functions
 import com.sun.jdi.ThreadReference
 import com.sun.jdi.event.StepEvent
-import org.scaladebugger.api.lowlevel.events.JDIEventArgument
-import org.scaladebugger.api.lowlevel.events.misc.NoResume
+import org.scaladebugger.api.lowlevel.jvm.events.JDIEventArgument
+import org.scaladebugger.api.lowlevel.jvm.events.misc.NoResume
 import org.scaladebugger.tool.backend.StateManager
 
 import scala.concurrent.{Await, Future}

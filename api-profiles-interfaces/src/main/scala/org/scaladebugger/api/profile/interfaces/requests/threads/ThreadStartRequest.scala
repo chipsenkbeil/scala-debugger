@@ -1,8 +1,8 @@
 package org.scaladebugger.api.interfaces.profiles.requests.threads
 
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.lowlevel.threads.ThreadStartRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.threads.ThreadStartRequestInfo
 
 import scala.util.Try
 

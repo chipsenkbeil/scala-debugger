@@ -2,8 +2,8 @@ package org.scaladebugger.api.interfaces.profiles.info.events
 
 import com.sun.jdi.event.Event
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.api.lowlevel.events.JDIEventArgument
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.events.JDIEventArgument
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
 
 import scala.util.Try
 

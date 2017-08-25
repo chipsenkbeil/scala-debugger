@@ -1,9 +1,9 @@
 package org.scaladebugger.api.profiles.requests.classes
 
 import org.scaladebugger.api.interfaces.lowlevel.JDIArgument
-import org.scaladebugger.api.interfaces.lowlevel.classes.ClassPrepareRequestInfo
 import org.scaladebugger.api.interfaces.profiles.requests.classes.ClassPrepareRequest
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.classes.ClassPrepareRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
 import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 import scala.util.{Failure, Success, Try}

@@ -4,12 +4,12 @@ import _root_.java.util.concurrent.ConcurrentHashMap
 import _root_.java.util.concurrent.atomic.AtomicInteger
 
 import com.sun.jdi.event.Event
-import org.scaladebugger.api.lowlevel.events.EventType.EventType
-import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.api.lowlevel.events.filters.UniqueIdPropertyFilter
-import org.scaladebugger.api.lowlevel.events.{EventManager, JDIEventArgument}
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
-import org.scaladebugger.api.lowlevel.requests.properties.UniqueIdProperty
+import org.scaladebugger.api.lowlevel.jvm.events.EventType.EventType
+import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
+import org.scaladebugger.api.lowlevel.jvm.events.filters.UniqueIdPropertyFilter
+import org.scaladebugger.api.lowlevel.jvm.events.{EventManager, JDIEventArgument}
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
+import org.scaladebugger.api.lowlevel.jvm.requests.properties.UniqueIdProperty
 import org.scaladebugger.api.lowlevel.{JDIArgument, RequestInfo}
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
 

@@ -1,9 +1,9 @@
 package test
 
 import com.sun.jdi.request.BreakpointRequest
-import org.scaladebugger.api.interfaces.lowlevel.breakpoints.{BreakpointManager, BreakpointRequestInfo}
-import org.scaladebugger.api.lowlevel.breakpoints.BreakpointRequestInfo
-import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
+import org.scaladebugger.api.interfaces.lowlevel.breakpoints.BreakpointRequestInfo
+import org.scaladebugger.api.lowlevel.jvm.breakpoints.{BreakpointManager, BreakpointRequestInfo}
+import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
 
 import scala.util.Try
 

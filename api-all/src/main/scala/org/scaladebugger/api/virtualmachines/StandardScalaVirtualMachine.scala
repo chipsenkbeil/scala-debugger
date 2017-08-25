@@ -2,13 +2,13 @@ package org.scaladebugger.api.virtualmachines
 
 import java.util.concurrent.atomic.AtomicBoolean
 
-import org.scaladebugger.api.lowlevel.ManagerContainer
-import org.scaladebugger.api.lowlevel.breakpoints.PendingBreakpointSupport
-import org.scaladebugger.api.lowlevel.exceptions.PendingExceptionSupport
-import org.scaladebugger.api.lowlevel.methods.{PendingMethodEntrySupport, PendingMethodExitSupport}
-import org.scaladebugger.api.lowlevel.utils.JDIHelperMethods
-import org.scaladebugger.api.lowlevel.watchpoints.{PendingAccessWatchpointSupport, PendingModificationWatchpointSupport}
+import org.scaladebugger.api.lowlevel.jvm.breakpoints.PendingBreakpointSupport
+import org.scaladebugger.api.lowlevel.jvm.exceptions.PendingExceptionSupport
+import org.scaladebugger.api.lowlevel.jvm.methods.{PendingMethodEntrySupport, PendingMethodExitSupport}
+import org.scaladebugger.api.lowlevel.jvm.utils.JDIHelperMethods
+import org.scaladebugger.api.lowlevel.jvm.watchpoints.{PendingAccessWatchpointSupport, PendingModificationWatchpointSupport}
 import com.sun.jdi._
+import org.scaladebugger.api.lowlevel.jvm.ManagerContainer
 
 import scala.util.Try
 
