@@ -5,10 +5,11 @@ import java.util.concurrent.{ExecutorService, Executors, ThreadFactory}
 import org.scaladebugger.test.utils.FixedParallelSuite._
 
 object FixedParallelSuite {
-  lazy val DefaultExecutorService = Executors.newFixedThreadPool(
-    ControlledParallelSuite.calculatePoolSize(),
-    ControlledParallelSuite.threadFactory
-  )
+  lazy val DefaultExecutorService: ExecutorService =
+    Executors.newFixedThreadPool(
+      ControlledParallelSuite.calculatePoolSize(),
+      ControlledParallelSuite.threadFactory
+    )
 }
 
 /**
