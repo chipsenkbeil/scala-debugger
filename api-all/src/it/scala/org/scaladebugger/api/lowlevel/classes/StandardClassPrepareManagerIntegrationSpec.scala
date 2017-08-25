@@ -5,8 +5,8 @@ import java.util.concurrent.atomic.AtomicBoolean
 import com.sun.jdi.event.ClassPrepareEvent
 import org.scaladebugger.api.lowlevel.events.EventType._
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
-import test.{ApiTestUtilities, VirtualMachineFixtures}
+import org.scaladebugger.test.utils.{ApiTestUtilities, ParallelMockFunSpec, VirtualMachineFixtures}
+import test.VirtualMachineFixtures
 
 class StandardClassPrepareManagerIntegrationSpec extends ParallelMockFunSpec
   with VirtualMachineFixtures

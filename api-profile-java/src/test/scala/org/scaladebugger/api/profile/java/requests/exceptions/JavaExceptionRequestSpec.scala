@@ -8,7 +8,7 @@ import org.scaladebugger.api.lowlevel.exceptions.{ExceptionManager, ExceptionReq
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 import org.scaladebugger.api.lowlevel.requests.properties.UniqueIdProperty
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 import test.{JDIMockHelpers, TestRequestHelper}
 
 import scala.util.{Failure, Success}

@@ -3,7 +3,7 @@ package org.scaladebugger.api.utils
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.atomic.{AtomicBoolean, AtomicInteger}
 
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.concurrent.Eventually
 import org.scalatest.time.{Milliseconds, Span}

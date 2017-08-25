@@ -6,8 +6,8 @@ import org.scaladebugger.api.lowlevel.events.EventType._
 import org.scaladebugger.api.lowlevel.requests.properties.CustomProperty
 import org.scaladebugger.api.utils.JDITools
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
-import test.{ApiTestUtilities, VirtualMachineFixtures}
+import org.scaladebugger.test.utils.{ApiTestUtilities, ParallelMockFunSpec, VirtualMachineFixtures}
+import test.VirtualMachineFixtures
 
 class CustomPropertyFilterIntegrationSpec extends ParallelMockFunSpec
   with VirtualMachineFixtures

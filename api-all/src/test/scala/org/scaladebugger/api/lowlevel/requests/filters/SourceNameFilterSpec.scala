@@ -1,6 +1,6 @@
 package org.scaladebugger.api.lowlevel.requests.filters
 
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 

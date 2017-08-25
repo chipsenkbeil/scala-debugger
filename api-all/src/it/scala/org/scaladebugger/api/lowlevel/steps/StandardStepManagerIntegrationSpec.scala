@@ -2,9 +2,9 @@ package org.scaladebugger.api.lowlevel.steps
 
 import com.sun.jdi.ThreadReference
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.{ApiTestUtilities, ParallelMockFunSpec, VirtualMachineFixtures}
 import org.scalatest.time.Seconds
-import test.{ApiTestUtilities, VirtualMachineFixtures}
+import test.VirtualMachineFixtures
 
 class StandardStepManagerIntegrationSpec extends ParallelMockFunSpec
   with VirtualMachineFixtures

@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicInteger
 
 import org.scaladebugger.api.utils.JDITools
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 import test.{ApiTestUtilities, VirtualMachineFixtures}
 
 class JavaThreadStartRequestIntegrationSpec extends ParallelMockFunSpec

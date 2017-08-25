@@ -2,10 +2,10 @@ package org.scaladebugger.api.profiles.java.requests.steps
 
 import org.scaladebugger.api.interfaces.profiles.info.ThreadInfo
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.{ApiTestUtilities, ParallelMockFunSpec, VirtualMachineFixtures}
 import org.scalatest.concurrent.Eventually
 import org.scalatest.time.Seconds
-import test.{ApiTestUtilities, VirtualMachineFixtures}
+import test.VirtualMachineFixtures
 
 class JavaStepRequestScala210IntegrationSpec extends ParallelMockFunSpec
   with VirtualMachineFixtures

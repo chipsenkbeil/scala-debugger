@@ -4,7 +4,7 @@ import com.sun.jdi.{Location, ObjectReference, ThreadReference, VirtualMachine}
 import com.sun.jdi.event._
 import com.sun.jdi.request.EventRequest
 import org.scaladebugger.api.interfaces.profiles.info.events.MonitorEvent
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 class MonitorEventSpec extends ParallelMockFunSpec {
   describe("MonitorEvent") {

@@ -4,8 +4,8 @@ import java.net.ServerSocket
 import java.util.concurrent.atomic.AtomicInteger
 
 import org.scaladebugger.api.utils.JDITools
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
-import test.{ApiTestUtilities, VirtualMachineFixtures}
+import org.scaladebugger.test.utils.{ApiTestUtilities, ParallelMockFunSpec, VirtualMachineFixtures}
+import test.VirtualMachineFixtures
 
 import scala.util.Try
 

@@ -4,7 +4,7 @@ import com.sun.jdi.connect.{AttachingConnector, Connector}
 import com.sun.jdi.{VirtualMachine, VirtualMachineManager}
 import org.scaladebugger.api.profiles.ProfileManager
 import org.scaladebugger.api.virtualmachines.{ScalaVirtualMachine, StandardScalaVirtualMachine}
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 import scala.collection.JavaConverters._
 

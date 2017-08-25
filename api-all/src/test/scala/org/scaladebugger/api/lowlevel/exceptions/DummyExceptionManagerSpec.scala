@@ -5,7 +5,7 @@ import com.sun.jdi.{ReferenceType, VirtualMachine}
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 import org.scaladebugger.api.lowlevel.DummyOperationException
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 import scala.collection.JavaConverters._
 import scala.util.{Failure, Success}

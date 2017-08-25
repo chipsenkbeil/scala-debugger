@@ -1,6 +1,6 @@
 package org.scaladebugger.api.utils
 
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 class JVMOptionsSpec extends ParallelMockFunSpec {
   describe("JVMOptions") {

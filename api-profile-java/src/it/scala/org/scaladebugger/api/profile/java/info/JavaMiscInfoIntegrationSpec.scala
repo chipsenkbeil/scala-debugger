@@ -1,6 +1,6 @@
 package org.scaladebugger.api.profiles.java.info
 
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 import test.{ApiTestUtilities, VirtualMachineFixtures}
 
 class JavaMiscInfoIntegrationSpec extends ParallelMockFunSpec

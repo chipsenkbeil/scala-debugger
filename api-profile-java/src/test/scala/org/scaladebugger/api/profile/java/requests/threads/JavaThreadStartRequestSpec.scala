@@ -7,7 +7,7 @@ import org.scaladebugger.api.lowlevel.events.{EventManager, JDIEventArgument}
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 import org.scaladebugger.api.lowlevel.threads.{PendingThreadStartSupportLike, ThreadStartManager, ThreadStartRequestInfo}
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 import test.{JDIMockHelpers, TestRequestHelper}
 
 import scala.util.Success

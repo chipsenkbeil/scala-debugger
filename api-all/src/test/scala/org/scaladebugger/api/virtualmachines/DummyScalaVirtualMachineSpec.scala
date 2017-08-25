@@ -12,7 +12,7 @@ import org.scaladebugger.api.lowlevel.steps.{DummyStepManager, PendingStepSuppor
 import org.scaladebugger.api.lowlevel.threads.{DummyThreadDeathManager, DummyThreadStartManager, PendingThreadDeathSupport, PendingThreadStartSupport}
 import org.scaladebugger.api.lowlevel.vm.{DummyVMDeathManager, PendingVMDeathSupport}
 import org.scaladebugger.api.lowlevel.watchpoints.{DummyAccessWatchpointManager, DummyModificationWatchpointManager, PendingAccessWatchpointSupport, PendingModificationWatchpointSupport}
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 class DummyScalaVirtualMachineSpec extends ParallelMockFunSpec
 {

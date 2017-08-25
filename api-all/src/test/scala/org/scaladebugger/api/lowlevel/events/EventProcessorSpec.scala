@@ -2,7 +2,7 @@ package org.scaladebugger.api.lowlevel.events
 
 import com.sun.jdi.event.Event
 import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 class EventProcessorSpec extends ParallelMockFunSpec {
   private val mockEvent = mock[Event]

@@ -3,7 +3,7 @@ package org.scaladebugger.api.lowlevel.events.filters
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 import org.scaladebugger.api.lowlevel.events.filters.processors.CustomPropertyFilterProcessor
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 class UniqueIdPropertyFilterSpec extends ParallelMockFunSpec
 {

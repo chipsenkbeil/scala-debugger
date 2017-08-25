@@ -6,7 +6,7 @@ import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 import org.scaladebugger.api.lowlevel.events.EventManager.EventHandler
 import org.scaladebugger.api.lowlevel.events.EventType.EventType
 import org.scaladebugger.api.lowlevel.events.data.{JDIEventDataRequest, JDIEventDataResult}
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 import test.TestEventManager
 
 class EventManagerSpec extends ParallelMockFunSpec

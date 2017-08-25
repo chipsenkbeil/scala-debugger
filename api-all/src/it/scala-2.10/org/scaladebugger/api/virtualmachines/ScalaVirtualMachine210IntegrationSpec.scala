@@ -1,9 +1,9 @@
 package org.scaladebugger.api.virtualmachines
 
 import org.scaladebugger.api.utils.JDITools
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.{ApiTestUtilities, ParallelMockFunSpec, VirtualMachineFixtures}
 import org.scalatest.concurrent.Eventually
-import test.{ApiTestUtilities, VirtualMachineFixtures}
+import test.VirtualMachineFixtures
 
 /** Specific to Scala 2.10 */
 class ScalaVirtualMachine210IntegrationSpec extends ParallelMockFunSpec

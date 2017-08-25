@@ -6,7 +6,7 @@ import com.sun.jdi.request.{EventRequest, EventRequestManager, MonitorContendedE
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 import org.scaladebugger.api.lowlevel.requests.{JDIRequestArgument, JDIRequestProcessor}
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 import scala.util.{Failure, Success}
 

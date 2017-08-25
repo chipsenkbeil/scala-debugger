@@ -5,7 +5,7 @@ import com.sun.jdi.request.EventRequest
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 import org.scaladebugger.api.lowlevel.events.filters.CustomPropertyFilter
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 class CustomPropertyFilterProcessorSpec extends ParallelMockFunSpec
 {

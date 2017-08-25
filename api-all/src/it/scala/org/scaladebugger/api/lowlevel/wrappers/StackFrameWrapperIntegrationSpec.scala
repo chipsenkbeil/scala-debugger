@@ -6,8 +6,8 @@ import org.scaladebugger.api.lowlevel.events.EventType
 import org.scaladebugger.api.lowlevel.events.EventType.BreakpointEventType
 import org.scaladebugger.api.utils.JDITools
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
-import test.{ApiTestUtilities, VirtualMachineFixtures}
+import org.scaladebugger.test.utils.{ApiTestUtilities, ParallelMockFunSpec, VirtualMachineFixtures}
+import test.VirtualMachineFixtures
 
 import scala.util.Try
 

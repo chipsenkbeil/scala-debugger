@@ -4,7 +4,7 @@ import com.sun.jdi.event._
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers}
 import EventType._
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 class EventTypeSpec extends ParallelMockFunSpec {
   describe("EventType") {

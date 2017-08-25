@@ -5,8 +5,8 @@ import org.scaladebugger.api.lowlevel.events.misc.NoResume
 import org.scaladebugger.api.profiles.java.JavaDebugProfile
 import org.scaladebugger.api.utils.JDITools
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
-import test.{ApiTestUtilities, VirtualMachineFixtures}
+import org.scaladebugger.test.utils.{ApiTestUtilities, ParallelMockFunSpec, VirtualMachineFixtures}
+import test.VirtualMachineFixtures
 
 class JavaFrameInfoScala210IntegrationSpec extends ParallelMockFunSpec
   with VirtualMachineFixtures

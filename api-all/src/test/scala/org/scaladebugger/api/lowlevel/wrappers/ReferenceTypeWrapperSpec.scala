@@ -1,7 +1,7 @@
 package org.scaladebugger.api.lowlevel.wrappers
 
 import com.sun.jdi.{ClassNotPreparedException, Field, ReferenceType}
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 import test.JDIMockHelpers
 
 import scala.collection.JavaConverters._

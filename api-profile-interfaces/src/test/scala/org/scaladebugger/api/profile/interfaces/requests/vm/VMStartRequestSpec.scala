@@ -3,7 +3,7 @@ package org.scaladebugger.api.profiles.requests.vm
 import org.scaladebugger.api.interfaces.profiles.requests.vm.VMStartRequest
 import org.scaladebugger.api.lowlevel.JDIArgument
 import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 import scala.util.{Failure, Success, Try}
 

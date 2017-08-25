@@ -2,7 +2,7 @@ package org.scaladebugger.api.debuggers
 import com.sun.jdi.connect.{AttachingConnector, Connector}
 import com.sun.jdi.{VirtualMachine, VirtualMachineManager}
 import org.scaladebugger.api.virtualmachines.{ScalaVirtualMachine, ScalaVirtualMachineManager, StandardScalaVirtualMachine}
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 import scala.collection.JavaConverters._
 

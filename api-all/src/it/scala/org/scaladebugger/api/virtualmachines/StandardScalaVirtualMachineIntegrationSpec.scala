@@ -1,7 +1,7 @@
 package org.scaladebugger.api.virtualmachines
 
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
-import test.{ApiTestUtilities, VirtualMachineFixtures}
+import org.scaladebugger.test.utils.{ApiTestUtilities, ParallelMockFunSpec, VirtualMachineFixtures}
+import test.VirtualMachineFixtures
 
 class StandardScalaVirtualMachineIntegrationSpec extends ParallelMockFunSpec
   with VirtualMachineFixtures

@@ -1,6 +1,6 @@
 package org.scaladebugger.api.profiles.swappable.info
 import com.sun.jdi._
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 import sun.reflect.FieldInfo

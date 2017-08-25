@@ -2,7 +2,7 @@ package org.scaladebugger.api.lowlevel.events.misc.processors
 
 import com.sun.jdi.event.Event
 import org.scaladebugger.api.lowlevel.events.misc.{NoResume, YesResume}
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 

@@ -1,6 +1,6 @@
 package org.scaladebugger.api.pipelines
 
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 class NoOperationSpec extends ParallelMockFunSpec {
   describe("NoOperation") {

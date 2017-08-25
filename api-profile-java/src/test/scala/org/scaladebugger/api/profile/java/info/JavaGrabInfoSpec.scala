@@ -4,7 +4,7 @@ import com.sun.jdi._
 import org.scaladebugger.api.interfaces.lowlevel.classes.ClassManager
 import org.scaladebugger.api.lowlevel.wrappers.ReferenceTypeWrapper
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 

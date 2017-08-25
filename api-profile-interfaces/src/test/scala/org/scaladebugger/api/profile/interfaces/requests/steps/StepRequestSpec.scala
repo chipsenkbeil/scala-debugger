@@ -4,7 +4,7 @@ import org.scaladebugger.api.interfaces.profiles.requests.steps.StepRequest
 import org.scaladebugger.api.lowlevel.JDIArgument
 import org.scaladebugger.api.lowlevel.events.data.JDIEventDataResult
 import org.scaladebugger.api.lowlevel.steps.StepRequestInfo
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 import org.scalatest.concurrent.ScalaFutures
 
 import scala.concurrent._

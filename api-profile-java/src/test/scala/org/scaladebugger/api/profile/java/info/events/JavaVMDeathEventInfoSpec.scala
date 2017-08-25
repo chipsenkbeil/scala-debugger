@@ -5,7 +5,7 @@ import com.sun.jdi.{ReferenceType, ThreadReference, VirtualMachine}
 import org.scaladebugger.api.lowlevel.events.JDIEventArgument
 import org.scaladebugger.api.lowlevel.requests.JDIRequestArgument
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
-import org.scaladebugger.test.helpers.ParallelMockFunSpec
+import org.scaladebugger.test.utils.ParallelMockFunSpec
 
 class JavaVMDeathEventInfoSpec extends ParallelMockFunSpec {
   private val mockScalaVirtualMachine = mock[ScalaVirtualMachine]

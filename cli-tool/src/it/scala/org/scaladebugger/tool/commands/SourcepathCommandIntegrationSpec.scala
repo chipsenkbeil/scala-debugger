@@ -2,12 +2,12 @@ package org.scaladebugger.tool.commands
 
 import java.nio.file.Paths
 
-import org.scaladebugger.test.helpers.FixedParallelSuite
+import org.scaladebugger.test.utils.FixedParallelSuite
 import org.scaladebugger.tool.Repl
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.concurrent.Eventually
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
-import test.{ToolConstants, ToolTestUtilities, ToolFixtures}
+import test.{ToolConstants, ToolFixtures, ToolTestUtilities}
 
 class SourcepathCommandIntegrationSpec extends FunSpec with Matchers
   with ParallelTestExecution with ToolFixtures with MockFactory

@@ -13,7 +13,8 @@ lazy val apiAll = project
   .dependsOn(apiLowlevelJVM % "compile->compile;test->compile;it->compile")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
-  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
+  .dependsOn(testExternal % "test->compile;it->compile")
+  .dependsOn(testUtils % "test->compile;it->compile")
 
 //
 // DEBUGGER API SCALA 2.10 IMPLEMENTATION PROJECT CONFIGURATION
@@ -29,7 +30,8 @@ lazy val apiProfileScala210 = project
   .dependsOn(apiLowlevelJVM % "compile->compile;test->compile;it->compile")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
-  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
+  .dependsOn(testExternal % "test->compile;it->compile")
+  .dependsOn(testUtils % "test->compile;it->compile")
 
 //
 // DEBUGGER API PROFILE JAVA IMPLEMENTATION PROJECT CONFIGURATION
@@ -44,7 +46,8 @@ lazy val apiProfileJava = project
   .dependsOn(apiLowlevelJVM % "compile->compile;test->compile;it->compile")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
-  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
+  .dependsOn(testExternal % "test->compile;it->compile")
+  .dependsOn(testUtils % "test->compile;it->compile")
 
 //
 // DEBUGGER API PROFILE SWAPPABLE IMPLEMENTATION PROJECT CONFIGURATION
@@ -59,7 +62,8 @@ lazy val apiProfileSwappable = project
   .dependsOn(apiLowlevelJVM % "compile->compile;test->compile;it->compile")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
-  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
+  .dependsOn(testExternal % "test->compile;it->compile")
+  .dependsOn(testUtils % "test->compile;it->compile")
 
 //
 // DEBUGGER API LOWLEVEL IMPLEMENTATION PROJECT CONFIGURATION
@@ -74,7 +78,8 @@ lazy val apiLowlevelJVM = project
   .dependsOn(apiLowlevelInterfaces % "compile->compile;test->compile;it->compile")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
-  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
+  .dependsOn(testExternal % "test->compile;it->compile")
+  .dependsOn(testUtils % "test->compile;it->compile")
 
 //
 // DEBUGGER API ALL INTERFACES PROJECT CONFIGURATION
@@ -89,7 +94,8 @@ lazy val apiAllInterfaces = project
   .dependsOn(apiLowlevelInterfaces % "compile->compile;test->compile;it->compile")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
-  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
+  .dependsOn(testExternal % "test->compile;it->compile")
+  .dependsOn(testUtils % "test->compile;it->compile")
 
 //
 // DEBUGGER API PROFILE INTERFACES PROJECT CONFIGURATION
@@ -104,7 +110,8 @@ lazy val apiProfileInterfaces = project
   .dependsOn(apiLowlevelInterfaces % "compile->compile;test->compile;it->compile")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
-  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
+  .dependsOn(testExternal % "test->compile;it->compile")
+  .dependsOn(testUtils % "test->compile;it->compile")
 
 //
 // DEBUGGER API LOWLEVEL INTERFACES PROJECT CONFIGURATION
@@ -118,7 +125,8 @@ lazy val apiLowlevelInterfaces = project
   .settings(name := "api-lowlevel-interfaces")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
-  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
+  .dependsOn(testExternal % "test->compile;it->compile")
+  .dependsOn(testUtils % "test->compile;it->compile")
 
 //
 // DEBUGGER API UTILS PROJECT CONFIGURATION
@@ -130,7 +138,8 @@ lazy val apiUtils = project
   .settings(Defaults.itSettings: _*)
   .settings(ApiUtils.settings: _*)
   .settings(name := "api-utils")
-  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
+  .dependsOn(testExternal % "test->compile;it->compile")
+  .dependsOn(testUtils % "test->compile;it->compile")
 
 //
 // DEBUGGER API UTILS PROJECT CONFIGURATION
@@ -142,10 +151,11 @@ lazy val apiPipelines = project
   .settings(Defaults.itSettings: _*)
   .settings(ApiPipelines.settings: _*)
   .settings(name := "api-pipelines")
-  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
+  .dependsOn(testExternal % "test->compile;it->compile")
+  .dependsOn(testUtils % "test->compile;it->compile")
 
 //
-// DEBUGGER TEST CODE PROJECT CONFIGURATION
+// EXTERNAL TEST CODE PROJECT CONFIGURATION
 //
 lazy val testExternal = project
   .in(file("test-external"))
@@ -153,6 +163,21 @@ lazy val testExternal = project
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
   .settings(TestExternal.settings: _*)
+  .settings(
+    // Do not publish the test project
+    publishArtifact := false,
+    publishLocal := {}
+  )
+
+//
+// TEST UTILS PROJECT CONFIGURATION
+//
+lazy val testUtils = project
+  .in(file("test-utils"))
+  .configs(IntegrationTest)
+  .settings(Common.settings: _*)
+  .settings(Defaults.itSettings: _*)
+  .settings(TestUtils.settings: _*)
   .settings(
     // Do not publish the test project
     publishArtifact := false,
@@ -192,6 +217,7 @@ lazy val sidl = project
   .settings(Sidl.settings: _*)
   .settings(name := "sidl")
   .dependsOn(apiAll % "compile->compile;test->compile;it->compile")
+  .dependsOn(testUtils % "test->compile;it->compile")
 
 //
 // DEBUGGER TOOL PROJECT CONFIGURATION
@@ -205,7 +231,8 @@ lazy val cliTool = project
   .settings(name := "cli-tool")
   .dependsOn(apiAll % "compile->compile;test->compile;it->compile")
   .dependsOn(sidl % "compile->compile;test->compile;it->compile")
-  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
+  .dependsOn(testExternal % "test->compile;it->compile")
+  .dependsOn(testUtils % "test->compile;it->compile")
 
 //
 // SBT SCALA DEBUGGER PLUGIN
@@ -216,7 +243,7 @@ lazy val sbtPlugin = project
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
   .settings(SbtPlugin.settings: _*)
-  .settings(name := "sbt-scala-debugger")
+  .settings(name := "sbt-debugger")
   .enablePlugins(CrossPerProjectPlugin)
 
 //
