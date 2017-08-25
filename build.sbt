@@ -181,7 +181,7 @@ lazy val cliTool = project
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
-  .settings(Tool.settings: _*)
+  .settings(CliTool.settings: _*)
   .settings(name := "cli-tool")
   .dependsOn(apiAll % "compile->compile;test->compile;it->compile")
   .dependsOn(sidl % "compile->compile;test->compile;it->compile")

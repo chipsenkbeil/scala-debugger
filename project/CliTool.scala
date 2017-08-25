@@ -2,7 +2,7 @@ import sbt.Keys._
 import sbt._
 import sbtassembly.AssemblyKeys._
 
-object Tool {
+object CliTool {
   lazy val ammoniteVersion = settingKey[String](
     "Version of Ammonite used in projects"
   )
