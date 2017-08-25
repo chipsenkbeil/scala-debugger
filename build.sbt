@@ -9,6 +9,7 @@ lazy val apiAll = project
   .settings(name := "api-all")
   .dependsOn(apiProfileScala210 % "compile->compile;test->compile;it->compile")
   .dependsOn(apiProfileJava % "compile->compile;test->compile;it->compile")
+  .dependsOn(apiProfileSwappable % "compile->compile;test->compile;it->compile")
   .dependsOn(apiLowlevelJVM % "compile->compile;test->compile;it->compile")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
@@ -40,6 +41,21 @@ lazy val apiProfileJava = project
   .settings(Defaults.itSettings: _*)
   .settings(ApiProfileJava.settings: _*)
   .settings(name := "api-profile-java")
+  .dependsOn(apiLowlevelJVM % "compile->compile;test->compile;it->compile")
+  .dependsOn(macros % "compile->compile;test->compile;it->compile")
+  .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
+  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
+
+//
+// DEBUGGER API PROFILE SWAPPABLE IMPLEMENTATION PROJECT CONFIGURATION
+//
+lazy val apiProfileSwappable = project
+  .in(file("api-profile-swappable"))
+  .configs(IntegrationTest)
+  .settings(Common.settings: _*)
+  .settings(Defaults.itSettings: _*)
+  .settings(ApiProfileSwappable.settings: _*)
+  .settings(name := "api-profile-swappable")
   .dependsOn(apiLowlevelJVM % "compile->compile;test->compile;it->compile")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
@@ -219,6 +235,7 @@ lazy val root = project
     apiAllInterfaces,
     apiProfileScala210,
     apiProfileJava,
+    apiProfileSwappable,
     apiProfileInterfaces,
     apiLowlevelJVM,
     apiLowlevelInterfaces,
