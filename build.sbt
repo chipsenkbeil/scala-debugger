@@ -7,9 +7,9 @@ lazy val apiAll = project
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
   .settings(name := "api-all")
-  .dependsOn(apiProfileScala210 % "compile->compile;test->compile;it->compile")
-  .dependsOn(apiProfileJava % "compile->compile;test->compile;it->compile")
-  .dependsOn(apiProfileSwappable % "compile->compile;test->compile;it->compile")
+  .dependsOn(apiProfilesScala210 % "compile->compile;test->compile;it->compile")
+  .dependsOn(apiProfilesJava % "compile->compile;test->compile;it->compile")
+  .dependsOn(apiProfilesSwappable % "compile->compile;test->compile;it->compile")
   .dependsOn(apiLowlevelJVM % "compile->compile;test->compile;it->compile")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
@@ -19,14 +19,15 @@ lazy val apiAll = project
 //
 // DEBUGGER API SCALA 2.10 IMPLEMENTATION PROJECT CONFIGURATION
 //
-lazy val apiProfileScala210 = project
-  .in(file("api-profile-scala210"))
+lazy val apiProfilesScala210 = project
+  .in(file("api-profiles-scala210"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
-  .settings(ApiProfileScala210.settings: _*)
-  .settings(name := "api-profile-scala210")
-  .dependsOn(apiProfileJava % "compile->compile;test->compile;it->compile")
+  .settings(ApiProfilesScala210.settings: _*)
+  .settings(name := "api-profiles-scala210")
+  .dependsOn(apiProfilesInterfaces % "compile->compile;test->compile;it->compile")
+  .dependsOn(apiProfilesJava % "compile->compile;test->compile;it->compile")
   .dependsOn(apiLowlevelJVM % "compile->compile;test->compile;it->compile")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
@@ -36,13 +37,14 @@ lazy val apiProfileScala210 = project
 //
 // DEBUGGER API PROFILE JAVA IMPLEMENTATION PROJECT CONFIGURATION
 //
-lazy val apiProfileJava = project
-  .in(file("api-profile-java"))
+lazy val apiProfilesJava = project
+  .in(file("api-profiles-java"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
-  .settings(ApiProfileJava.settings: _*)
-  .settings(name := "api-profile-java")
+  .settings(ApiProfilesJava.settings: _*)
+  .settings(name := "api-profiles-java")
+  .dependsOn(apiProfilesInterfaces % "compile->compile;test->compile;it->compile")
   .dependsOn(apiLowlevelJVM % "compile->compile;test->compile;it->compile")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
@@ -52,13 +54,14 @@ lazy val apiProfileJava = project
 //
 // DEBUGGER API PROFILE SWAPPABLE IMPLEMENTATION PROJECT CONFIGURATION
 //
-lazy val apiProfileSwappable = project
-  .in(file("api-profile-swappable"))
+lazy val apiProfilesSwappable = project
+  .in(file("api-profiles-swappable"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
-  .settings(ApiProfileSwappable.settings: _*)
-  .settings(name := "api-profile-swappable")
+  .settings(ApiProfilesSwappable.settings: _*)
+  .settings(name := "api-profiles-swappable")
+  .dependsOn(apiProfilesInterfaces % "compile->compile;test->compile;it->compile")
   .dependsOn(apiLowlevelJVM % "compile->compile;test->compile;it->compile")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
@@ -90,7 +93,7 @@ lazy val apiAllInterfaces = project
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
   .settings(name := "api-all-interfaces")
-  .dependsOn(apiProfileInterfaces % "compile->compile;test->compile;it->compile")
+  .dependsOn(apiProfilesInterfaces % "compile->compile;test->compile;it->compile")
   .dependsOn(apiLowlevelInterfaces % "compile->compile;test->compile;it->compile")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
@@ -100,13 +103,13 @@ lazy val apiAllInterfaces = project
 //
 // DEBUGGER API PROFILE INTERFACES PROJECT CONFIGURATION
 //
-lazy val apiProfileInterfaces = project
-  .in(file("api-profile-interfaces"))
+lazy val apiProfilesInterfaces = project
+  .in(file("api-profiles-interfaces"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
-  .settings(ApiProfileInterfaces.settings: _*)
-  .settings(name := "api-profile-interfaces")
+  .settings(ApiProfilesInterfaces.settings: _*)
+  .settings(name := "api-profiles-interfaces")
   .dependsOn(apiLowlevelInterfaces % "compile->compile;test->compile;it->compile")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
@@ -260,10 +263,10 @@ lazy val root = project
   ).aggregate(
     apiAll,
     apiAllInterfaces,
-    apiProfileScala210,
-    apiProfileJava,
-    apiProfileSwappable,
-    apiProfileInterfaces,
+    apiProfilesScala210,
+    apiProfilesJava,
+    apiProfilesSwappable,
+    apiProfilesInterfaces,
     apiLowlevelJVM,
     apiLowlevelInterfaces,
     apiPipelines,
