@@ -4,6 +4,7 @@ import java.util.concurrent._
 import java.util.concurrent.atomic.AtomicInteger
 
 import org.scaladebugger.test.utils.ControlledParallelSuite._
+import org.scalatest.{Args, Distributor, Status, Suite}
 
 import scala.util.Try
 

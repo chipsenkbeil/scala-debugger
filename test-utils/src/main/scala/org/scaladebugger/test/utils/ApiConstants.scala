@@ -1,5 +1,8 @@
 package org.scaladebugger.test.utils
 
+import org.scalatest.Tag
+import org.scalatest.time.{Milliseconds, Seconds, Span}
+
 /**
  * Constants for our tests.
  */

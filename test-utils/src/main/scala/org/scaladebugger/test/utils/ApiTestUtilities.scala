@@ -5,6 +5,9 @@ import java.util.concurrent.atomic.AtomicBoolean
 import com.sun.jdi.ThreadReference
 import com.sun.jdi.event.{BreakpointEvent, StepEvent}
 import org.scaladebugger.test.utils
+import org.scalatest.concurrent.Eventually
+import org.scalatest.concurrent.PatienceConfiguration.{Interval, Timeout}
+import org.scalatest.time.{Milliseconds, Span, Units}
 
 /**
  * Contains helper methods for testing.

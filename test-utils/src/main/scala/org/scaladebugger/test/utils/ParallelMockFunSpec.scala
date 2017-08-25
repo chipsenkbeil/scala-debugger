@@ -1,5 +1,8 @@
 package org.scaladebugger.test.utils
 
+import org.scalamock.scalatest.MockFactory
+import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
+
 abstract class ParallelMockFunSpec
   extends FunSpec
     with Matchers
