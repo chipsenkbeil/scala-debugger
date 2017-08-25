@@ -1,5 +1,7 @@
 package org.scaladebugger.api.utils
 
+import org.scaladebugger.api.utils.ActionInfo.{Action, ActionId}
+
 /**
  * Represents the information about an action.
  *

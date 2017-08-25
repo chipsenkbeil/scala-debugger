@@ -18,7 +18,7 @@ class JDITools private[utils] extends JDILoader with Logging {
    * @param classString The class string to convert
    * @return The resulting file string
    */
-  def scalaClassStringToFileString(classString: String) =
+  def scalaClassStringToFileString(classString: String): String =
     classString.replace('.', java.io.File.separatorChar) + ".scala"
 
   /**

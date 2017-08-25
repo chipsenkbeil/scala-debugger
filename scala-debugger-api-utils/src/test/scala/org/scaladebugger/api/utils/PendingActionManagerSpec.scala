@@ -2,6 +2,7 @@ package org.scaladebugger.api.utils
 
 import java.util.concurrent.atomic.AtomicBoolean
 
+import org.scaladebugger.api.utils.ActionInfo.ActionId
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 import org.scaladebugger.test.helpers.ParallelMockFunSpec

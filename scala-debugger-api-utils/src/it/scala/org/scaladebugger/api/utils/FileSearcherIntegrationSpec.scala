@@ -3,12 +3,11 @@ package org.scaladebugger.api.utils
 import java.nio.file.Paths
 
 import org.scaladebugger.test.helpers.ParallelMockFunSpec
-import test.{ApiTestUtilities, VirtualMachineFixtures}
 
 class FileSearcherIntegrationSpec extends ParallelMockFunSpec {
   private val fileSearcher = new FileSearcher
   private lazy val searchPath = Paths.get(
-    ClassLoader.getSystemResource("file_searcher").toURI
+    getClass.getClassLoader.getResource("file_searcher").toURI
   )
 
   describe("FileSearcher") {

@@ -8,7 +8,7 @@ import org.slf4j.{ Logger, LoggerFactory }
  */
 trait Logging {
   private val loggerName = this.getClass.getName
-  protected val logger = LoggerFactory.getLogger(loggerName)
+  protected val logger: Logger = LoggerFactory.getLogger(loggerName)
 
   implicit class LoggerExtras(private val logger: Logger) {
     def throwable(throwable: Throwable): Unit = {
