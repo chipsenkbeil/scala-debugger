@@ -9,7 +9,7 @@ object Common {
   )
 
   def settings: Seq[Setting[_]] = Seq(
-    version := "1.1.0-M3",
+    version := "0.1.0-M1",
 
     organization := "org.scala-debugger",
 
