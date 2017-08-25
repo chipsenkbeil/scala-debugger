@@ -3,7 +3,9 @@
 //
 lazy val apiAll = project
   .in(file("api-all"))
+  .configs(IntegrationTest)
   .settings(Common.settings: _*)
+  .settings(Defaults.itSettings: _*)
   .settings(name := "api-all")
   .dependsOn(apiProfileScala210 % "compile->compile;test->compile;it->compile")
   .dependsOn(apiProfileJava % "compile->compile;test->compile;it->compile")
@@ -63,7 +65,9 @@ lazy val apiLowlevelJVM = project
 //
 lazy val apiAllInterfaces = project
   .in(file("api-all-interfaces"))
+  .configs(IntegrationTest)
   .settings(Common.settings: _*)
+  .settings(Defaults.itSettings: _*)
   .settings(name := "api-all-interfaces")
   .dependsOn(apiProfileInterfaces % "compile->compile;test->compile;it->compile")
   .dependsOn(apiLowlevelInterfaces % "compile->compile;test->compile;it->compile")
