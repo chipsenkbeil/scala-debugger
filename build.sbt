@@ -1,66 +1,138 @@
 //
-// DEBUGGER API CORE PROJECT CONFIGURATION
+// DEBUGGER API ALL IMPLEMENTATION PROJECT CONFIGURATION
 //
-lazy val scalaDebuggerApiCore = project
-  .in(file("scala-debugger-api-core"))
-  .configs(IntegrationTest)
+lazy val apiAll = project
+  .in(file("api-all"))
   .settings(Common.settings: _*)
-  .settings(Defaults.itSettings: _*)
-  .settings(ApiCore.settings: _*)
-  .settings(name := "scala-debugger-api-core")
-  .dependsOn(scalaDebuggerApiInterfaces % "compile->compile;test->compile;it->compile")
-  .dependsOn(scalaDebuggerApiPipelines % "compile->compile;test->compile;it->compile")
-  .dependsOn(scalaDebuggerApiUtils % "compile->compile;test->compile;it->compile")
-  .dependsOn(scalaDebuggerMacros % "compile->compile;test->compile;it->compile")
-  .dependsOn(scalaDebuggerTest % "test->compile;it->compile;test->test;it->test")
+  .settings(name := "api-all")
+  .dependsOn(apiProfileScala210 % "compile->compile;test->compile;it->compile")
+  .dependsOn(apiProfileJava % "compile->compile;test->compile;it->compile")
+  .dependsOn(apiLowlevelJVM % "compile->compile;test->compile;it->compile")
+  .dependsOn(macros % "compile->compile;test->compile;it->compile")
+  .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
+  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
 
 //
-// DEBUGGER API INTERFACE PROJECT CONFIGURATION
+// DEBUGGER API SCALA 2.10 IMPLEMENTATION PROJECT CONFIGURATION
 //
-lazy val scalaDebuggerApiInterfaces = project
-  .in(file("scala-debugger-api-interfaces"))
+lazy val apiProfileScala210 = project
+  .in(file("api-profile-scala210"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
-  .settings(ApiInterfaces.settings: _*)
-  .settings(name := "scala-debugger-api-interfaces")
-  .dependsOn(scalaDebuggerMacros % "compile->compile;test->compile;it->compile")
-  .dependsOn(scalaDebuggerApiPipelines % "compile->compile;test->compile;it->compile")
-  .dependsOn(scalaDebuggerTest % "test->compile;it->compile;test->test;it->test")
+  .settings(ApiProfileScala210.settings: _*)
+  .settings(name := "api-profile-scala210")
+  .dependsOn(apiProfileJava % "compile->compile;test->compile;it->compile")
+  .dependsOn(apiLowlevelJVM % "compile->compile;test->compile;it->compile")
+  .dependsOn(macros % "compile->compile;test->compile;it->compile")
+  .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
+  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
+
+//
+// DEBUGGER API PROFILE JAVA IMPLEMENTATION PROJECT CONFIGURATION
+//
+lazy val apiProfileJava = project
+  .in(file("api-profile-java"))
+  .configs(IntegrationTest)
+  .settings(Common.settings: _*)
+  .settings(Defaults.itSettings: _*)
+  .settings(ApiProfileJava.settings: _*)
+  .settings(name := "api-profile-java")
+  .dependsOn(apiLowlevelJVM % "compile->compile;test->compile;it->compile")
+  .dependsOn(macros % "compile->compile;test->compile;it->compile")
+  .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
+  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
+
+//
+// DEBUGGER API LOWLEVEL IMPLEMENTATION PROJECT CONFIGURATION
+//
+lazy val apiLowlevelJVM = project
+  .in(file("api-lowlevel-jvm"))
+  .configs(IntegrationTest)
+  .settings(Common.settings: _*)
+  .settings(Defaults.itSettings: _*)
+  .settings(ApiLowlevelJVM.settings: _*)
+  .settings(name := "api-lowlevel-jvm")
+  .dependsOn(apiLowlevelInterfaces % "compile->compile;test->compile;it->compile")
+  .dependsOn(macros % "compile->compile;test->compile;it->compile")
+  .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
+  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
+
+//
+// DEBUGGER API ALL INTERFACES PROJECT CONFIGURATION
+//
+lazy val apiAllInterfaces = project
+  .in(file("api-all-interfaces"))
+  .settings(Common.settings: _*)
+  .settings(name := "api-all-interfaces")
+  .dependsOn(apiProfileInterfaces % "compile->compile;test->compile;it->compile")
+  .dependsOn(apiLowlevelInterfaces % "compile->compile;test->compile;it->compile")
+  .dependsOn(macros % "compile->compile;test->compile;it->compile")
+  .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
+  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
+
+//
+// DEBUGGER API PROFILE INTERFACES PROJECT CONFIGURATION
+//
+lazy val apiProfileInterfaces = project
+  .in(file("api-profile-interfaces"))
+  .configs(IntegrationTest)
+  .settings(Common.settings: _*)
+  .settings(Defaults.itSettings: _*)
+  .settings(ApiProfileInterfaces.settings: _*)
+  .settings(name := "api-profile-interfaces")
+  .dependsOn(apiLowlevelInterfaces % "compile->compile;test->compile;it->compile")
+  .dependsOn(macros % "compile->compile;test->compile;it->compile")
+  .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
+  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
+
+//
+// DEBUGGER API LOWLEVEL INTERFACES PROJECT CONFIGURATION
+//
+lazy val apiLowlevelInterfaces = project
+  .in(file("api-lowlevel-interfaces"))
+  .configs(IntegrationTest)
+  .settings(Common.settings: _*)
+  .settings(Defaults.itSettings: _*)
+  .settings(ApiLowlevelInterfaces.settings: _*)
+  .settings(name := "api-lowlevel-interfaces")
+  .dependsOn(macros % "compile->compile;test->compile;it->compile")
+  .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
+  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
 
 //
 // DEBUGGER API UTILS PROJECT CONFIGURATION
 //
-lazy val scalaDebuggerApiUtils = project
-  .in(file("scala-debugger-api-utils"))
+lazy val apiUtils = project
+  .in(file("api-utils"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
   .settings(ApiUtils.settings: _*)
-  .settings(name := "scala-debugger-api-utils")
-  .dependsOn(scalaDebuggerTest % "test->compile;it->compile;test->test;it->test")
+  .settings(name := "api-utils")
+  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
 
 //
 // DEBUGGER API UTILS PROJECT CONFIGURATION
 //
-lazy val scalaDebuggerApiPipelines = project
-  .in(file("scala-debugger-api-pipelines"))
+lazy val apiPipelines = project
+  .in(file("api-pipelines"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
   .settings(ApiPipelines.settings: _*)
-  .settings(name := "scala-debugger-api-pipelines")
-  .dependsOn(scalaDebuggerTest % "test->compile;it->compile;test->test;it->test")
+  .settings(name := "api-pipelines")
+  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
 
 //
 // DEBUGGER TEST CODE PROJECT CONFIGURATION
 //
-lazy val scalaDebuggerTest = project
-  .in(file("scala-debugger-test"))
+lazy val testExternal = project
+  .in(file("test-external"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
-  .settings(DebuggerTest.settings: _*)
+  .settings(TestExternal.settings: _*)
   .settings(
     // Do not publish the test project
     publishArtifact := false,
@@ -70,57 +142,56 @@ lazy val scalaDebuggerTest = project
 //
 // DEBUGGER MACRO PROJECT CONFIGURATION
 //
-lazy val scalaDebuggerMacros = project
-  .in(file("scala-debugger-macros"))
+lazy val macros = project
+  .in(file("macros"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
   .settings(Macros.settings: _*)
-  .settings(name := "scala-debugger-macros")
+  .settings(name := "macros")
 
 //
 // DEBUGGER DOC PROJECT CONFIGURATION
 //
-lazy val scalaDebuggerDocs = project
-  .in(file("scala-debugger-docs"))
+lazy val docs = project
+  .in(file("docs"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
   .settings(Docs.settings: _*)
-  .settings(name := "scala-debugger-docs")
+  .settings(name := "docs")
 
 //
 // LANGUAGE PROJECT CONFIGURATION
 //
-lazy val scalaDebuggerLanguage = project
-  .in(file("scala-debugger-language"))
+lazy val sidl = project
+  .in(file("sidl"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
-  .settings(Language.settings: _*)
-  .settings(Macros.settings: _*)
-  .settings(name := "scala-debugger-language")
-  .dependsOn(scalaDebuggerApiCore % "compile->compile;test->compile;it->compile")
+  .settings(Sidl.settings: _*)
+  .settings(name := "sidl")
+  .dependsOn(apiAll % "compile->compile;test->compile;it->compile")
 
 //
 // DEBUGGER TOOL PROJECT CONFIGURATION
 //
-lazy val scalaDebuggerTool = project
-  .in(file("scala-debugger-tool"))
+lazy val cliTool = project
+  .in(file("cli-tool"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
   .settings(Tool.settings: _*)
-  .settings(name := "scala-debugger-tool")
-  .dependsOn(scalaDebuggerApiCore % "compile->compile;test->compile;it->compile")
-  .dependsOn(scalaDebuggerLanguage % "compile->compile;test->compile;it->compile")
-  .dependsOn(scalaDebuggerTest % "test->compile;it->compile;test->test;it->test")
+  .settings(name := "cli-tool")
+  .dependsOn(apiAll % "compile->compile;test->compile;it->compile")
+  .dependsOn(sidl % "compile->compile;test->compile;it->compile")
+  .dependsOn(testExternal % "test->compile;it->compile;test->test;it->test")
 
 //
 // SBT SCALA DEBUGGER PLUGIN
 //
-lazy val sbtScalaDebuggerPlugin = project
-  .in(file("sbt-scala-debugger-plugin"))
+lazy val sbtPlugin = project
+  .in(file("sbt-plugin"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
@@ -140,15 +211,20 @@ lazy val root = project
     publishArtifact := false,
     publishLocal := {}
   ).aggregate(
-    scalaDebuggerApiCore,
-    scalaDebuggerApiInterfaces,
-    scalaDebuggerApiPipelines,
-    scalaDebuggerApiUtils,
-    scalaDebuggerDocs,
-    scalaDebuggerTest,
-    scalaDebuggerMacros,
-    scalaDebuggerLanguage,
-    scalaDebuggerTool,
-    sbtScalaDebuggerPlugin
+    apiAll,
+    apiAllInterfaces,
+    apiProfileScala210,
+    apiProfileJava,
+    apiProfileInterfaces,
+    apiLowlevelJVM,
+    apiLowlevelInterfaces,
+    apiPipelines,
+    apiUtils,
+    docs,
+    testExternal,
+    macros,
+    sidl,
+    cliTool,
+    sbtPlugin
   ).enablePlugins(CrossPerProjectPlugin)
 

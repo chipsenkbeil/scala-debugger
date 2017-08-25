@@ -1,8 +1,8 @@
 import sbt.Keys._
 import sbt._
 
-object Language {
-  /** Language-specific project settings. */
+object Sidl {
+  /** Scala Debugger Interactive Language-specific project settings. */
   val settings = Seq(
     libraryDependencies ++= Seq(
       "org.parboiled" %% "parboiled" % "2.1.3",

@@ -1,6 +1,6 @@
 import sbt._
 
-object ApiInterfaces {
+object ApiCoreInterfaces {
   /** API interfaces-specific project settings. */
   val settings: Seq[Setting[_]] = Nil
 }
