@@ -264,6 +264,21 @@ lazy val testUtils: Project = project
     publishLocal := {}
   )
 
+//
+// INTEGERATION TEST UTILS PROJECT CONFIGURATION
+//
+lazy val itUtils: Project = project
+  .in(file("it-utils"))
+  .configs(IntegrationTest)
+  .settings(Common.settings: _*)
+  .settings(Defaults.itSettings: _*)
+  .settings(ItUtils.settings: _*)
+  .settings(
+    // Do not publish the test project
+    publishArtifact := false,
+    publishLocal := {}
+  )
+  .dependsOn(testUtils)
 
 //
 // DEBUGGER MACRO PROJECT CONFIGURATION

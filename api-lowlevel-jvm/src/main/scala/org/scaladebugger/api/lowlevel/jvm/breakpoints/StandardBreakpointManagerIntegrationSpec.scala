@@ -7,7 +7,8 @@ import org.scaladebugger.api.lowlevel.jvm.events.EventType
 import org.scaladebugger.api.lowlevel.jvm.events.EventType._
 import org.scaladebugger.api.utils.JDITools
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
-import org.scaladebugger.test.utils.{ApiTestUtilities, ParallelMockFunSpec, VirtualMachineFixtures}
+import org.scaladebugger.it.utils.{ApiTestUtilities, VirtualMachineFixtures}
+import org.scaladebugger.test.utils.{ParallelMockFunSpec, VirtualMachineFixtures}
 import test.VirtualMachineFixtures
 
 class StandardBreakpointManagerIntegrationSpec extends ParallelMockFunSpec

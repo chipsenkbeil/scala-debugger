@@ -2,7 +2,8 @@ package org.scaladebugger.api.lowlevel.jvm.steps
 
 import com.sun.jdi.ThreadReference
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
-import org.scaladebugger.test.utils.{ApiTestUtilities, ParallelMockFunSpec, VirtualMachineFixtures}
+import org.scaladebugger.it.utils.{ApiTestUtilities, VirtualMachineFixtures}
+import org.scaladebugger.test.utils.{ParallelMockFunSpec, VirtualMachineFixtures}
 import org.scalatest.time.Seconds
 import test.VirtualMachineFixtures
 

@@ -1,4 +1,4 @@
-package org.scaladebugger.test.utils.helpers
+package org.scaladebugger.it.utils.helpers
 
 import com.sun.jdi.request.MonitorWaitRequest
 

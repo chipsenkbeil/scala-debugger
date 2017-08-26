@@ -3,7 +3,8 @@ package org.scaladebugger.api.debuggers.jvm
 import java.io.IOException
 import java.util.concurrent.atomic.AtomicBoolean
 
-import org.scaladebugger.test.utils.{ApiTestUtilities, ParallelMockFunSpec, VirtualMachineFixtures}
+import org.scaladebugger.it.utils.{ApiTestUtilities, VirtualMachineFixtures}
+import org.scaladebugger.test.utils.{ParallelMockFunSpec, VirtualMachineFixtures}
 
 import scala.util.Try
 

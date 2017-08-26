@@ -5,7 +5,8 @@ import java.util.concurrent.atomic.AtomicBoolean
 import com.sun.jdi.event.MonitorWaitedEvent
 import org.scaladebugger.api.lowlevel.jvm.events.EventType._
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
-import org.scaladebugger.test.utils.{ApiTestUtilities, ParallelMockFunSpec, VirtualMachineFixtures}
+import org.scaladebugger.it.utils.{ApiTestUtilities, VirtualMachineFixtures}
+import org.scaladebugger.test.utils.{ParallelMockFunSpec, VirtualMachineFixtures}
 import test.VirtualMachineFixtures
 
 class StandardMonitorWaitedManagerIntegrationSpec extends ParallelMockFunSpec

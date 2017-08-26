@@ -1,4 +1,4 @@
-package org.scaladebugger.test.utils.helpers
+package org.scaladebugger.it.utils.helpers
 
 /**
  * Test event manager that merely invokes the provided event manager

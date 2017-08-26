@@ -1,4 +1,6 @@
-package org.scaladebugger.test.utils
+package org.scaladebugger.it.utils
+
+import org.scaladebugger.test.utils.ControlledParallelSuite
 
 /**
  * Provides fixture methods to provide virtual machines running specified

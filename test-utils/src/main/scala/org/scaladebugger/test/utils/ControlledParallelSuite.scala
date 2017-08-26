@@ -17,7 +17,7 @@ object ControlledParallelSuite {
   private val atomicThreadCounter: AtomicInteger = new AtomicInteger
 
   lazy val threadFactory: ThreadFactory = new ThreadFactory {
-    val defaultThreadFactory = Executors.defaultThreadFactory
+    private val defaultThreadFactory = Executors.defaultThreadFactory
 
     def newThread(runnable: Runnable): Thread = {
       val thread = defaultThreadFactory.newThread(runnable)

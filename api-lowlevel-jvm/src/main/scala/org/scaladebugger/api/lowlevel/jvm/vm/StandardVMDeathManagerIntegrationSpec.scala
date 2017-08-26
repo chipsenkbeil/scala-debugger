@@ -3,7 +3,8 @@ import java.util.concurrent.atomic.AtomicBoolean
 
 import org.scaladebugger.api.lowlevel.jvm.events.EventType._
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
-import org.scaladebugger.test.utils.{ApiConstants, ApiTestUtilities, ParallelMockFunSpec, VirtualMachineFixtures}
+import org.scaladebugger.it.utils.{ApiTestUtilities, VirtualMachineFixtures}
+import org.scaladebugger.test.utils.{ApiConstants, ParallelMockFunSpec, VirtualMachineFixtures}
 import test.{ApiTestUtilities, VirtualMachineFixtures}
 
 class StandardVMDeathManagerIntegrationSpec extends ParallelMockFunSpec
