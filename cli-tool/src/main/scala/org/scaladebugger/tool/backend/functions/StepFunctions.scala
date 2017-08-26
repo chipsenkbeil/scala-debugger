@@ -8,7 +8,6 @@ import org.scaladebugger.tool.backend.StateManager
 import scala.concurrent.{Await, Future}
 import scala.concurrent.duration._
 import scala.concurrent.ExecutionContext.Implicits.global
-import org.scaladebugger.api.dsl.Implicits._
 
 /**
  * Represents a collection of functions for managing steps.

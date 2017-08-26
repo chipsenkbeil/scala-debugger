@@ -3,8 +3,8 @@ import java.net.URI
 import java.nio.file.Path
 
 import com.sun.jdi.{ThreadGroupReference, ThreadReference}
-import org.scaladebugger.api.debuggers.Debugger
-import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
+import org.scaladebugger.api.debuggers.interfaces.Debugger
+import org.scaladebugger.api.virtualmachines.interfaces.ScalaVirtualMachine
 
 /**
  * Represents a manager for the backend state of the REPL.

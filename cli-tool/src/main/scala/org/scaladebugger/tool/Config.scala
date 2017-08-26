@@ -3,7 +3,7 @@ package org.scaladebugger.tool
 import java.io.File
 
 import org.rogach.scallop.ScallopConf
-import org.scaladebugger.api.debuggers.Debugger
+import org.scaladebugger.api.debuggers.interfaces.Debugger
 import org.scaladebugger.api.profiles.java.JavaDebugProfile
 import org.scaladebugger.api.profiles.scala210.Scala210DebugProfile
 

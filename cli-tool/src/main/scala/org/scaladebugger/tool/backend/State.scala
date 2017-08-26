@@ -3,8 +3,9 @@ import java.net.URI
 import java.nio.file.Path
 
 import ammonite.util.Bind
-import org.scaladebugger.api.debuggers.Debugger
-import org.scaladebugger.api.virtualmachines.{DummyScalaVirtualMachine, ScalaVirtualMachine}
+import org.scaladebugger.api.debuggers.interfaces.Debugger
+import org.scaladebugger.api.virtualmachines.interfaces.ScalaVirtualMachine
+import org.scaladebugger.api.virtualmachines.jvm.DummyScalaVirtualMachine
 
 case class State(
   activeDebugger: Option[Debugger],

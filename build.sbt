@@ -1,7 +1,7 @@
 //
 // API ALL IMPLEMENTATION PROJECT CONFIGURATION
 //
-lazy val apiAll = project
+lazy val apiAll: Project = project
   .in(file("api-all"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -22,7 +22,7 @@ lazy val apiAll = project
 //
 // API SCALA 2.10 IMPLEMENTATION PROJECT CONFIGURATION
 //
-lazy val apiProfilesScala210 = project
+lazy val apiProfilesScala210: Project = project
   .in(file("api-profiles-scala210"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -40,7 +40,7 @@ lazy val apiProfilesScala210 = project
 //
 // API PROFILE JAVA IMPLEMENTATION PROJECT CONFIGURATION
 //
-lazy val apiProfilesJava = project
+lazy val apiProfilesJava: Project = project
   .in(file("api-profiles-java"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -57,7 +57,7 @@ lazy val apiProfilesJava = project
 //
 // API PROFILE SWAPPABLE IMPLEMENTATION PROJECT CONFIGURATION
 //
-lazy val apiProfilesSwappable = project
+lazy val apiProfilesSwappable: Project = project
   .in(file("api-profiles-swappable"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -74,7 +74,7 @@ lazy val apiProfilesSwappable = project
 //
 // API DEBUGGERS JVM PROJECT CONFIGURATION
 //
-lazy val apiDebuggersJVM = project
+lazy val apiDebuggersJVM: Project = project
   .in(file("api-debuggers-jvm"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -89,7 +89,7 @@ lazy val apiDebuggersJVM = project
 //
 // API DSL PROJECT CONFIGURATION
 //
-lazy val apiDsl = project
+lazy val apiDsl: Project = project
   .in(file("api-dsl"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -103,7 +103,7 @@ lazy val apiDsl = project
 //
 // API VIRTUALMACHINES IMPLEMENTATION PROJECT CONFIGURATION
 //
-lazy val apiVirtualmachinesJVM = project
+lazy val apiVirtualmachinesJVM: Project = project
   .in(file("api-virtualmachines-jvm"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -118,7 +118,7 @@ lazy val apiVirtualmachinesJVM = project
 //
 // API LOWLEVEL IMPLEMENTATION PROJECT CONFIGURATION
 //
-lazy val apiLowlevelJVM = project
+lazy val apiLowlevelJVM: Project = project
   .in(file("api-lowlevel-jvm"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -134,7 +134,7 @@ lazy val apiLowlevelJVM = project
 //
 // API ALL INTERFACES PROJECT CONFIGURATION
 //
-lazy val apiAllInterfaces = project
+lazy val apiAllInterfaces: Project = project
   .in(file("api-all-interfaces"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -152,7 +152,7 @@ lazy val apiAllInterfaces = project
 //
 // API PROFILE INTERFACES PROJECT CONFIGURATION
 //
-lazy val apiProfilesInterfaces = project
+lazy val apiProfilesInterfaces: Project = project
   .in(file("api-profiles-interfaces"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -168,7 +168,7 @@ lazy val apiProfilesInterfaces = project
 //
 // API VIRTUALMACHINES INTERFACES PROJECT CONFIGURATION
 //
-lazy val apiVirtualmachinesInterfaces = project
+lazy val apiVirtualmachinesInterfaces: Project = project
   .in(file("api-virtualmachines-interfaces"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -182,7 +182,7 @@ lazy val apiVirtualmachinesInterfaces = project
 //
 // API DEBUGGERS INTERFACES PROJECT CONFIGURATION
 //
-lazy val apiDebuggersInterfaces = project
+lazy val apiDebuggersInterfaces: Project = project
   .in(file("api-debuggers-interfaces"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -196,7 +196,7 @@ lazy val apiDebuggersInterfaces = project
 //
 // API LOWLEVEL INTERFACES PROJECT CONFIGURATION
 //
-lazy val apiLowlevelInterfaces = project
+lazy val apiLowlevelInterfaces: Project = project
   .in(file("api-lowlevel-interfaces"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -211,7 +211,7 @@ lazy val apiLowlevelInterfaces = project
 //
 // API UTILS PROJECT CONFIGURATION
 //
-lazy val apiUtils = project
+lazy val apiUtils: Project = project
   .in(file("api-utils"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -224,7 +224,7 @@ lazy val apiUtils = project
 //
 // API UTILS PROJECT CONFIGURATION
 //
-lazy val apiPipelines = project
+lazy val apiPipelines: Project = project
   .in(file("api-pipelines"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -237,7 +237,7 @@ lazy val apiPipelines = project
 //
 // EXTERNAL TEST CODE PROJECT CONFIGURATION
 //
-lazy val testExternal = project
+lazy val testExternal: Project = project
   .in(file("test-external"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -252,7 +252,7 @@ lazy val testExternal = project
 //
 // TEST UTILS PROJECT CONFIGURATION
 //
-lazy val testUtils = project
+lazy val testUtils: Project = project
   .in(file("test-utils"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -264,10 +264,11 @@ lazy val testUtils = project
     publishLocal := {}
   )
 
+
 //
 // DEBUGGER MACRO PROJECT CONFIGURATION
 //
-lazy val macros = project
+lazy val macros: Project = project
   .in(file("macros"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -278,7 +279,7 @@ lazy val macros = project
 //
 // DEBUGGER DOC PROJECT CONFIGURATION
 //
-lazy val docs = project
+lazy val docs: Project = project
   .in(file("docs"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -289,7 +290,7 @@ lazy val docs = project
 //
 // LANGUAGE PROJECT CONFIGURATION
 //
-lazy val sidl = project
+lazy val sidl: Project = project
   .in(file("sidl"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -302,7 +303,7 @@ lazy val sidl = project
 //
 // DEBUGGER TOOL PROJECT CONFIGURATION
 //
-lazy val cliTool = project
+lazy val cliTool: Project = project
   .in(file("cli-tool"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -317,7 +318,7 @@ lazy val cliTool = project
 //
 // SBT SCALA DEBUGGER PLUGIN
 //
-lazy val sbtPlugin = project
+lazy val sbtPlugin: Project = project
   .in(file("sbt-plugin"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
@@ -329,7 +330,7 @@ lazy val sbtPlugin = project
 //
 // MAIN PROJECT CONFIGURATION
 //
-lazy val root = project
+lazy val root: Project = project
   .in(file("."))
   .settings(Common.settings: _*)
   .settings(
