@@ -18,6 +18,7 @@ lazy val apiAll: Project = project
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
   .dependsOn(testUtils % "test->compile;it->compile")
+  .dependsOn(itUtils % "test->compile;it->compile")
 
 //
 // API SCALA 2.10 IMPLEMENTATION PROJECT CONFIGURATION
@@ -36,6 +37,7 @@ lazy val apiProfilesScala210: Project = project
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
   .dependsOn(testUtils % "test->compile;it->compile")
+  .dependsOn(itUtils % "test->compile;it->compile")
 
 //
 // API PROFILE JAVA IMPLEMENTATION PROJECT CONFIGURATION
@@ -53,6 +55,7 @@ lazy val apiProfilesJava: Project = project
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
   .dependsOn(testUtils % "test->compile;it->compile")
+  .dependsOn(itUtils % "test->compile;it->compile")
 
 //
 // API PROFILE SWAPPABLE IMPLEMENTATION PROJECT CONFIGURATION
@@ -70,6 +73,7 @@ lazy val apiProfilesSwappable: Project = project
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
   .dependsOn(testUtils % "test->compile;it->compile")
+  .dependsOn(itUtils % "test->compile;it->compile")
 
 //
 // API DEBUGGERS JVM PROJECT CONFIGURATION
@@ -85,6 +89,7 @@ lazy val apiDebuggersJVM: Project = project
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
   .dependsOn(testUtils % "test->compile;it->compile")
+  .dependsOn(itUtils % "test->compile;it->compile")
 
 //
 // API DSL PROJECT CONFIGURATION
@@ -99,6 +104,7 @@ lazy val apiDsl: Project = project
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
   .dependsOn(testUtils % "test->compile;it->compile")
+  .dependsOn(itUtils % "test->compile;it->compile")
 
 //
 // API VIRTUALMACHINES IMPLEMENTATION PROJECT CONFIGURATION
@@ -114,6 +120,7 @@ lazy val apiVirtualmachinesJVM: Project = project
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
   .dependsOn(testUtils % "test->compile;it->compile")
+  .dependsOn(itUtils % "test->compile;it->compile")
 
 //
 // API LOWLEVEL IMPLEMENTATION PROJECT CONFIGURATION
@@ -130,6 +137,7 @@ lazy val apiLowlevelJVM: Project = project
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
   .dependsOn(testUtils % "test->compile;it->compile")
+  .dependsOn(itUtils % "test->compile;it->compile")
 
 //
 // API ALL INTERFACES PROJECT CONFIGURATION
@@ -279,6 +287,7 @@ lazy val itUtils: Project = project
     publishLocal := {}
   )
   .dependsOn(testUtils)
+  .dependsOn(apiAllInterfaces)
 
 //
 // DEBUGGER MACRO PROJECT CONFIGURATION
