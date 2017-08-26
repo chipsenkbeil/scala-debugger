@@ -16,6 +16,7 @@ lazy val apiAll: Project = project
   .dependsOn(apiLowlevelJVM % "compile->compile;test->compile;it->compile")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
+  .dependsOn(apiUtils % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
   .dependsOn(testUtils % "test->compile;it->compile")
   .dependsOn(itUtils % "test->compile;it->compile")
@@ -364,20 +365,26 @@ lazy val root: Project = project
     publishLocal := {}
   ).aggregate(
     apiAll,
-    apiAllInterfaces,
     apiProfilesScala210,
     apiProfilesJava,
     apiProfilesSwappable,
-    apiProfilesInterfaces,
+    apiDebuggersJVM,
+    apiVirtualmachinesJVM,
+    apiDsl,
     apiLowlevelJVM,
+    apiAllInterfaces,
+    apiProfilesInterfaces,
     apiLowlevelInterfaces,
+    apiDebuggersInterfaces,
+    apiVirtualmachinesInterfaces,
     apiPipelines,
     apiUtils,
     docs,
-    testExternal,
     macros,
     sidl,
     cliTool,
-    sbtPlugin
+    sbtPlugin,
+    testExternal,
+    testUtils,
+    itUtils
   ).enablePlugins(CrossPerProjectPlugin)
-
