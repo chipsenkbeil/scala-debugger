@@ -1,3 +1,5 @@
+package org.scaladebugger.api.lowlevel.interfaces
+
 /**
  * Represents generic information about a request.
  */

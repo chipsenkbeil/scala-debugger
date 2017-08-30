@@ -1,3 +1,7 @@
+package org.scaladebugger.api.lowlevel.interfaces
+
+import java.util.concurrent.atomic.AtomicBoolean
+
 /**
  * Represents the common interface inherited by all components that offer
  * pending request support in some fashion.
