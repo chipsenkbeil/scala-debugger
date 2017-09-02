@@ -5,7 +5,7 @@ import ammonite.repl.FrontEndUtils
 import ammonite.terminal.{Terminal => TermCore, _}
 import ammonite.terminal.filters._
 import ammonite.terminal.LazyList.~:
-import org.scaladebugger.language.parsers.grammar.ReservedKeywords
+import org.scaladebugger.sidl.parsers.grammar.ReservedKeywords
 import org.scaladebugger.tool.frontend.completion.CompletionContext
 import org.scaladebugger.tool.frontend.history.HistoryManager
 

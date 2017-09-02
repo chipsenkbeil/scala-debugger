@@ -1,5 +1,5 @@
 package org.scaladebugger.tool.frontend
-import org.scaladebugger.language.models.{Context, Identifier}
+import org.scaladebugger.sidl.models.{Context, Identifier}
 
 /**
  * Contains helper methods to do with terminal operations.

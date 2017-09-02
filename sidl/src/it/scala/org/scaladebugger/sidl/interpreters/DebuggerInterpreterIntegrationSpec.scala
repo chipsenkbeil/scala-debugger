@@ -1,9 +1,9 @@
-package org.scaladebugger.language.interpreters
+package org.scaladebugger.sidl.interpreters
 
 import java.io.{ByteArrayOutputStream, PrintStream}
 import java.nio.charset.Charset
 
-import org.scaladebugger.language.models.Undefined
+import org.scaladebugger.sidl.models.Undefined
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 
 import scala.util.{Failure, Success}

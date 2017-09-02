@@ -117,10 +117,10 @@ class FrontPage extends SitePage(syntaxHighlightTheme = "default") {
 
             // Language
             Tabs.Tab(
-              name = "language",
+              name = "sidl",
               LinedContent("sbt", ScalaCodeBlock(
                 """
-                  |libraryDependencies += "org.scala-debugger" %% "scala-debugger-language" % "1.1.0-M3"
+                  |libraryDependencies += "org.scala-debugger" %% "scala-debugger-sidl" % "1.1.0-M3"
                 """.stripMargin, fitContainer = true, trim = true)
               )
             ),
@@ -200,7 +200,7 @@ class FrontPage extends SitePage(syntaxHighlightTheme = "default") {
 
             // Language
             Tabs.Tab(
-              name = "language",
+              name = "sidl",
               LinedContent.Raw(
                 ScalaCodeBlock(LanguageExampleCode,
                   fitContainer = true, trim = true)

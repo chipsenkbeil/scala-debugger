@@ -1,5 +1,5 @@
-package org.scaladebugger.language.interpreters
-import org.scaladebugger.language.models
+package org.scaladebugger.sidl.interpreters
+import org.scaladebugger.sidl.models
 
 import java.io.PrintStream
 

@@ -1,7 +1,7 @@
-package org.scaladebugger.language.parsers.grammar
+package org.scaladebugger.sidl.parsers.grammar
 
 import org.parboiled2._
-import org.scaladebugger.language.models.Expression
+import org.scaladebugger.sidl.models.Expression
 
 /**
  * Represents the full grammar of the small debugger language.

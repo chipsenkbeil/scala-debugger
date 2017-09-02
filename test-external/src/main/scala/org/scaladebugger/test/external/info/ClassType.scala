@@ -1,6 +1,6 @@
 package org.scaladebugger.test.external.info
 
-import org.scaladebugger.test.java.{JavaEnumerations, JavaStaticMethods}
+import org.scaladebugger.test.external.java.{JavaEnumerations, JavaStaticMethods}
 
 /**
  * Provides tests for examining class type information.

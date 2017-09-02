@@ -1,4 +1,4 @@
-package org.scaladebugger.language.models
+package org.scaladebugger.sidl.models
 
 trait Expression
 case class SkipEval(expression: Expression) extends Expression

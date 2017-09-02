@@ -1,8 +1,8 @@
-package org.scaladebugger.language.parsers
+package org.scaladebugger.sidl.parsers
 
 import org.parboiled2._
-import org.scaladebugger.language.models.Context
-import org.scaladebugger.language.parsers.grammar.FullGrammar
+import org.scaladebugger.sidl.models.Context
+import org.scaladebugger.sidl.parsers.grammar.FullGrammar
 
 /**
  * Represents the standard implementation of a parser for the

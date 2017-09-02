@@ -1,4 +1,4 @@
-package org.scaladebugger.language.models
+package org.scaladebugger.sidl.models
 
 sealed trait Function extends BaseValue {
   val parameters: Seq[Identifier]

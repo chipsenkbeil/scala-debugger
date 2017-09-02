@@ -322,7 +322,7 @@ lazy val sidl: Project = project
   .settings(Defaults.itSettings: _*)
   .settings(Sidl.settings: _*)
   .settings(name := "sidl")
-  .dependsOn(apiAll % "compile->compile;test->compile;it->compile")
+  .dependsOn(testExternal % "test->compile;it->compile")
   .dependsOn(testUtils % "test->compile;it->compile")
 
 //

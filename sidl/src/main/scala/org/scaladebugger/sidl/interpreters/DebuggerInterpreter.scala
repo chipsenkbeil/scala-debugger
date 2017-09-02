@@ -1,8 +1,8 @@
-package org.scaladebugger.language.interpreters
+package org.scaladebugger.sidl.interpreters
 
 import org.parboiled2._
-import org.scaladebugger.language.models
-import org.scaladebugger.language.parsers.DebuggerParser
+import org.scaladebugger.sidl.models
+import org.scaladebugger.sidl.parsers.DebuggerParser
 
 import scala.annotation.tailrec
 import scala.util.{Failure, Success, Try}

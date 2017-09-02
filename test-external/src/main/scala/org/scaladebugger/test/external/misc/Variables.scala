@@ -1,6 +1,6 @@
 package org.scaladebugger.test.external.misc
 
-import org.scaladebugger.test.helpers.Stubs._
+import org.scaladebugger.test.external.helpers.Stubs._
 
 /**
  * Provides test of examining variable values.

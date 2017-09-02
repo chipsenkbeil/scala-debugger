@@ -1,7 +1,7 @@
-package org.scaladebugger.language.interpreters
+package org.scaladebugger.sidl.interpreters
 
 import org.parboiled2.ParseError
-import org.scaladebugger.language.models
+import org.scaladebugger.sidl.models
 
 import scala.util.{Failure, Success, Try}
 

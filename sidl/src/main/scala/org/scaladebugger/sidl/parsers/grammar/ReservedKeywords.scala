@@ -1,4 +1,4 @@
-package org.scaladebugger.language.parsers.grammar
+package org.scaladebugger.sidl.parsers.grammar
 
 object ReservedKeywords {
   val CreateFunction = "func"

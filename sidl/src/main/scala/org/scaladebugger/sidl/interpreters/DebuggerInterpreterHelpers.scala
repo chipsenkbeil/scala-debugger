@@ -1,7 +1,7 @@
-package org.scaladebugger.language.interpreters
+package org.scaladebugger.sidl.interpreters
 
 import scala.annotation.tailrec
-import org.scaladebugger.language.models
+import org.scaladebugger.sidl.models
 
 trait DebuggerInterpreterHelpers { this: DebuggerInterpreter =>
    def fillInArgs(

@@ -3,8 +3,8 @@ package org.scaladebugger.tool
 import java.io.File
 
 import org.parboiled2.ParseError
-import org.scaladebugger.language.interpreters.{DebuggerInterpreter, Interpreter}
-import org.scaladebugger.language.models.Undefined
+import org.scaladebugger.sidl.interpreters.{DebuggerInterpreter, Interpreter}
+import org.scaladebugger.sidl.models.Undefined
 import org.scaladebugger.tool.backend.StateManager
 import org.scaladebugger.tool.frontend.completion.CompletionContext
 import org.scaladebugger.tool.frontend.history.FileHistoryManager

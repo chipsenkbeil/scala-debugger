@@ -1,8 +1,8 @@
-package org.scaladebugger.language.parsers.grammar
+package org.scaladebugger.sidl.parsers.grammar
 
 import org.parboiled2._
-import org.scaladebugger.language
-import org.scaladebugger.language.models._
+import org.scaladebugger.sidl
+import org.scaladebugger.sidl.models._
 
 /**
  * Contains operation-related grammars.
@@ -15,17 +15,17 @@ trait OperationsGrammar extends Parser with ValueGrammar with WhiteSpaceGrammar 
   }
 
   def Assignment: Rule1[Variable] = rule {
-    Identifier ~ ws(":=") ~ Expression ~> language.models.Variable
+    Identifier ~ ws(":=") ~ Expression ~> sidl.models.Variable
   }
 
   def ExpressionGroup: Rule1[ExpressionGroup] = rule {
-    ws('{') ~ zeroOrMore(Expression) ~ ws('}') ~> language.models.ExpressionGroup
+    ws('{') ~ zeroOrMore(Expression) ~ ws('}') ~> sidl.models.ExpressionGroup
   }
 
   def SkipEval: Rule1[SkipEval] = rule {
     ws(ReservedKeywords.SkipEval) ~ (
       FunctionCall | ExpressionGroup | Parens | Identifier
-    ) ~> language.models.SkipEval
+    ) ~> sidl.models.SkipEval
   }
 
   def BaseValue: Rule1[Expression] = rule {
@@ -39,9 +39,9 @@ trait OperationsGrammar extends Parser with ValueGrammar with WhiteSpaceGrammar 
 
   def Term: Rule1[Expression] = rule {
     Factor ~ zeroOrMore(
-      ws('*') ~ Factor ~> language.models.Multiply |
-      ws('/') ~ Factor ~> language.models.Divide   |
-      ws('%') ~ Factor ~> language.models.Modulus
+      ws('*') ~ Factor ~> sidl.models.Multiply |
+      ws('/') ~ Factor ~> sidl.models.Divide   |
+      ws('%') ~ Factor ~> sidl.models.Modulus
     )
   }
 
@@ -49,18 +49,18 @@ trait OperationsGrammar extends Parser with ValueGrammar with WhiteSpaceGrammar 
     Term ~ zeroOrMore(
       ws("++") ~ Term ~> PlusPlus |
       ws('+') ~ Term ~> Plus |
-      ws('-') ~ Term ~> language.models.Minus
+      ws('-') ~ Term ~> sidl.models.Minus
     )
   }
 
   def Expression: Rule1[Expression] = rule {
     WhiteSpace ~ Equation ~ zeroOrMore(
-      ws('<')   ~ Equation ~> language.models.Less         |
-      ws("<=")  ~ Equation ~> language.models.LessEqual    |
-      ws('>')   ~ Equation ~> language.models.Greater      |
-      ws(">=")  ~ Equation ~> language.models.GreaterEqual |
-      ws("==")  ~ Equation ~> language.models.Equal        |
-      ws("!=")  ~ Equation ~> language.models.NotEqual
+      ws('<')   ~ Equation ~> sidl.models.Less         |
+      ws("<=")  ~ Equation ~> sidl.models.LessEqual    |
+      ws('>')   ~ Equation ~> sidl.models.Greater      |
+      ws(">=")  ~ Equation ~> sidl.models.GreaterEqual |
+      ws("==")  ~ Equation ~> sidl.models.Equal        |
+      ws("!=")  ~ Equation ~> sidl.models.NotEqual
     ) ~ WhiteSpace ~ optional(';' ~ WhiteSpace)
   }
 }

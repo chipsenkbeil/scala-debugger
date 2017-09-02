@@ -1,8 +1,8 @@
-package org.scaladebugger.language.parsers
+package org.scaladebugger.sidl.parsers
 
 import org.parboiled2.{ErrorFormatter, ParseError}
-import org.scaladebugger.language.models._
-import org.scaladebugger.language.parsers.grammar.ReservedKeywords
+import org.scaladebugger.sidl.models._
+import org.scaladebugger.sidl.parsers.grammar.ReservedKeywords
 import org.scalatest.{Matchers, ParallelTestExecution, FunSpec}
 
 import scala.util.{Failure, Success}

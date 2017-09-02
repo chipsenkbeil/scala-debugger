@@ -1,7 +1,7 @@
 package org.scaladebugger.tool.frontend.completion
 
-import org.scaladebugger.language.interpreters.Interpreter
-import org.scaladebugger.language.models.Context
+import org.scaladebugger.sidl.interpreters.Interpreter
+import org.scaladebugger.sidl.models.Context
 
 /**
  * Represents a context for completing input.

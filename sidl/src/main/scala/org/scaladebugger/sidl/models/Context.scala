@@ -1,4 +1,4 @@
-package org.scaladebugger.language.models
+package org.scaladebugger.sidl.models
 
 /**
  * Represents the context about the program state at a point in time.

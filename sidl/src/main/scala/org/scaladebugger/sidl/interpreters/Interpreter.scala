@@ -1,6 +1,6 @@
-package org.scaladebugger.language.interpreters
+package org.scaladebugger.sidl.interpreters
 
-import org.scaladebugger.language.models.Context
+import org.scaladebugger.sidl.models.Context
 
 import scala.util.Try
 
