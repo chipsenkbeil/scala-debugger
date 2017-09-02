@@ -1,0 +1,75 @@
+package org.scaladebugger.api.profiles.swappable.requests.methods
+
+import org.scaladebugger.api.lowlevel.JDIArgument
+import org.scaladebugger.api.lowlevel.jvm.methods.MethodExitRequestInfo
+
+import scala.util.Try
+
+/**
+ * Represents a swappable profile for method exit events that redirects the
+ * invocation to another profile.
+ */
+trait SwappableMethodExitRequest extends MethodExitRequest {
+  this: SwappableDebugProfileManagement =>
+
+  override def tryGetOrCreateMethodExitRequestWithData(
+    className: String,
+    methodName: String,
+    extraArguments: JDIArgument*
+  ): Try[IdentityPipeline[MethodExitEventAndData]] = {
+    withCurrentProfile.tryGetOrCreateMethodExitRequestWithData(
+      className,
+      methodName,
+      extraArguments: _*
+    )
+  }
+
+  override def isMethodExitRequestPending(
+    className: String,
+    methodName: String
+  ): Boolean = {
+    withCurrentProfile.isMethodExitRequestPending(className, methodName)
+  }
+
+  override def isMethodExitRequestWithArgsPending(
+    className: String,
+    methodName: String,
+    extraArguments: JDIArgument*
+  ): Boolean = {
+    withCurrentProfile.isMethodExitRequestWithArgsPending(
+      className,
+      methodName,
+      extraArguments: _*
+    )
+  }
+
+  override def removeMethodExitRequests(
+    className: String,
+    methodName: String
+  ): Seq[MethodExitRequestInfo] = {
+    withCurrentProfile.removeMethodExitRequests(
+      className,
+      methodName
+    )
+  }
+
+  override def removeMethodExitRequestWithArgs(
+    className: String,
+    methodName: String,
+    extraArguments: JDIArgument*
+  ): Option[MethodExitRequestInfo] = {
+    withCurrentProfile.removeMethodExitRequestWithArgs(
+      className,
+      methodName,
+      extraArguments: _*
+    )
+  }
+
+  override def removeAllMethodExitRequests(): Seq[MethodExitRequestInfo] = {
+    withCurrentProfile.removeAllMethodExitRequests()
+  }
+
+  override def methodExitRequests: Seq[MethodExitRequestInfo] = {
+    withCurrentProfile.methodExitRequests
+  }
+}
