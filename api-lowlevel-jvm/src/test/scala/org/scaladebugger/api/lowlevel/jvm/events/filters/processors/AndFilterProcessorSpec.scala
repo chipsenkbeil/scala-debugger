@@ -2,7 +2,7 @@ package org.scaladebugger.api.lowlevel.jvm.events.filters.processors
 
 import com.sun.jdi.event.Event
 import org.scaladebugger.api.lowlevel.jvm.events.filters.{AndFilter, JDIEventFilter, JDIEventFilterProcessor}
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class AndFilterProcessorSpec extends ParallelMockFunSpec
 {

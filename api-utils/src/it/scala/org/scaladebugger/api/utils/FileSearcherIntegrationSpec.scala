@@ -2,7 +2,7 @@ package org.scaladebugger.api.utils
 
 import java.nio.file.Paths
 
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class FileSearcherIntegrationSpec extends ParallelMockFunSpec {
   private val fileSearcher = new FileSearcher

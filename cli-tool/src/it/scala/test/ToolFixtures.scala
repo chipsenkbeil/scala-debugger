@@ -3,7 +3,7 @@ package test
 import java.io.IOException
 
 import org.scaladebugger.api.profiles.java.JavaDebugProfile
-import org.scaladebugger.test.utils.ControlledParallelSuite
+import org.scaladebugger.test.common.utils.ControlledParallelSuite
 import org.scaladebugger.tool.Repl
 import org.scaladebugger.tool.backend.StateManager
 import org.scaladebugger.tool.frontend.VirtualTerminal

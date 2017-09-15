@@ -4,7 +4,7 @@ import com.sun.jdi.event.Event
 import org.scaladebugger.api.lowlevel.jvm.events.EventManager.EventHandler
 import org.scaladebugger.api.lowlevel.jvm.events.EventType.EventType
 import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class EventManagerSpec extends ParallelMockFunSpec
 {

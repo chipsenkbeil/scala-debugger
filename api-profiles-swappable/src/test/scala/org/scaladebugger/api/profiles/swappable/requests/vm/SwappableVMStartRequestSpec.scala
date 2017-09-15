@@ -3,7 +3,7 @@ package org.scaladebugger.api.profiles.swappable.requests.vm
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 import org.scaladebugger.api.lowlevel.JDIArgument
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class SwappableVMStartRequestSpec extends ParallelMockFunSpec
 {

@@ -5,7 +5,7 @@ import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 import org.scaladebugger.api.lowlevel.JDIArgument
 import org.scaladebugger.api.lowlevel.jvm.events.EventType.EventType
 import org.scaladebugger.api.profiles.swappable.SwappableDebugProfile
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class SwappableDebugProfileManagementSpec extends ParallelMockFunSpec
 {

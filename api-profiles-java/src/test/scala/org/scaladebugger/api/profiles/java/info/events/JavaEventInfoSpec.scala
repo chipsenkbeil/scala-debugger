@@ -4,7 +4,7 @@ import com.sun.jdi.event._
 import org.scaladebugger.api.lowlevel.jvm.events.JDIEventArgument
 import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 import scala.reflect.ClassTag
 

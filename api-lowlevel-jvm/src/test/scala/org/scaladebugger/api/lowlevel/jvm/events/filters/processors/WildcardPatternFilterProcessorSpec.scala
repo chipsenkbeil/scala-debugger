@@ -3,7 +3,7 @@ package org.scaladebugger.api.lowlevel.jvm.events.filters.processors
 import com.sun.jdi._
 import com.sun.jdi.event._
 import org.scaladebugger.api.lowlevel.jvm.events.filters.WildcardPatternFilter
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class WildcardPatternFilterProcessorSpec extends ParallelMockFunSpec
 {

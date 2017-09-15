@@ -8,7 +8,7 @@ import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
 import org.scaladebugger.api.lowlevel.jvm.events.{EventHandlerInfo, EventManager, JDIEventArgument, PendingEventHandlerSupportLike}
 import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 import org.scalatest.concurrent.{Futures, ScalaFutures}
 import org.scalatest.time.{Milliseconds, Span}
 import test.JDIMockHelpers

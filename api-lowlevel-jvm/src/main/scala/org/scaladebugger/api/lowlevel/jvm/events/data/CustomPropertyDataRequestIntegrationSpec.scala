@@ -8,8 +8,9 @@ import org.scaladebugger.api.lowlevel.jvm.events.data.results.CustomPropertyData
 import org.scaladebugger.api.lowlevel.jvm.requests.properties.CustomProperty
 import org.scaladebugger.api.utils.JDITools
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
-import org.scaladebugger.it.utils.{ApiTestUtilities, VirtualMachineFixtures}
-import org.scaladebugger.test.utils.{ParallelMockFunSpec, VirtualMachineFixtures}
+import org.scaladebugger.it.utils.VirtualMachineFixtures
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
+import org.scaladebugger.test.it.utils.{ApiTestUtilities, VirtualMachineFixtures}
 import test.VirtualMachineFixtures
 
 class CustomPropertyDataRequestIntegrationSpec extends ParallelMockFunSpec

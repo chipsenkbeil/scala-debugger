@@ -3,7 +3,7 @@ package org.scaladebugger.api.profiles.java.requests.monitors
 import java.util.concurrent.atomic.AtomicBoolean
 
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 import test.{ApiTestUtilities, VirtualMachineFixtures}
 
 class JavaMonitorContendedEnteredRequestIntegrationSpec extends ParallelMockFunSpec

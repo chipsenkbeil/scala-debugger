@@ -1,8 +1,8 @@
 package org.scaladebugger.api.lowlevel.jvm.breakpoints
 
 import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
-import org.scaladebugger.it.utils.helpers.JDIMockHelpers
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
+import org.scaladebugger.test.it.utils.helpers.JDIMockHelpers
 
 import scala.util.{Failure, Success}
 

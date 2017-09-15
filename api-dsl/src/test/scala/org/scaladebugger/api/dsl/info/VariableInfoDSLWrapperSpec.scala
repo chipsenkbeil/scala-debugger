@@ -3,7 +3,7 @@ package org.scaladebugger.api.dsl.info
 import com.sun.jdi.VirtualMachine
 import org.scaladebugger.api.lowlevel.jvm.ManagerContainer
 import org.scaladebugger.api.virtualmachines.{ObjectCache, ScalaVirtualMachine, ScalaVirtualMachineManager}
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 

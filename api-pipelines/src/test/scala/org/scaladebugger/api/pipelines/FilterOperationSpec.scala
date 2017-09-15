@@ -1,6 +1,6 @@
 package org.scaladebugger.api.pipelines
 
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class FilterOperationSpec extends ParallelMockFunSpec {
   describe("FilterOperation") {

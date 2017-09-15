@@ -2,7 +2,7 @@ package org.scaladebugger.api.profiles.java.info
 
 import com.sun.jdi._
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class JavaPrimitiveTypeInfoSpec extends ParallelMockFunSpec
 {

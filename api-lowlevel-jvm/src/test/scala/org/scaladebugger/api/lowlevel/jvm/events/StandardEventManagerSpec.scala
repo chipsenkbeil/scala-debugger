@@ -5,7 +5,7 @@ import org.scaladebugger.api.lowlevel.jvm.events.EventType._
 import org.scaladebugger.api.lowlevel.jvm.events.data.{JDIEventDataProcessor, JDIEventDataRequest, JDIEventDataResult}
 import org.scaladebugger.api.lowlevel.jvm.events.filters.{JDIEventFilter, JDIEventFilterProcessor}
 import org.scaladebugger.api.lowlevel.jvm.events.misc.YesResume
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class StandardEventManagerSpec extends ParallelMockFunSpec
 {

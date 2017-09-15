@@ -17,7 +17,7 @@ import org.scaladebugger.api.lowlevel.jvm.steps._
 import org.scaladebugger.api.lowlevel.jvm.threads._
 import org.scaladebugger.api.lowlevel.jvm.vm._
 import org.scaladebugger.api.lowlevel.jvm.watchpoints._
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class ManagerContainerSpec extends ParallelMockFunSpec {
   describe("ManagerContainer") {

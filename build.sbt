@@ -18,8 +18,8 @@ lazy val apiAll: Project = project
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
   .dependsOn(apiUtils % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
-  .dependsOn(testUtils % "test->compile;it->compile")
-  .dependsOn(itUtils % "test->compile;it->compile")
+  .dependsOn(testCommonUtils % "test->compile;it->compile")
+  .dependsOn(testItUtils % "test->compile;it->compile")
 
 //
 // API SCALA 2.10 IMPLEMENTATION PROJECT CONFIGURATION
@@ -37,8 +37,8 @@ lazy val apiProfilesScala210: Project = project
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
-  .dependsOn(testUtils % "test->compile;it->compile")
-  .dependsOn(itUtils % "test->compile;it->compile")
+  .dependsOn(testCommonUtils % "test->compile;it->compile")
+  .dependsOn(testItUtils % "test->compile;it->compile")
 
 //
 // API PROFILE JAVA IMPLEMENTATION PROJECT CONFIGURATION
@@ -55,8 +55,8 @@ lazy val apiProfilesJava: Project = project
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
-  .dependsOn(testUtils % "test->compile;it->compile")
-  .dependsOn(itUtils % "test->compile;it->compile")
+  .dependsOn(testCommonUtils % "test->compile;it->compile")
+  .dependsOn(testItUtils % "test->compile;it->compile")
 
 //
 // API PROFILE SWAPPABLE IMPLEMENTATION PROJECT CONFIGURATION
@@ -73,8 +73,8 @@ lazy val apiProfilesSwappable: Project = project
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
-  .dependsOn(testUtils % "test->compile;it->compile")
-  .dependsOn(itUtils % "test->compile;it->compile")
+  .dependsOn(testCommonUtils % "test->compile;it->compile")
+  .dependsOn(testItUtils % "test->compile;it->compile")
 
 //
 // API DEBUGGERS JVM PROJECT CONFIGURATION
@@ -89,8 +89,8 @@ lazy val apiDebuggersJVM: Project = project
   .dependsOn(apiDebuggersInterfaces % "compile->compile;test->compile;it->compile")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
-  .dependsOn(testUtils % "test->compile;it->compile")
-  .dependsOn(itUtils % "test->compile;it->compile")
+  .dependsOn(testCommonUtils % "test->compile;it->compile")
+  .dependsOn(testItUtils % "test->compile;it->compile")
 
 //
 // API DSL PROJECT CONFIGURATION
@@ -104,8 +104,8 @@ lazy val apiDsl: Project = project
   .settings(name := "api-dsl")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
-  .dependsOn(testUtils % "test->compile;it->compile")
-  .dependsOn(itUtils % "test->compile;it->compile")
+  .dependsOn(testCommonUtils % "test->compile;it->compile")
+  .dependsOn(testItUtils % "test->compile;it->compile")
 
 //
 // API VIRTUALMACHINES IMPLEMENTATION PROJECT CONFIGURATION
@@ -120,8 +120,8 @@ lazy val apiVirtualmachinesJVM: Project = project
   .dependsOn(apiVirtualmachinesInterfaces % "compile->compile;test->compile;it->compile")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
-  .dependsOn(testUtils % "test->compile;it->compile")
-  .dependsOn(itUtils % "test->compile;it->compile")
+  .dependsOn(testCommonUtils % "test->compile;it->compile")
+  .dependsOn(testItUtils % "test->compile;it->compile")
 
 //
 // API LOWLEVEL IMPLEMENTATION PROJECT CONFIGURATION
@@ -137,8 +137,8 @@ lazy val apiLowlevelJVM: Project = project
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
-  .dependsOn(testUtils % "test->compile;it->compile")
-  .dependsOn(itUtils % "test->compile;it->compile")
+  .dependsOn(testCommonUtils % "test->compile;it->compile")
+  .dependsOn(testItUtils % "test->compile;it->compile")
 
 //
 // API ALL INTERFACES PROJECT CONFIGURATION
@@ -156,7 +156,7 @@ lazy val apiAllInterfaces: Project = project
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
-  .dependsOn(testUtils % "test->compile;it->compile")
+  .dependsOn(testCommonUtils % "test->compile;it->compile")
 
 //
 // API PROFILE INTERFACES PROJECT CONFIGURATION
@@ -172,7 +172,7 @@ lazy val apiProfilesInterfaces: Project = project
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
-  .dependsOn(testUtils % "test->compile;it->compile")
+  .dependsOn(testCommonUtils % "test->compile;it->compile")
 
 //
 // API VIRTUALMACHINES INTERFACES PROJECT CONFIGURATION
@@ -186,7 +186,7 @@ lazy val apiVirtualmachinesInterfaces: Project = project
   .settings(name := "api-virtualmachines-interfaces")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
-  .dependsOn(testUtils % "test->compile;it->compile")
+  .dependsOn(testCommonUtils % "test->compile;it->compile")
 
 //
 // API DEBUGGERS INTERFACES PROJECT CONFIGURATION
@@ -200,7 +200,7 @@ lazy val apiDebuggersInterfaces: Project = project
   .settings(name := "api-debuggers-interfaces")
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
-  .dependsOn(testUtils % "test->compile;it->compile")
+  .dependsOn(testCommonUtils % "test->compile;it->compile")
 
 //
 // API LOWLEVEL INTERFACES PROJECT CONFIGURATION
@@ -215,7 +215,7 @@ lazy val apiLowlevelInterfaces: Project = project
   .dependsOn(macros % "compile->compile;test->compile;it->compile")
   .dependsOn(apiPipelines % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
-  .dependsOn(testUtils % "test->compile;it->compile")
+  .dependsOn(testCommonUtils % "test->compile;it->compile")
 
 //
 // API UTILS PROJECT CONFIGURATION
@@ -228,7 +228,7 @@ lazy val apiUtils: Project = project
   .settings(ApiUtils.settings: _*)
   .settings(name := "api-utils")
   .dependsOn(testExternal % "test->compile;it->compile")
-  .dependsOn(testUtils % "test->compile;it->compile")
+  .dependsOn(testCommonUtils % "test->compile;it->compile")
 
 //
 // API UTILS PROJECT CONFIGURATION
@@ -241,7 +241,7 @@ lazy val apiPipelines: Project = project
   .settings(ApiPipelines.settings: _*)
   .settings(name := "api-pipelines")
   .dependsOn(testExternal % "test->compile;it->compile")
-  .dependsOn(testUtils % "test->compile;it->compile")
+  .dependsOn(testCommonUtils % "test->compile;it->compile")
 
 //
 // EXTERNAL TEST CODE PROJECT CONFIGURATION
@@ -259,10 +259,10 @@ lazy val testExternal: Project = project
   )
 
 //
-// TEST UTILS PROJECT CONFIGURATION
+// TEST COMMON UTILS PROJECT CONFIGURATION
 //
-lazy val testUtils: Project = project
-  .in(file("test-utils"))
+lazy val testCommonUtils: Project = project
+  .in(file("test-common-utils"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
@@ -274,10 +274,10 @@ lazy val testUtils: Project = project
   )
 
 //
-// INTEGERATION TEST UTILS PROJECT CONFIGURATION
+// TEST INTEGERATION UTILS PROJECT CONFIGURATION
 //
-lazy val itUtils: Project = project
-  .in(file("it-utils"))
+lazy val testItUtils: Project = project
+  .in(file("test-it-utils"))
   .configs(IntegrationTest)
   .settings(Common.settings: _*)
   .settings(Defaults.itSettings: _*)
@@ -287,7 +287,7 @@ lazy val itUtils: Project = project
     publishArtifact := false,
     publishLocal := {}
   )
-  .dependsOn(testUtils)
+  .dependsOn(testCommonUtils)
   .dependsOn(apiAllInterfaces)
 
 //
@@ -323,7 +323,7 @@ lazy val sidl: Project = project
   .settings(Sidl.settings: _*)
   .settings(name := "sidl")
   .dependsOn(testExternal % "test->compile;it->compile")
-  .dependsOn(testUtils % "test->compile;it->compile")
+  .dependsOn(testCommonUtils % "test->compile;it->compile")
 
 //
 // DEBUGGER TOOL PROJECT CONFIGURATION
@@ -338,7 +338,7 @@ lazy val cliTool: Project = project
   .dependsOn(apiAll % "compile->compile;test->compile;it->compile")
   .dependsOn(sidl % "compile->compile;test->compile;it->compile")
   .dependsOn(testExternal % "test->compile;it->compile")
-  .dependsOn(testUtils % "test->compile;it->compile")
+  .dependsOn(testCommonUtils % "test->compile;it->compile")
 
 //
 // SBT SCALA DEBUGGER PLUGIN
@@ -385,6 +385,6 @@ lazy val root: Project = project
     cliTool,
     sbtPlugin,
     testExternal,
-    testUtils,
-    itUtils
+    testCommonUtils,
+    testItUtils
   ).enablePlugins(CrossPerProjectPlugin)

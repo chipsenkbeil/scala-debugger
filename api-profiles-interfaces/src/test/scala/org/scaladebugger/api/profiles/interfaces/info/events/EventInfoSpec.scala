@@ -4,7 +4,7 @@ import org.scaladebugger.api.interfaces.profiles.info.events._
 import org.scaladebugger.api.lowlevel.jvm.events.JDIEventArgument
 import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 import test.EventInfoTestClasses.TestEventInfo
 
 class EventInfoSpec extends ParallelMockFunSpec {

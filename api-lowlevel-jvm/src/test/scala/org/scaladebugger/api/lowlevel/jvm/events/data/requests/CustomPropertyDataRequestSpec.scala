@@ -1,6 +1,6 @@
 package org.scaladebugger.api.lowlevel.jvm.events.data.requests
 
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class CustomPropertyDataRequestSpec extends ParallelMockFunSpec
 {

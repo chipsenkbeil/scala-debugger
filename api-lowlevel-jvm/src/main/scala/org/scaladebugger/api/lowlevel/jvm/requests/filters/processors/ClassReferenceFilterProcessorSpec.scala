@@ -5,7 +5,7 @@ import com.sun.jdi.request._
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 import org.scaladebugger.api.lowlevel.jvm.requests.filters.ClassReferenceFilter
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class ClassReferenceFilterProcessorSpec extends ParallelMockFunSpec
 {

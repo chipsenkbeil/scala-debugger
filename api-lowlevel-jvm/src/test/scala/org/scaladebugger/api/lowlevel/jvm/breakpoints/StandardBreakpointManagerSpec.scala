@@ -4,8 +4,8 @@ import com.sun.jdi.request.{BreakpointRequest, EventRequest, EventRequestManager
 import com.sun.jdi.{Location, VirtualMachine}
 import org.scaladebugger.api.lowlevel.jvm.classes.ClassManager
 import org.scaladebugger.api.lowlevel.jvm.requests.{JDIRequestArgument, JDIRequestProcessor}
-import org.scaladebugger.it.utils.helpers.JDIMockHelpers
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
+import org.scaladebugger.test.it.utils.helpers.JDIMockHelpers
 
 import scala.util.{Failure, Success}
 

@@ -4,7 +4,7 @@ import com.sun.jdi.ThreadReference
 import org.scaladebugger.api.interfaces.lowlevel.{InvokeNonVirtualArgument, InvokeSingleThreadedArgument, JDIArgument}
 import org.scaladebugger.api.interfaces.profiles.info._
 import org.scaladebugger.api.lowlevel.{InvokeSingleThreadedArgument, JDIArgument}
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 import test.InfoTestClasses.TestObjectInfo

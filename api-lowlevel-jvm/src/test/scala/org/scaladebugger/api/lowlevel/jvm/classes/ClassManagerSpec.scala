@@ -1,7 +1,7 @@
 package org.scaladebugger.api.lowlevel.jvm.classes
 
 import com.sun.jdi.{Field, Method, ReferenceType, VirtualMachine}
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 import scala.collection.JavaConverters._
 import scala.language.reflectiveCalls

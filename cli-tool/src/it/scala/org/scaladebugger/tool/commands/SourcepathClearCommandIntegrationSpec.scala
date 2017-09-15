@@ -2,7 +2,7 @@ package org.scaladebugger.tool.commands
 
 import java.nio.file.Paths
 
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 import org.scaladebugger.tool.Repl
 import org.scalatest.concurrent.Eventually
 import test.{ToolConstants, ToolFixtures, ToolTestUtilities}

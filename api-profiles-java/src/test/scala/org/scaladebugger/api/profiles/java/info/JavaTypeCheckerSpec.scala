@@ -1,7 +1,7 @@
 package org.scaladebugger.api.profiles.java.info
 
 import com.sun.jdi._
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 

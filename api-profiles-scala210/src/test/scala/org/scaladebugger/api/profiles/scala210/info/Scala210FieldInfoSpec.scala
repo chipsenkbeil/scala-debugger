@@ -2,7 +2,7 @@ package org.scaladebugger.api.profiles.scala210.info
 
 import com.sun.jdi._
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class Scala210FieldInfoSpec extends ParallelMockFunSpec
 {

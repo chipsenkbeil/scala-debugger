@@ -2,7 +2,7 @@ package org.scaladebugger.api.profiles.java.requests.steps
 
 import org.scaladebugger.api.interfaces.profiles.info.ThreadInfo
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 import org.scalatest.time.Seconds
 import test.{ApiTestUtilities, VirtualMachineFixtures}
 

@@ -2,7 +2,7 @@ package org.scaladebugger.tool.frontend.history
 
 import java.io.{File, PrintWriter, Writer}
 
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class FileHistoryManagerSpec extends ParallelMockFunSpec {
   private class TestFile extends File("")

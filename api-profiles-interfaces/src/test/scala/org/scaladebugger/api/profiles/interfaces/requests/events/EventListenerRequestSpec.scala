@@ -5,7 +5,7 @@ import org.scaladebugger.api.interfaces.profiles.requests.events.EventListenerRe
 import org.scaladebugger.api.lowlevel.jvm.events.EventHandlerInfo
 import org.scaladebugger.api.lowlevel.jvm.events.EventType.EventType
 import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 import scala.util.{Failure, Success, Try}
 

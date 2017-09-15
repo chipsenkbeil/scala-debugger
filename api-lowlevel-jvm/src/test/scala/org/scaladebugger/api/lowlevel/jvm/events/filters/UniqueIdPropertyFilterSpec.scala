@@ -1,7 +1,7 @@
 package org.scaladebugger.api.lowlevel.jvm.events.filters
 
 import org.scaladebugger.api.lowlevel.jvm.events.filters.processors.CustomPropertyFilterProcessor
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class UniqueIdPropertyFilterSpec extends ParallelMockFunSpec
 {

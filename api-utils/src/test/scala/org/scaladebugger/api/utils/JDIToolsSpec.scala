@@ -3,7 +3,7 @@ package org.scaladebugger.api.utils
 import java.io.ByteArrayInputStream
 import java.net.{URL, URLClassLoader}
 
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 

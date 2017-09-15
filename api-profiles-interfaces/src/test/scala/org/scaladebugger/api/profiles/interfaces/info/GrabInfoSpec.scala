@@ -2,7 +2,7 @@ package org.scaladebugger.api.profiles.info
 
 import com.sun.jdi.{ObjectReference, ThreadGroupReference, ThreadReference}
 import org.scaladebugger.api.interfaces.profiles.info.{ObjectInfo, ReferenceTypeInfo, ThreadGroupInfo, ThreadInfo}
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 import test.InfoTestClasses.TestGrabInfoProfile

@@ -10,7 +10,7 @@ import org.scaladebugger.api.lowlevel.jvm.events.filters.UniqueIdPropertyFilter
 import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
 import org.scaladebugger.api.lowlevel.jvm.requests.properties.UniqueIdProperty
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 import test.{JDIMockHelpers, TestRequestHelper}
 
 import scala.util.{Failure, Success}

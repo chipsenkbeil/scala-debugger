@@ -3,7 +3,7 @@ import org.scaladebugger.api.interfaces.profiles.info.ThreadInfo
 import org.scaladebugger.api.profiles.java.JavaDebugProfile
 import org.scaladebugger.api.utils.JDITools
 import org.scaladebugger.api.virtualmachines.DummyScalaVirtualMachine
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 import test.{ApiTestUtilities, VirtualMachineFixtures}
 
 class JavaGrabInfoIntegrationSpec extends ParallelMockFunSpec

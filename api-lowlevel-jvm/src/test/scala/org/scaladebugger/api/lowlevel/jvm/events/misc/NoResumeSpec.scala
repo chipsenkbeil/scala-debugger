@@ -1,6 +1,6 @@
 package org.scaladebugger.api.lowlevel.jvm.events.misc
 
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class NoResumeSpec extends ParallelMockFunSpec
 {

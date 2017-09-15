@@ -3,7 +3,7 @@ package org.scaladebugger.api.lowlevel.jvm.events.filters.processors
 import com.sun.jdi.event.Event
 import com.sun.jdi.request.EventRequest
 import org.scaladebugger.api.lowlevel.jvm.events.filters.CustomPropertyFilter
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class CustomPropertyFilterProcessorSpec extends ParallelMockFunSpec
 {

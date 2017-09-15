@@ -3,7 +3,7 @@ package org.scaladebugger.api.lowlevel.jvm.methods
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 import test.{JDIMockHelpers, TestMethodEntryManager}
 
 import scala.util.{Failure, Success}

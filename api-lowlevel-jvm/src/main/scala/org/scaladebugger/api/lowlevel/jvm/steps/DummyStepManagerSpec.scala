@@ -3,9 +3,9 @@ package org.scaladebugger.api.lowlevel.jvm.steps
 import com.sun.jdi.ThreadReference
 import com.sun.jdi.request.{EventRequest, EventRequestManager, StepRequest}
 import org.scaladebugger.api.lowlevel.jvm.DummyOperationException
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
-import org.scaladebugger.test.utils.ParallelMockFunSpec
 import test.JDIMockHelpers
 
 import scala.util.{Failure, Success}

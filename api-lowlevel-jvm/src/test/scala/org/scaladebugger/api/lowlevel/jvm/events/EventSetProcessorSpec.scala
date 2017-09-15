@@ -3,7 +3,7 @@ package org.scaladebugger.api.lowlevel.jvm.events
 import com.sun.jdi.event.{Event, EventIterator, EventSet}
 import org.scaladebugger.api.lowlevel.jvm.events.EventType.EventType
 import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class EventSetProcessorSpec extends ParallelMockFunSpec {
   // TODO: This is a workaround for a log statement that is causing a test to

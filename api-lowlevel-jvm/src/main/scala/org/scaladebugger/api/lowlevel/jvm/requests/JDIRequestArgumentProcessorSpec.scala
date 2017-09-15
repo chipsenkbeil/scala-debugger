@@ -6,7 +6,7 @@ import org.scalamock.scalatest.MockFactory
 import org.scalatest.{FunSpec, Matchers, ParallelTestExecution}
 import org.scaladebugger.api.lowlevel.jvm.requests.filters._
 import org.scaladebugger.api.lowlevel.jvm.requests.properties.{CustomProperty, EnabledProperty, SuspendPolicyProperty}
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class JDIRequestArgumentProcessorSpec extends ParallelMockFunSpec
 {

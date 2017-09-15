@@ -2,7 +2,7 @@ package org.scaladebugger.api.lowlevel.jvm.events.misc.processors
 
 import com.sun.jdi.event.Event
 import org.scaladebugger.api.lowlevel.jvm.events.misc.{NoResume, YesResume}
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class ResumeProcessorSpec extends ParallelMockFunSpec
 {

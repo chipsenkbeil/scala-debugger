@@ -1,7 +1,7 @@
 package org.scaladebugger.api.virtualmachines.interfaces
 
 import com.sun.jdi.VirtualMachine
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class ScalaVirtualMachineSpec extends ParallelMockFunSpec
 {

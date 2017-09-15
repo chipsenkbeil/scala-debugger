@@ -2,8 +2,8 @@ package org.scaladebugger.api.debuggers.jvm
 
 import java.util.concurrent.atomic.AtomicBoolean
 
-import org.scaladebugger.it.utils.ApiTestUtilities
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
+import org.scaladebugger.test.it.utils.ApiTestUtilities
 
 class LaunchingDebuggerIntegrationSpec extends ParallelMockFunSpec
    with ApiTestUtilities with Logging

@@ -4,7 +4,7 @@ import org.scaladebugger.api.interfaces.profiles.requests.watchpoints.Modificati
 import org.scaladebugger.api.lowlevel.JDIArgument
 import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
 import org.scaladebugger.api.lowlevel.jvm.watchpoints.ModificationWatchpointRequestInfo
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 import scala.util.{Failure, Success, Try}
 

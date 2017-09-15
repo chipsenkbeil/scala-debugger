@@ -8,7 +8,7 @@ import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
 import org.scaladebugger.api.lowlevel.jvm.requests.filters.ThreadFilter
 import org.scaladebugger.api.lowlevel.jvm.steps.{PendingStepSupportLike, StepManager, StepRequestInfo}
 import org.scaladebugger.api.virtualmachines.ScalaVirtualMachine
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 import org.scalatest.concurrent.{Futures, ScalaFutures}
 import org.scalatest.time.{Milliseconds, Span}
 import test.{JDIMockHelpers, Workarounds}

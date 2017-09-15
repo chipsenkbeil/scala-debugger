@@ -3,7 +3,7 @@ package org.scaladebugger.api.dsl.events
 import org.scaladebugger.api.lowlevel.jvm.events.EventType
 import org.scaladebugger.api.lowlevel.jvm.events.data.JDIEventDataResult
 import org.scaladebugger.api.lowlevel.jvm.requests.JDIRequestArgument
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 import scala.util.Success
 

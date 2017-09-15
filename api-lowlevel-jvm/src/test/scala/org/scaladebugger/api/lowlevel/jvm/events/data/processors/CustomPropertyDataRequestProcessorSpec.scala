@@ -4,7 +4,7 @@ import com.sun.jdi.event.Event
 import com.sun.jdi.request.EventRequest
 import org.scaladebugger.api.lowlevel.jvm.events.data.requests.CustomPropertyDataRequest
 import org.scaladebugger.api.lowlevel.jvm.events.data.results.CustomPropertyDataResult
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class CustomPropertyDataRequestProcessorSpec extends ParallelMockFunSpec
 {

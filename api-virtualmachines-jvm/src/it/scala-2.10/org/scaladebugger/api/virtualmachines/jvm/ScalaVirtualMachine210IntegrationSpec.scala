@@ -1,7 +1,8 @@
 package org.scaladebugger.api.virtualmachines.jvm
 
-import org.scaladebugger.it.utils.{ApiTestUtilities, VirtualMachineFixtures}
-import org.scaladebugger.test.utils.{ParallelMockFunSpec, VirtualMachineFixtures}
+import org.scaladebugger.it.utils.VirtualMachineFixtures
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
+import org.scaladebugger.test.it.utils.{ApiTestUtilities, VirtualMachineFixtures}
 import org.scalatest.concurrent.Eventually
 
 /** Specific to Scala 2.10 */

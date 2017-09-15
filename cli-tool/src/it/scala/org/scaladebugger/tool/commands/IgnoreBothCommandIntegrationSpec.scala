@@ -1,6 +1,6 @@
 package org.scaladebugger.tool.commands
 
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 import org.scalatest.concurrent.Eventually
 import test.{ToolConstants, ToolFixtures, ToolTestUtilities}
 

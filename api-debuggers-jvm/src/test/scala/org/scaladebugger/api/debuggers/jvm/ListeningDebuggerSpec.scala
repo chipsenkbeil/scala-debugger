@@ -4,7 +4,7 @@ import java.util
 
 import com.sun.jdi.connect.{Connector, ListeningConnector, TransportTimeoutException}
 import com.sun.jdi.{VirtualMachine, VirtualMachineManager}
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 import scala.collection.JavaConverters._
 

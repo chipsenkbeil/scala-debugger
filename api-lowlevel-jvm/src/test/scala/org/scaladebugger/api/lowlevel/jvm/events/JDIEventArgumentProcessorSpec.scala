@@ -3,7 +3,7 @@ package org.scaladebugger.api.lowlevel.jvm.events
 import com.sun.jdi.event.Event
 import org.scaladebugger.api.lowlevel.jvm.events.data.{JDIEventDataProcessor, JDIEventDataRequest, JDIEventDataResult, JDIEventDataUnknownError}
 import org.scaladebugger.api.lowlevel.jvm.events.filters.{JDIEventFilter, JDIEventFilterProcessor}
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class JDIEventArgumentProcessorSpec extends ParallelMockFunSpec
 {

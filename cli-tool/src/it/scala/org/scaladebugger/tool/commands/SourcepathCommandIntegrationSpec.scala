@@ -2,7 +2,7 @@ package org.scaladebugger.tool.commands
 
 import java.nio.file.Paths
 
-import org.scaladebugger.test.utils.FixedParallelSuite
+import org.scaladebugger.test.common.utils.FixedParallelSuite
 import org.scaladebugger.tool.Repl
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.concurrent.Eventually

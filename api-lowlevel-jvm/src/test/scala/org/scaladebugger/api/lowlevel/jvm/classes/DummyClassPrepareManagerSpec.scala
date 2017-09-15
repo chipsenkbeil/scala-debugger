@@ -1,7 +1,7 @@
 package org.scaladebugger.api.lowlevel.jvm.classes
 
 import org.scaladebugger.api.lowlevel.jvm.DummyOperationException
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class DummyClassPrepareManagerSpec extends ParallelMockFunSpec
 {

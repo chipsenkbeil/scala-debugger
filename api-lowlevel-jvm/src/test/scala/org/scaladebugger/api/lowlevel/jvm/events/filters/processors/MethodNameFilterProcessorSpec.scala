@@ -3,7 +3,7 @@ package org.scaladebugger.api.lowlevel.jvm.events.filters.processors
 import com.sun.jdi.event.{Event, LocatableEvent, MethodEntryEvent, MethodExitEvent}
 import com.sun.jdi.{Location, Method}
 import org.scaladebugger.api.lowlevel.jvm.events.filters.MethodNameFilter
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class MethodNameFilterProcessorSpec extends ParallelMockFunSpec
 {

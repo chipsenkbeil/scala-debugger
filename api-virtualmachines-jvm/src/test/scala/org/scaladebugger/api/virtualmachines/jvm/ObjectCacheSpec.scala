@@ -1,7 +1,7 @@
 package org.scaladebugger.api.virtualmachines.jvm
 
 import com.sun.jdi.{ObjectReference, VMCannotBeModifiedException}
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class ObjectCacheSpec extends ParallelMockFunSpec
 {

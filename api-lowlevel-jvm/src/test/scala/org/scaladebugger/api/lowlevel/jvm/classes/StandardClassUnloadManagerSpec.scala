@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicInteger
 
 import com.sun.jdi.request.{ClassUnloadRequest, EventRequest, EventRequestManager}
 import org.scaladebugger.api.lowlevel.jvm.requests.{JDIRequestArgument, JDIRequestProcessor}
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 import scala.util.{Failure, Success}
 

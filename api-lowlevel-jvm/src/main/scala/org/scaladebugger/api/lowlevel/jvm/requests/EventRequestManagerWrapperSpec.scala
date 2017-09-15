@@ -3,7 +3,7 @@ package org.scaladebugger.api.lowlevel.jvm.requests
 import com.sun.jdi.{Field, Location, ReferenceType, ThreadReference}
 import com.sun.jdi.request._
 import org.scaladebugger.api.lowlevel.jvm.requests.properties.{CustomProperty, EnabledProperty, SuspendPolicyProperty}
-import org.scaladebugger.test.utils.ParallelMockFunSpec
+import org.scaladebugger.test.common.utils.ParallelMockFunSpec
 
 class EventRequestManagerWrapperSpec extends ParallelMockFunSpec {
   private val mockEventRequestManager = mock[EventRequestManager]
